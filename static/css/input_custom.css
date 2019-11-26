@@ -1,0 +1,77 @@
+.select_box {
+	position: relative;
+	text-align: center;
+	left: 75px;
+	width:34%;
+	top: -20px;
+	/*margin:10px;*/
+	/*border: 1px solid rgba(107, 107, 107, 1);*/
+	font-size:12px;
+}
+ul,li {
+	list-style-type:none; 
+	padding:0; 
+	margin:0;
+}
+.select_box input {
+	cursor:pointer; 
+	display:block; 
+	line-height:23px; 
+	text-align: center;
+	color: #999999;
+	/*width:100%;*/ 
+	width: 5em;
+	height:21px; 
+	overflow:hidden;
+	border: 1px solid rgba(107, 107, 107, 1);
+    /*border-radius: 4px;*/
+    box-shadow: none;
+	padding-right:20px; 
+	padding-left:10px; 
+	background:url(../../img/sub_manage/u1322.png) no-repeat 160px center;
+}
+.select_box ul {
+	position:absolute; 
+	/*text-align: center;*/
+	left:0px; 
+	top:100%; 
+	width:99%; 
+	border: 1px solid rgba(107, 107, 107, 1); 
+	background:#fff; 
+	overflow: hidden;
+	display:none; 
+	border-radius: 2px;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	background-color: rgba(255, 255, 255, 1);
+	z-index:99999;
+}
+.select_box ul li {
+	display:block;
+	text-align: center;
+	height:1.8em;
+	overflow:hidden;
+	line-height:2em;
+	padding-left:1%;
+	text-align: center;
+	width:80%;
+	cursor:pointer;
+}
+.select_box li{
+	position: relative;
+	left: 10px;
+}
+.hover {
+	color: white;
+	background: rgba(36, 110, 200, 1)
+}
+
+.select_img{
+	position: absolute;
+	top: 10%;
+	right: 5%;
+	-moz-transform:rotate(-60deg);
+	-webkit-transform:rotate(-60deg);
+	filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+	cursor: pointer;
+}

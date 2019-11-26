@@ -1,0 +1,48 @@
+table{
+	width: 710px;
+}
+table td{
+	height: 43px;
+	border: 1px solid rgba(201, 201, 201, 1);
+	color: #333333;
+}
+
+#information_edit{
+	position: relative;
+	width: 50px;
+	height: 16px;
+	line-height: 16px;
+	top: 35px;
+	left: 85px;
+	/*border: 1px solid aqua;*/
+	font-family: '思源黑体CN Regular', '思源黑体CN';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    color: #246DFF;
+}
+#information_edit img{
+	position: absolute;
+	width: 18px;
+	height: 15px;
+}
+#information_edit span{
+	position: absolute;
+	/*top: -2px;*/
+	left: 22px;
+	width: 30px;
+	height: 15px;
+}
+#information_table_div{
+	position: relative;
+	top: 45px;
+	left: 85px;
+}
+.td_span{
+	position: relative;
+	left: 20px;
+}
+.td-right{
+	color: #000000;
+	font-size: 13px;
+}

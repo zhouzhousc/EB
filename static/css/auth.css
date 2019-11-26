@@ -1,0 +1,265 @@
+body {
+	margin: 0;
+	background-color: #fbfbfb;
+	text-align: center;
+}
+
+
+
+.login .login-wrapper {
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+	-webkit-perspective: 1000px;
+	        perspective: 1000px;
+	position: relative;
+	height: 100%;
+	width: 360px;
+	margin: 0 auto;
+}
+
+.login.login-blue {
+	--color-primary: #0081C6;
+	--color-grey: rgba(0, 129, 198, .05);
+	--color-dark: #000;
+	--color-semidark: rgba(0, 129, 198, .45);
+}
+
+.login a {
+	color: var(--color-primary);
+	text-decoration: none;
+	border-bottom: 1px dashed var(--color-semidark);
+	margin-top: -3px;
+	padding-bottom: 2px;
+}
+
+.login * {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+
+
+.login .login-box {
+	width: 100%;
+	position: absolute;
+	left: 0;
+}
+
+.login .login-box-inner {
+	background-color: #fff;
+	-webkit-box-shadow: 0 7px 25px rgba(0, 0, 0, .08);
+	        box-shadow: 0 7px 25px rgba(0, 0, 0, .08);
+	padding: 40px 25px 25px 25px;
+	text-align: left;
+	border-radius: 3px;
+}
+
+.login .login-box::after {
+	content: ' ';
+	-webkit-box-shadow: 0 0 25px rgba(0, 0, 0, .1);
+	        box-shadow: 0 0 25px rgba(0, 0, 0, .1);
+	-webkit-transform: translate(0, -92.6%) scale(.88);
+	    -ms-transform: translate(0, -92.6%) scale(.88);
+	        transform: translate(0, -92.6%) scale(.88);
+	border-radius: 3px;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #lll;
+	z-index: -1;
+}
+
+.login .login-box.login-flip {
+	-webkit-transform: rotate3d(0, 1, 0, -180deg);
+	        transform: rotate3d(0, 1, 0, -180deg);
+	display: none;
+	opacity: 0;
+}
+
+.login .login-box p {
+	font-size: 20px;
+	color: #000;
+	font-weight: 800;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.login .login-box .login-group {
+	margin-bottom: 20px;
+}
+
+.login .login-box label {
+	margin-bottom: 5px;
+	display: inline-block;
+	width: 100%;
+	color: var(--color-semidark);
+	font-weight: 700;
+}
+
+.login .login-box label a {
+	float: right;
+}
+
+.login .login-box .login-input {
+	background-color: var(--color-grey);
+	color: var(--color-dark);
+	border: none;
+	border-radius: 3px;
+	padding: 15px 20px;
+	width: 100%;
+	outline: 0;
+}
+
+.login .login-box .login-btn {
+	display: inline-block;
+	width: 100%;
+	border: none;
+	color: #fff;
+	padding: 15px;
+	border-radius: 3px;
+	background-color: var(--color-primary);
+	-webkit-box-shadow: 0 2px 7px var(--color-semidark);
+	        box-shadow: 0 2px 7px var(--color-semidark);
+	font-weight: 700;
+	outline: 0;
+	cursor: pointer;
+	-webkit-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+
+.login .login-box .login-btn:active {
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+}
+
+.login .login-box .login-btn:hover {
+	opacity: .9;
+}
+
+.login .text-foot {
+	text-align: center;
+	padding: 10px;
+	font-weight: 700;
+	margin-top: 20px;
+	color: var(--color-semidark);
+}
+
+.login .login-footer {
+	text-align: center;
+	margin: 30px 0;
+	font-size: 12px;
+	color: var(--color-semidark);
+	font-weight: 700;
+}
+
+.login .login-back-link {
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+	display: none;
+	opacity: 0;
+}
+
+/* animation */
+.login .login-box.login-animated {
+	-webkit-animation-name: LowinAnimated;
+	        animation-name: LowinAnimated;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+	-webkit-animation-timing-function: ease-in-out;
+	        animation-timing-function: ease-in-out;
+}
+
+.login .login-box.login-animatedback {
+	-webkit-animation-name: LowinAnimatedBack;
+	        animation-name: LowinAnimatedBack;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+	-webkit-animation-timing-function: ease-in-out;
+	        animation-timing-function: ease-in-out;
+}
+
+.login .login-box.login-animated-flip {
+	-webkit-animation-name: LowinAnimatedFlip;
+	        animation-name: LowinAnimatedFlip;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+	-webkit-animation-timing-function: ease-in-out;
+	        animation-timing-function: ease-in-out;
+}
+
+.login .login-box.login-animated-flipback {
+	-webkit-animation-name: LowinAnimatedFlipBack;
+	        animation-name: LowinAnimatedFlipBack;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+	-webkit-animation-timing-function: ease-in-out;
+	        animation-timing-function: ease-in-out;
+}
+
+.login .login-brand.login-animated {
+	-webkit-animation-name: LowinBrandAnimated;
+	        animation-name: LowinBrandAnimated;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+	-webkit-animation-timing-function: ease-in-out;
+	        animation-timing-function: ease-in-out;
+}
+
+.login .login-group.password-group {
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+}
+
+.login .login-group.password-group.login-animated {
+	-webkit-animation-name: LowinPasswordAnimated;
+	        animation-name: LowinPasswordAnimated;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+	-webkit-animation-timing-function: ease-in-out;
+	        animation-timing-function: ease-in-out;
+	-webkit-transform-origin: 0 0;
+	    -ms-transform-origin: 0 0;
+	        transform-origin: 0 0;
+}
+
+.login .login-group.password-group.login-animated-back {
+	-webkit-animation-name: LowinPasswordAnimatedBack;
+	        animation-name: LowinPasswordAnimatedBack;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+	-webkit-animation-timing-function: ease-in-out;
+	        animation-timing-function: ease-in-out;
+	-webkit-transform-origin: 0 0;
+	    -ms-transform-origin: 0 0;
+	        transform-origin: 0 0;
+}
+
+
+@media screen and (max-width: 320px) {
+	.login .login-wrapper {
+		width: 100%;
+	}
+	.login .login-box {
+		padding: 0 10px;
+	}
+}

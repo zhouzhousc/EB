@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="{% static 'css/pop.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/page.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/iframe.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/Small_Main.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/font.css' %}" />
+		<!--<link rel="stylesheet" href="{% static 'css/overflow.css' %}" />-->
+	</head>
+	<body>
+		<div class="gateway_top">
+			<div class="page_tittle">
+				<!--<span>网关管理&nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;网关信息</span>-->
+				<span>日志事件 &nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;<span id="log_sub_title">日志中心</span></span>
+			</div>
+		</div>
+		<div id="gateway_small" class="smallMenu">
+			<a style="text-decoration: none;" >
+				<div class="menu" onclick="clickDiv(className,0,3);clickM(className,0)" onmouseover="over(className,0);overM(className,0)" onmouseout="out(className,0)">
+					<div class="smallMenu_div_word">日志中心&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</div>
+				</div>
+			</a>
+			<a style="text-decoration: none;" >
+				<div class="menu" onclick="clickDiv(className,1,3);clickM(className,1)" onmouseover="over(className,1);overM(className,1)" onmouseout="out(className,1)">
+					<div class="smallMenu_div_word">事件中心&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</div>
+				</div>
+			</a>
+			<a style="text-decoration: none;" >
+				<div class="menu"  onclick="clickDiv(className,2,3);clickM(className,2)" onmouseover="over(className,2);overM(className,2)" onmouseout="out(className,2)">
+					<div class="smallMenu_div_word">通知管理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</div>
+				</div>
+			</a>
+		</div>
+		<iframe id="logging_iframe" class="css_iframe" name="logging_iframe" src="{% url 'loginfo:loginfolog' %}"></iframe>
+	
+		
+		<div id="podiv">
+			<form name="" action="" method="post">
+				{% csrf_token %}
+				<div id="add_notification_div" class="div_position div_shadow div_backgr">
+					<div class="pop_top">
+						<div class="pop_img"><img src="{% static 'img/gateway/gateway_pop/u44.png' %}" /></div>
+						<div class="pop_tittle text_left"><span class="tittle_label">新增责任人</span></div>
+						<div class="pop_close div_cursor" onclick="pop_close('add_notification_div')"><img src="{% static 'img/gateway/gateway_pop/u132.png' %}" /></div>
+					</div>
+					<div  class="pop_line"><img src="{% static 'img/logging_events/u4721.png' %}" width="370px" /></div>
+
+					<div class="pop_message">
+						<div class="add_notification_input_div">
+							<span><sup class="font_red">*</sup>责任人：</span>
+							<input id="person_liable" name="person_liable" stype="text" placeholder="请输入责任人名称" />
+						</div>
+						<div class="add_notification_input_div">
+							<span><sup class="font_red">*</sup>手机：</span>
+							<input id="mobile_phone"  name="mobile_phone" type="text" placeholder="请输入责任人手机号" />
+						</div>
+						<div class="add_notification_input_div">
+							<span><sup class="font_red">*</sup>邮箱：</span>
+							<input id="mailbox" name="mailbox" type="text" placeholder="请输入责任人邮箱" />
+						</div>
+						<div class="add_notification_input_div">
+							<span><sup class="font_red">*</sup>位置：</span>
+							<input id="position" name="position" type="text" placeholder="请输入责任人位置信息	" />
+						</div>
+					</div>
+
+					<button type="submit" id="notification_submit_div" class="new_submit div_cursor text_center"  onclick="pop_save('add_notification_div')"><p>確定<p></button>
+					<div id="notification_close_div" class="new_close div_cursor text_center" onclick="pop_close('add_notification_div')"><p>取消</p></div>
+				</div>
+			</form>
+
+
+			<form name="" action="" method="post">
+				<div id="notification_details_div" class="div_position div_shadow div_backgr">
+					<div class="pop_top">
+						<div class="pop_img"><img src="{% static 'img/logging_events/u3735.png' %}" /></div>
+						<div class="pop_tittle text_left"><span class="tittle_label">责任人详情</span></div>
+						<div class="pop_close div_cursor" onclick="pop_close('notification_details_div')"><img src="{% static 'img/gateway/gateway_pop/u132.png' %}" /></div>
+					</div>
+
+					<div id="split_notification_pop_img"><img src="{% static 'img/logging_events/u4721.png' %}" width="380px" /></div>
+
+					<div class="pop_message">
+						<div class="add_notification_input_div">
+							<span>责任人：</span>
+							<input id="person"   type="text" placeholder="请输入责任人名称" />
+						</div>
+						<div class="add_notification_input_div">
+							<span>手机：</span>
+							<input id="phone" type="text" placeholder="请输入责任人手机号" />
+						</div>
+						<div class="add_notification_input_div">
+							<span>邮箱：</span>
+							<input id="mail" type="text" placeholder="请输入责任人邮箱"  />
+						</div>
+						<div class="add_notification_input_div">
+							<span>位置：</span>
+							<input id="pos" type="text" placeholder="请输入责任人位置信息" />
+						</div>
+					</div>
+					
+				</div>
+			</form>
+		</div>
+	
+		<script type="text/javascript" src="{% static 'js/pop.js' %}" ></script>
+		<script type="text/javascript" src="{% static 'js/page.js' %}" ></script>
+		<script type="text/javascript" src="{% static 'js/jquery.js' %}" ></script>
+		<script type="text/javascript" src="{% static 'js/logging_events/Logging_Events_Mains.js' %}" ></script>
+	</body>
+</html>

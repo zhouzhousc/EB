@@ -1,0 +1,85 @@
+#details{
+	position: absolute;
+	top: 12px;
+	left: 40px;
+	color: #246DFF;
+}
+#delete{
+	position: absolute;
+	top: 12px;
+	right: 40px;
+	color: #FF0000;
+}
+#delete:hover{
+	color: #246DFF;
+}
+.notification_button_div{
+	position: relative;
+	top: 0px;
+	left: 30px;
+	/*right: 184px;*/
+	/*width: 90px;*/
+	height: 37px;
+	/*border: 1px solid aqua;*/
+}
+.notification_enable_content{
+	position: absolute;
+	top: 11px;
+	left: -4px;
+	width: 30px;
+	height: 20px;
+}
+.notification_enable_button{
+	position: relative;
+    width: 53px;
+    height: 22px;
+    left: 26px;
+    top: 8px;
+    font-size: 13px;
+    color: #FFFFFF;
+    background-color: rgba(0, 159, 60, 1);
+    border-radius: 44px;
+    cursor: pointer;
+}
+.notification_button_on{
+	position: absolute;
+	top: 4px;
+	left: 4px;
+}
+.notification_button_off{
+	position: absolute;
+	display: none;
+	top: 4px;
+	right: 4px;
+}
+.notification_button_circular{
+	position: absolute;
+    /*left: 1px;*/
+    right: 1px;
+    top: 2px;
+    width: 19px;
+    height: 18px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 150px;
+}
+.notification_details{
+	position: absolute;
+	top: 12px;
+	left: 30px;
+	color: #246DFF;
+}
+.notification_edit{
+	position: absolute;
+	top: 12px;
+	left: 85px;
+	color: #246DFF;
+}
+.notification_delete{
+	position: absolute;
+	top: 12px;
+	right: 20px;
+	color: #FF0000;
+}
+.div_cursor{
+	cursor: pointer;
+}

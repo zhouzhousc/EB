@@ -1,0 +1,1337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ebce3518-ea09-4f87-810b-558f17cb4197" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/edgebox_web0919$TESTSAFH.coverage" NAME="TESTSAFH Coverage Results" MODIFIED="1574307028237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/edgebox_web$views.coverage" NAME="views Coverage Results" MODIFIED="1566020506881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/m5" />
+    <SUITE FILE_PATH="coverage/edgebox_web$testserver.coverage" NAME="testserver Coverage Results" MODIFIED="1565416407328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="F:/Codebase(20181220)/EdgeBox_opcua" />
+    <SUITE FILE_PATH="coverage/edgebox_web$format_ui.coverage" NAME="format_ui Coverage Results" MODIFIED="1566877775462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../edgebox_app/plugins" />
+    <SUITE FILE_PATH="coverage/edgebox_web$test.coverage" NAME="test Coverage Results" MODIFIED="1565934488658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/celery_tasks" />
+    <SUITE FILE_PATH="coverage/edgebox_web$__init____1_.coverage" NAME="__init__ (1) Coverage Results" MODIFIED="1568604113767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/edgebox_web" />
+    <SUITE FILE_PATH="coverage/edgebox_web$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1568802024641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/templates/shebei" />
+    <SUITE FILE_PATH="coverage/edgebox_web$auth_ui.coverage" NAME="auth_ui Coverage Results" MODIFIED="1566812698545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../edgebox_app/plugins" />
+    <SUITE FILE_PATH="coverage/edgebox_web0919$tests__1_.coverage" NAME="tests (1) Coverage Results" MODIFIED="1572571992369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/edgebox_web$report_assets.coverage" NAME="report_assets Coverage Results" MODIFIED="1566287976810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="F:/CMDB-master/Client/bin" />
+    <SUITE FILE_PATH="coverage/edgebox_web0919$tasks__3_.coverage" NAME="tasks (3) Coverage Results" MODIFIED="1569482996653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/edgebox_web0919$name.coverage" NAME="name Coverage Results" MODIFIED="1574307073455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/edgebox_web$three_ui.coverage" NAME="three_ui Coverage Results" MODIFIED="1566809996899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../edgebox_app/plugins" />
+    <SUITE FILE_PATH="coverage/edgebox_web$line_ui.coverage" NAME="line_ui Coverage Results" MODIFIED="1566811979799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../edgebox_app/plugins" />
+    <SUITE FILE_PATH="coverage/edgebox_web$manage__1_.coverage" NAME="manage (1) Coverage Results" MODIFIED="1568019154869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../tutorial" />
+    <SUITE FILE_PATH="coverage/edgebox_web$sysinfo.coverage" NAME="sysinfo Coverage Results" MODIFIED="1562307891268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/edgebox_web$tasks.coverage" NAME="tasks Coverage Results" MODIFIED="1564129335154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/celery_tasks" />
+    <SUITE FILE_PATH="coverage/edgebox_web0919$views__1_.coverage" NAME="views (1) Coverage Results" MODIFIED="1574234592327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/edgebox_web0919$tasks.coverage" NAME="tasks Coverage Results" MODIFIED="1573437322142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/edgebox_web0919$manage.coverage" NAME="manage Coverage Results" MODIFIED="1574666386028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/edgebox_web$auth_corepro.coverage" NAME="auth_corepro Coverage Results" MODIFIED="1567749213410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../edgebox_app/bin/core" />
+    <SUITE FILE_PATH="coverage/edgebox_web$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1566616915065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/celery_tasks" />
+    <SUITE FILE_PATH="coverage/edgebox_web$__init____2_.coverage" NAME="__init__ (2) Coverage Results" MODIFIED="1568626681035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/shebei" />
+    <SUITE FILE_PATH="coverage/edgebox_web0919$mqtt.coverage" NAME="mqtt Coverage Results" MODIFIED="1574407803077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/edgebox_web0919$systemos.coverage" NAME="systemos Coverage Results" MODIFIED="1574662433539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/edgebox_web$manage.coverage" NAME="manage Coverage Results" MODIFIED="1567414610472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="F:/CMDB-master" />
+    <SUITE FILE_PATH="coverage/edgebox_web0919$tasks__4_.coverage" NAME="tasks (4) Coverage Results" MODIFIED="1571103563017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/edgebox_web0919$tasks__2_.coverage" NAME="tasks (2) Coverage Results" MODIFIED="1568947362929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/edgebox_web0919$MYSQL.coverage" NAME="MYSQL Coverage Results" MODIFIED="1573700646422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/edgebox_web$newedgebox_app.coverage" NAME="newedgebox_app Coverage Results" MODIFIED="1566984404558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../edgebox_app/expand/ui" />
+    <SUITE FILE_PATH="coverage/edgebox_web0919$views.coverage" NAME="views Coverage Results" MODIFIED="1573802949444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/edgebox_web$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1566523933256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/celery_tasks" />
+    <SUITE FILE_PATH="coverage/edgebox_web0919$firstname__1_.coverage" NAME="firstname (1) Coverage Results" MODIFIED="1572571992448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/edgebox_web$manage__2_.coverage" NAME="imooc Coverage Results" MODIFIED="1566953565198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../imooc_celery" />
+    <SUITE FILE_PATH="coverage/edgebox_web$send_email.coverage" NAME="send_email Coverage Results" MODIFIED="1562747237845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/celery_tasks" />
+    <SUITE FILE_PATH="coverage/edgebox_web$nwe1.coverage" NAME="nwe1 Coverage Results" MODIFIED="1565419848570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="F:/Codebase(20181220)/EdgeBox_opcua" />
+    <SUITE FILE_PATH="coverage/edgebox_web$info.coverage" NAME="info Coverage Results" MODIFIED="1562314309829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/edgebox_web$collect_windows_info.coverage" NAME="collect_windows_info Coverage Results" MODIFIED="1567414180769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="F:/CMDB-master/Client/plugins" />
+    <SUITE FILE_PATH="coverage/edgebox_web$edgebox_web.coverage" NAME="edgebox_web Coverage Results" MODIFIED="1568853351790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/edgebox_web$__init____3_.coverage" NAME="__init__ (3) Coverage Results" MODIFIED="1568680940610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps" />
+    <SUITE FILE_PATH="coverage/edgebox_web$tests.coverage" NAME="tests Coverage Results" MODIFIED="1566612338152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/celery_tasks" />
+    <SUITE FILE_PATH="coverage/edgebox_web0919$tasks__1_.coverage" NAME="tasks (1) Coverage Results" MODIFIED="1573437323002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/edgebox_web$nwe.coverage" NAME="nwe Coverage Results" MODIFIED="1565420984184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="F:/Codebase(20181220)/EdgeBox_opcua" />
+    <SUITE FILE_PATH="coverage/edgebox_web0919$firstname.coverage" NAME="firstname Coverage Results" MODIFIED="1571792675772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/edgebox_web0919$systemos__1_.coverage" NAME="systemos (1) Coverage Results" MODIFIED="1573437321639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/edgebox_web$main.coverage" NAME="main Coverage Results" MODIFIED="1568615800106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../edgebox_app/bin" />
+    <SUITE FILE_PATH="coverage/edgebox_web0919$tests.coverage" NAME="tests Coverage Results" MODIFIED="1571792675709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="edgebox_web" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="edgebox_web" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/wangguang/utils/systemos.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="159" column="1" lean-forward="true" selection-start-line="159" selection-start-column="1" selection-end-line="159" selection-end-column="1" />
+              <folding>
+                <element signature="e#107#118#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/loginfo/tasks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="93" column="44" selection-start-line="93" selection-start-column="44" selection-end-line="93" selection-end-column="44" />
+              <folding>
+                <element signature="e#98#113#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/loginfo/utils/TESTSAFH.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/loginfo/utils/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/loginfo/utils/MYSQL.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+              <folding>
+                <element signature="e#99#110#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/yuancheng/utils/mqtt.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="63" selection-start-line="63" selection-end-line="64" selection-end-column="114" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/user/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1215">
+              <caret line="43" column="47" lean-forward="true" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apps/yuancheng/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/yuancheng/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="3" column="34" lean-forward="true" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+              <folding>
+                <element signature="e#1#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>StandardResultSetPagination</find>
+      <find>SysInfo</find>
+      <find>sys_net_status</find>
+      <find>u</find>
+      <find>create_time</find>
+      <find>RegisterInfo</find>
+      <find>sys_harddisk</find>
+      <find>val</find>
+      <find>dele</find>
+      <find>NoticeManagerdata</find>
+      <find>updatae</find>
+      <find>up</find>
+      <find>DateTimeField</find>
+      <find>Agent_sys_init_tasks</find>
+      <find>GateWaySettingDown</find>
+      <find>Send_enent_email_tasks</find>
+      <find>Getsystem</find>
+      <find>SubDevice</find>
+      <find>fil</find>
+      <find>upda</find>
+      <find>json_dumps_params</find>
+      <find>event_message</find>
+      <find>ser</find>
+      <find>mqtt_Sub</find>
+      <find>sys_memory_size</find>
+      <find>15</find>
+      <find>sys</find>
+      <find>com</find>
+      <find>sys_use_usb_num</find>
+      <find>sys_com</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>png %}'&quot;</replace>
+      <replace>{ static '</replace>
+      <replace>js' %}&quot;</replace>
+      <replace>png' %}&quot;</replace>
+      <replace>停止</replace>
+      <replace>.png %}' &quot;</replace>
+      <replace>{% static'</replace>
+      <replace>.png' %} &quot;</replace>
+      <replace>href=&quot;{ static 'adminlte/</replace>
+      <replace>href=&quot;{% static 'adminlte/</replace>
+      <replace>.css' %}&quot;</replace>
+      <replace>.js' %}&quot;</replace>
+      <replace>src=&quot;{% static 'adminlte/dist</replace>
+      <replace>.jpg' %}&quot;</replace>
+      <replace>:</replace>
+      <replace>append</replace>
+      <replace>{% static '</replace>
+      <replace>--</replace>
+      <replace>.png' %}&quot;</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/templates/shebei/Equipment_Debugging.html" />
+        <option value="$PROJECT_DIR$/apps/shebei/tasks.py" />
+        <option value="$PROJECT_DIR$/static/css/table.css" />
+        <option value="$PROJECT_DIR$/templates/shebei/__init__.py" />
+        <option value="$PROJECT_DIR$/apps/shebei/views.py" />
+        <option value="$PROJECT_DIR$/static/css/iframe.css" />
+        <option value="$PROJECT_DIR$/templates/loginfo/Logging_Events_Main.html" />
+        <option value="$PROJECT_DIR$/templates/loginfo/Event_Center.html" />
+        <option value="$PROJECT_DIR$/templates/loginfo/Log_Center.html" />
+        <option value="$PROJECT_DIR$/templates/loginfo/Notification_Management.html" />
+        <option value="$PROJECT_DIR$/static/js/logging_events/Notification_Management.js" />
+        <option value="$PROJECT_DIR$/static/css/pop.css" />
+        <option value="$PROJECT_DIR$/apps/user/tasks.py" />
+        <option value="$PROJECT_DIR$/edgebox_web/celery_config.py" />
+        <option value="$PROJECT_DIR$/apps/wangguang/tests.py" />
+        <option value="$PROJECT_DIR$/apps/shebei/firstest.py" />
+        <option value="$PROJECT_DIR$/apps/loginfo/tests.py" />
+        <option value="$PROJECT_DIR$/celery_tasks/tests.py" />
+        <option value="$PROJECT_DIR$/apps/loginfo/firstname.py" />
+        <option value="$PROJECT_DIR$/apps/wangguang/tasks.py" />
+        <option value="$PROJECT_DIR$/apps/wangguang/firstname.py" />
+        <option value="$PROJECT_DIR$/edgebox_web/settings.py" />
+        <option value="$PROJECT_DIR$/edgebox_web/urls.py" />
+        <option value="$PROJECT_DIR$/apps/loginfo/admin.py" />
+        <option value="$PROJECT_DIR$/apps/apidata/models.py" />
+        <option value="$PROJECT_DIR$/apps/loginfo/urls.py" />
+        <option value="$PROJECT_DIR$/apps/yuancheng/models.py" />
+        <option value="$PROJECT_DIR$/apps/yuancheng/serializers.py" />
+        <option value="$PROJECT_DIR$/apps/wangguang/util.py" />
+        <option value="$PROJECT_DIR$/apps/wangguang/systemos.py" />
+        <option value="$PROJECT_DIR$/apps/wangguang/urls.py" />
+        <option value="$PROJECT_DIR$/apps/wangguang/views.py" />
+        <option value="$PROJECT_DIR$/apps/loginfo/models.py" />
+        <option value="$PROJECT_DIR$/apps/loginfo/migrations/0001_initial.py" />
+        <option value="$PROJECT_DIR$/apps/yuancheng/name.py" />
+        <option value="$PROJECT_DIR$/apps/yuancheng/tasks.py" />
+        <option value="$PROJECT_DIR$/apps/loginfo/serializers.py" />
+        <option value="$PROJECT_DIR$/apps/yuancheng/urls.py" />
+        <option value="$PROJECT_DIR$/Edgebox.txt" />
+        <option value="$PROJECT_DIR$/apps/loginfo/utils/MYSQL.py" />
+        <option value="$PROJECT_DIR$/../env0809/Lib/site-packages/django/http/response.py" />
+        <option value="$PROJECT_DIR$/apps/loginfo/utils/test.py" />
+        <option value="$PROJECT_DIR$/apps/loginfo/name.py" />
+        <option value="$PROJECT_DIR$/apps/loginfo/utils/TESTSAFH.py" />
+        <option value="$PROJECT_DIR$/apps/wangguang/models.py" />
+        <option value="$PROJECT_DIR$/apps/wangguang/serializers.py" />
+        <option value="$PROJECT_DIR$/apps/loginfo/views.py" />
+        <option value="$PROJECT_DIR$/apps/yuancheng/utils/mqtt.py" />
+        <option value="$PROJECT_DIR$/apps/wangguang/utils/systemos.py" />
+        <option value="$PROJECT_DIR$/apps/loginfo/tasks.py" />
+        <option value="$PROJECT_DIR$/apps/yuancheng/views.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="85" />
+    <option name="y" value="392" />
+    <option name="width" value="1439" />
+    <option name="height" value="860" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="edgebox_web0919" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edgebox_web0919" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edgebox_web0919" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edgebox_web0919" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edgebox_web0919" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edgebox_web0919" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="yuancheng" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edgebox_web0919" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edgebox_web0919" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="yuancheng" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edgebox_web0919" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="edgebox_web0919" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.5 (env0809) &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="edgebox_web0919" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.5 (env0809) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edgebox_web0919" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.5 (env0809) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="loginfo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edgebox_web0919" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.5 (env0809) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="loginfo" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edgebox_web0919" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.5 (env0809) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="yuancheng" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edgebox_web0919" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.5 (env0809) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="yuancheng" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite&#10;mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/edgebox_final(1118)/edgebox_final" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="edgebox_web" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="edgebox_web" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\django\edgebox_web0919\apps\loginfo\utils" />
+      <recent name="G:\django\edgebox_web0919\apps\yuancheng" />
+      <recent name="G:\django\edgebox_web0919\apps\wangguang" />
+      <recent name="G:\django\edgebox_web0919\apps\wangguang\utils" />
+      <recent name="G:\django\edgebox_web0919\apps\loginfo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\liu\Desktop\quickstart\edgebox_web" />
+      <recent name="C:\Users\liu\Desktop\quickstart\edgebox_app\expand" />
+      <recent name="C:\Users\liu\Desktop\quickstart\edgebox_app\bin" />
+      <recent name="C:\Users\liu\Desktop\quickstart\edgebox_app\plugins\ui" />
+      <recent name="C:\Users\liu\Desktop\quickstart\edgebox_web\celery_tasks\Core" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="PythonConfigurationType" />
+      </set>
+    </option>
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+    <option name="contentProportion" value="0.013899049" />
+  </component>
+  <component name="RunManager" selected="Python.manage">
+    <configuration default="true" type="DjangoTestsConfigurationType">
+      <module name="EdgeBox_opcua" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <module name="EdgeBox_opcua" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <module name="EdgeBox_opcua" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TESTSAFH" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="edgebox_web" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/loginfo/utils/TESTSAFH.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="edgebox_web" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="edgebox_web" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="runserver 0.0.0.0:9090" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mqtt" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="edgebox_web" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/yuancheng/utils/mqtt.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="name" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="edgebox_web" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/loginfo/name.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="systemos" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="edgebox_web" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/wangguang/utils/systemos.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="views (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="edgebox_web" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/wangguang/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="imooc_celery" type="Python.DjangoServer" factoryName="Django server">
+      <module name="imooc_celery" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="imooc_celery.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.FlaskServer" factoryName="Flask server">
+      <module name="EdgeBox_opcua" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="EdgeBox_opcua" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="EdgeBox_opcua" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Django server.imooc_celery" />
+      <item itemvalue="Python.manage" />
+      <item itemvalue="Python.views (1)" />
+      <item itemvalue="Python.TESTSAFH" />
+      <item itemvalue="Python.name" />
+      <item itemvalue="Python.systemos" />
+      <item itemvalue="Python.mqtt" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.systemos" />
+        <item itemvalue="Python.mqtt" />
+        <item itemvalue="Python.name" />
+        <item itemvalue="Python.TESTSAFH" />
+        <item itemvalue="Python.views (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ebce3518-ea09-4f87-810b-558f17cb4197" name="Default Changelist" comment="" />
+      <created>1562027475904</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562027475904</updated>
+      <workItem from="1562027477148" duration="24029000" />
+      <workItem from="1562114158169" duration="11451000" />
+      <workItem from="1562205595139" duration="12450000" />
+      <workItem from="1562285951707" duration="18379000" />
+      <workItem from="1562376262443" duration="6373000" />
+      <workItem from="1562392704994" duration="17533000" />
+      <workItem from="1562544955869" duration="6070000" />
+      <workItem from="1562551053625" duration="25802000" />
+      <workItem from="1562634555238" duration="29126000" />
+      <workItem from="1562718691181" duration="31387000" />
+      <workItem from="1562815727083" duration="6817000" />
+      <workItem from="1562903785756" duration="268000" />
+      <workItem from="1562911800870" duration="22242000" />
+      <workItem from="1562980122973" duration="977000" />
+      <workItem from="1562981786490" duration="19123000" />
+      <workItem from="1563150434156" duration="22646000" />
+      <workItem from="1563237337390" duration="18329000" />
+      <workItem from="1563323563828" duration="19362000" />
+      <workItem from="1563410884806" duration="11108000" />
+      <workItem from="1563500343315" duration="4967000" />
+      <workItem from="1563588704977" duration="3044000" />
+      <workItem from="1563777717589" duration="1610000" />
+      <workItem from="1563785529466" duration="1207000" />
+      <workItem from="1564123601448" duration="6586000" />
+      <workItem from="1564367575570" duration="50487000" />
+      <workItem from="1564963545328" duration="75061000" />
+      <workItem from="1565157108230" duration="13789000" />
+      <workItem from="1565224768855" duration="37622000" />
+      <workItem from="1565343428004" duration="25685000" />
+      <workItem from="1565570344944" duration="21297000" />
+      <workItem from="1565656096760" duration="82027000" />
+      <workItem from="1566006274326" duration="19586000" />
+      <workItem from="1566174195688" duration="24563000" />
+      <workItem from="1566261034102" duration="5000" />
+      <workItem from="1566261153401" duration="32977000" />
+      <workItem from="1566366710244" duration="12861000" />
+      <workItem from="1566433946188" duration="63275000" />
+      <workItem from="1566778383052" duration="61817000" />
+      <workItem from="1567037811271" duration="14652000" />
+      <workItem from="1567125061229" duration="30738000" />
+      <workItem from="1567162940608" duration="1220000" />
+      <workItem from="1567217105849" duration="29172000" />
+      <workItem from="1567383128528" duration="5239000" />
+      <workItem from="1567391714846" duration="51615000" />
+      <workItem from="1567555925526" duration="18341000" />
+      <workItem from="1567728908516" duration="21087000" />
+      <workItem from="1567820560391" duration="5581000" />
+      <workItem from="1568018187512" duration="34427000" />
+      <workItem from="1568161366405" duration="32990000" />
+      <workItem from="1568247708435" duration="22015000" />
+      <workItem from="1568430659313" duration="27581000" />
+      <workItem from="1568593881658" duration="27496000" />
+      <workItem from="1568679493382" duration="33198000" />
+      <workItem from="1568795589347" duration="8687000" />
+      <workItem from="1568852196052" duration="1827000" />
+      <workItem from="1568875728819" duration="5052000" />
+      <workItem from="1568939206496" duration="9285000" />
+      <workItem from="1569199995038" duration="3401000" />
+      <workItem from="1569285824491" duration="3941000" />
+      <workItem from="1569482378028" duration="5572000" />
+      <workItem from="1569547150804" duration="5130000" />
+      <workItem from="1570408769300" duration="11877000" />
+      <workItem from="1570493861759" duration="3958000" />
+      <workItem from="1570504086825" duration="212000" />
+      <workItem from="1570513186045" duration="574000" />
+      <workItem from="1570514584975" duration="7004000" />
+      <workItem from="1570529660748" duration="2322000" />
+      <workItem from="1570582380730" duration="3833000" />
+      <workItem from="1570668472314" duration="1965000" />
+      <workItem from="1570701663696" duration="2767000" />
+      <workItem from="1570757509599" duration="8994000" />
+      <workItem from="1570840397607" duration="14396000" />
+      <workItem from="1571013258317" duration="1705000" />
+      <workItem from="1571038076712" duration="9721000" />
+      <workItem from="1571098952429" duration="7574000" />
+      <workItem from="1571110230146" duration="6271000" />
+      <workItem from="1571123374499" duration="6951000" />
+      <workItem from="1571186234950" duration="19733000" />
+      <workItem from="1571275111130" duration="10459000" />
+      <workItem from="1571296029860" duration="2474000" />
+      <workItem from="1571359110742" duration="15697000" />
+      <workItem from="1571387507248" duration="3467000" />
+      <workItem from="1571448349854" duration="3619000" />
+      <workItem from="1571618273987" duration="14463000" />
+      <workItem from="1571705465826" duration="8480000" />
+      <workItem from="1571791115163" duration="21509000" />
+      <workItem from="1571878049488" duration="18644000" />
+      <workItem from="1571964110442" duration="7824000" />
+      <workItem from="1571982154321" duration="2462000" />
+      <workItem from="1572223895606" duration="13128000" />
+      <workItem from="1572309564944" duration="9058000" />
+      <workItem from="1572396827464" duration="10106000" />
+      <workItem from="1572485277871" duration="4060000" />
+      <workItem from="1572568362827" duration="3815000" />
+      <workItem from="1572572246251" duration="12012000" />
+      <workItem from="1572660760898" duration="3620000" />
+      <workItem from="1572828751576" duration="18638000" />
+      <workItem from="1572914047740" duration="13128000" />
+      <workItem from="1573001230659" duration="9598000" />
+      <workItem from="1573087805347" duration="3279000" />
+      <workItem from="1573173943124" duration="11191000" />
+      <workItem from="1573432017064" duration="23202000" />
+      <workItem from="1573519215316" duration="15497000" />
+      <workItem from="1573605283917" duration="17214000" />
+      <workItem from="1573692103668" duration="14680000" />
+      <workItem from="1573778896177" duration="17109000" />
+      <workItem from="1574037326025" duration="13638000" />
+      <workItem from="1574128182794" duration="1798000" />
+      <workItem from="1574214768903" duration="7414000" />
+      <workItem from="1574296657221" duration="11876000" />
+      <workItem from="1574393448544" duration="10484000" />
+      <workItem from="1574642604872" duration="9431000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1713116000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.789272" visible="true" weight="0.1504298" />
+      <window_info id="Structure" order="1" sideWeight="0.21072797" side_tool="true" visible="true" weight="0.1504298" />
+      <window_info id="Favorites" order="2" side_tool="true" weight="0.32980332" />
+      <window_info id="Database" order="3" sideWeight="0.49669966" weight="0.1833811" />
+      <window_info anchor="bottom" id="Find" order="0" weight="0.32843137" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.32026145" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" sideWeight="0.4969743" weight="0.31699347" />
+      <window_info anchor="bottom" id="Database Console" order="8" side_tool="true" weight="0.25980392" />
+      <window_info anchor="bottom" id="Python Console" order="9" sideWeight="0.49924356" side_tool="true" weight="0.4509804" />
+      <window_info anchor="bottom" id="TODO" order="10" sideWeight="0.33595988" side_tool="true" weight="0.35080644" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5028653" side_tool="true" weight="0.4717742" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="12" weight="0.32843137" />
+      <window_info anchor="bottom" id="Run" order="13" weight="0.3006536" />
+      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.9068768" weight="0.2876344" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.49713466" visible="true" weight="0.2983871" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="4" weight="0.32980332" />
+      <window_info anchor="right" id="Mongo Explorer" order="5" weight="0.32980332" />
+      <window_info anchor="right" x="0" y="0" width="295" height="544" id="Documentation" order="6" sideWeight="0.50190115" side_tool="true" weight="0.32980332" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/apps/qudong/tasks.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/apps/qudong/tasks.py</url>
+          <line>89</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/apps/loginfo/models.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/apps/loginfo/views.py</url>
+          <line>306</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/apps/loginfo/models.py</url>
+          <line>77</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/apps/yuancheng/views.py</url>
+          <line>82</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/apps/yuancheng/views.py</url>
+          <line>83</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../env0809/Lib/site-packages/rest_framework/viewsets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="218" column="6" selection-start-line="218" selection-start-column="6" selection-end-line="218" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../env0809/Lib/site-packages/django/urls/resolvers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="580" selection-start-line="580" selection-end-line="580" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../env0809/Lib/site-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="114" selection-start-line="114" selection-end-line="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../env0809/Lib/site-packages/django/core/handlers/exception.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/loginfo/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/yuancheng/name.py" />
+    <entry file="file://$PROJECT_DIR$/apps/shebei/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="48" column="49" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../env0809/Lib/site-packages/paho/mqtt/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="368" column="8" selection-start-line="368" selection-start-column="8" selection-end-line="368" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/loginfo/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#101#139#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/shebei/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/m5/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../env0809/Lib/site-packages/django/urls/conf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/yuancheng/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Edgebox.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/1157667755/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="4911" column="8" selection-start-line="4911" selection-start-column="8" selection-end-line="4911" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../env0809/Lib/site-packages/django/http/response.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="553" column="13" lean-forward="true" selection-start-line="553" selection-start-column="13" selection-end-line="553" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../env0809/Lib/site-packages/django/db/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/shebei/Data_Forwarding.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/loginfo/Notification_Management.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/loginfo/Logging_Events_Main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1449">
+          <caret line="63" column="30" lean-forward="true" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/apidata/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2385">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/yuancheng/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" selection-start-line="7" selection-end-line="13" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/loginfo/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/base_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="15" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/yuancheng/admin.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/loginfo/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/loginfo/name.py" />
+    <entry file="file://$PROJECT_DIR$/apps/wangguang/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="59" column="25" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/wangguang/migrations/0002_auto_20190805_1025.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/loginfo/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/wangguang/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2415">
+          <caret line="114" column="27" selection-start-line="114" selection-start-column="27" selection-end-line="114" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/wangguang/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/wangguang/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="10" column="54" lean-forward="true" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+          <folding>
+            <element signature="e#102#140#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/loginfo/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7889">
+          <caret line="412" selection-start-line="412" selection-end-line="412" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#9443#11961#0" />
+            <element signature="e#9529#11300#0" />
+            <element signature="e#11344#11961#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/loginfo/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
+          <folding>
+            <element signature="e#1#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/loginfo/utils/TESTSAFH.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/loginfo/utils/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://G:/chuangkou/TCE/TCE/dist/F8YSKQ.exe">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/loginfo/utils/MYSQL.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+          <folding>
+            <element signature="e#99#110#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/wangguang/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-402">
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+          <folding>
+            <element signature="e#98#113#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/wangguang/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="35" column="65" selection-start-line="35" selection-start-column="65" selection-end-line="35" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/wangguang/utils/systemos.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="159" column="1" lean-forward="true" selection-start-line="159" selection-start-column="1" selection-end-line="159" selection-end-column="1" />
+          <folding>
+            <element signature="e#107#118#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/loginfo/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="93" column="44" selection-start-line="93" selection-start-column="44" selection-end-line="93" selection-end-column="44" />
+          <folding>
+            <element signature="e#98#113#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/user/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1215">
+          <caret line="43" column="47" lean-forward="true" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/yuancheng/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/yuancheng/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/yuancheng/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/yuancheng/utils/mqtt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="63" selection-start-line="63" selection-end-line="64" selection-end-column="114" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/loginfo/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding>
+            <element signature="e#20#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/yuancheng/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="3" column="34" lean-forward="true" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+          <folding>
+            <element signature="e#1#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/yuancheng/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

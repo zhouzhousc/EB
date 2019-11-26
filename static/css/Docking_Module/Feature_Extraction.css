@@ -1,0 +1,81 @@
+html{
+	overflow: hidden;
+}
+#feature_template{
+	position: relative;
+	top: 25px;
+	left: 35px;
+	width: 100px;
+    height: 33px;
+    border-radius: 2px;
+    background-color: rgba(204, 204, 204, 1);
+}
+#feature_table_div{
+	position: relative;
+	top: 40px;
+	left: 30px;
+}
+
+
+
+
+#list_count{
+	position: absolute;
+	width: 100px;
+	/*height: 100px;*/
+	top: 455px;
+	left: 400px;
+}
+#page{
+	width: 80px;
+}
+#page_skip{
+	left: 40px;
+	width: 25px;
+	text-align: center;
+}
+#paging_div{
+	position: absolute;
+	/*border: 1px solid aqua;*/ 
+	top: 450px;
+	left: 520px;
+	width: 260px;
+	height: 30px;
+}
+#paging_div span{
+	position: absolute;
+	/*border: 1px solid aqua;*/
+	left: 0px;
+}
+#paging_div_two{
+	position: absolute;
+	/*border: 1px solid aqua;*/
+	top: 2px;
+	left: 200px;
+	width: 140px;
+	height: 30px;
+	line-height: 24px;
+}
+#submit_paging{
+	position: absolute;
+	top: 2px;
+	left: 100px;
+	color: white;
+	width: 34px;
+	height: 22px;
+	line-height: 170%;
+	border-radius: 3px;
+	text-align: center;
+	background-color: rgba(36, 109, 255, 1);
+}
+.paging_a{
+	position: relative;
+	display: inline-block;
+	/*border: 1px solid aqua;*/
+	margin-left: 10px;
+	top: 5px;
+	height: 18px;
+}
+.div_cursor{
+	cursor: pointer;
+}

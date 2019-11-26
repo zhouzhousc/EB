@@ -1,0 +1,184 @@
+html{
+	overflow-x: hidden;
+    overflow-y: auto;
+	background: white;
+}
+a{
+	text-decoration: none;
+}
+#batch_div{
+	position: absolute;
+	/*border: 1px solid aqua;*/
+	top: 120px;
+	left: 820px;
+	width: 293px;
+    height: 27px;
+    margin-bottom: 20px;
+}
+#add_sub_div{
+	position: absolute;
+	/*border: 1px solid aqua;*/
+	top: 70px;
+	left: 70px;
+}
+#sub_list{
+	position: absolute;
+	top: 160px;
+	left: 65px;
+	width: 1033px;
+}
+#manage{
+	position: absolute;
+	top: 12px;
+	left: 20px;
+	color: #246DFF;
+}
+#delete{
+	position: absolute;
+	top: 12px;
+	right: 20px;
+	color: #FF0000;
+}
+#add_div{
+	position: relative;
+	width: 80px;
+    height: 27px;
+    color: #000000;
+    border-radius: 50px;
+}
+#add_div_word{
+	position: relative;
+	height: 25px;
+}
+#list_count{
+	position: absolute;
+	width: 100px;
+	/*height: 100px;*/
+	top: 580px;
+	left: 480px;
+}
+#paging_div{
+	position: absolute;
+	/*border: 1px solid aqua;*/ 
+	top: 575px;
+	left: 730px;
+	width: 260px;
+	height: 30px;
+}
+#paging_div_two{
+	position: absolute;
+	/*border: 1px solid aqua;*/
+	top: 2px;
+	left: 240px;
+	width: 260px;
+	height: 30px;
+	line-height: 24px;
+}
+#submit_paging{
+	position: absolute;
+	top: 2px;
+	left: 100px;
+	color: white;
+	width: 28px;
+	height: 22px;
+	line-height: 20px;
+	border-radius: 3px;
+	background-color: rgba(36, 109, 255, 1);
+}
+#page{
+	width: 80px;
+}
+#page_skip{
+	left: 40px;
+	width: 25px;
+	text-align: center;
+}
+#paging_div span{
+	position: absolute;
+	/*border: 1px solid aqua;*/
+	left: 0px;
+}
+.paging_a{
+	position: relative;
+	display: inline-block;
+	/*border: 1px solid aqua;*/
+	margin-left: 10px;
+	top: 5px;
+	height: 18px;
+}
+.batch{
+	position: relative;
+	display: inline-block;
+	/*right: 20px;*/
+	color: #FFFFFF;
+	background-color: rgba(204, 204, 204, 1);
+	margin-right: 10px;
+	/*border: 1px solid aqua;*/
+	width: 82px;
+	height: 26px;
+	line-height: 26px;
+}
+.font_css{
+	display: block;
+	width: 80px;
+	height: 27px;
+	line-height: 29px;
+}
+.left_td{
+	/*left: 0px;*/
+	/*text-align: left;*/
+}
+.enable_td{
+	width: 95px;
+	text-align: left;
+}
+.button_div{
+	position: absolute;
+	top: 0px;
+	/*right: 184px;*/
+	width: 90px;
+	height: 37px;
+	/*border: 1px solid aqua;*/
+}
+.enable_content{
+	position: absolute;
+	top: 11px;
+	left: -4px;
+	width: 30px;
+	height: 20px;
+	/*border: 1px solid aqua;*/
+}
+.enable_button{
+	position: relative;
+    width: 53px;
+    height: 22px;
+    left: 26px;
+    top: 8px;
+    font-size: 13px;
+    color: #FFFFFF;
+    background-color: rgba(0, 159, 60, 1);
+    border-radius: 44px;
+    cursor: pointer;
+	/*border: 1px solid aqua;*/
+}
+.button_on{
+	position: absolute;
+	top: 4px;
+	left: 4px;
+}
+.button_off{
+	position: absolute;
+	display: none;
+	top: 4px;
+	right: 4px;
+}
+.button_circular{
+	position: absolute;
+    /*left: 1px;*/
+    right: 1px;
+    top: 2px;
+    width: 19px;
+    height: 18px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 150px;
+}

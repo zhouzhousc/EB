@@ -1,0 +1,16 @@
+#tittle_css{
+	position: absolute;
+    left: 14px;
+    top: 10px;
+    width: 97%;
+    height: 34px;
+    line-height: 36px;
+    font-size: 14px;
+    text-align: left;
+	/*border: 1px solid aqua;*/
+	background-color: rgba(209, 222, 252, 1);
+}
+#tittle_css span{
+	position: absolute;
+	left: 20px;
+}

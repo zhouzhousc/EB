@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="{% static 'css/pop.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/table.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/font.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/sub_manage/Data_Forwarding.css' %}" />
+	</head>
+	<body>
+		<div id="data_add" class="div_font_css div_cursor" onclick="clickAdd('data_add_podiv')">
+			<img src="{% static 'img/gateway/gateway_pop/u44.png' %}" />&nbsp;&nbsp;&nbsp;<span class="font_blue">新增转发</span>
+		</div>
+		<div id="data_table_div">
+			<table id="data_table" cellpadding="0" cellspacing="0">
+				<thead id="data_thead">
+					<td style="width: 70px;">序号</td>
+					<td style="width: 120px;">转发路径名称</td>
+					<td style="width: 110px;">启用/关闭</td>
+					<td>运行状态</td>
+					<td>上行消息数</td>
+					<!--<td>创建时间</td>-->
+					<td style="width: 150px;">描述</td>
+					<td style="width: 150px;">操作</td>
+				</thead>
+				{% for m5path in m5paths %}
+					<tr class='data_tr'>
+						<td>{{ forloop.counter }}</td>
+						<td><p class='data_name'>{{ m5path.m5path_name }}</p></td>
+						<td>
+							<div class='data_button_div'>
+								<div class='data_enable_content'>
+									<span class='data_enable_span'>{{ m5path.m5path_enable }}</span>
+								</div>
+								{% if m5path.m5path_enable == "启用"  %}
+									<div  style="background:rgba(0, 159, 60, 1)" class='data_enable_button' onclick=''>
+									<div style='display:block' class='data_button_on'>ON</div>
+									<div style='display:None'  class='data_button_off'>OFF</div>
+									<div style="right: 0" class='data_button_circular'></div>
+									</div>
+								{% else %}
+									<div  style="background:rgba(188, 188, 188, 1)" class='data_enable_button' onclick=''>
+									<div style='display:None' class='data_button_on'>ON</div>
+									<div style='display:block'  class='data_button_off'>OFF</div>
+									<div style="left: 1px" class='data_button_circular'></div>
+									</div>
+								{% endif %}
+							</div>
+						</td>
+						<td id="status" class="status">{{ m5path.m5path_status }}</td>
+						<td class="count" id="count"  >{{ m5path.m5path_count }}</td>
+
+
+						<td>{{ m5path.m5path_remark }}</td>
+						<td style='position: relative;'>
+							<div class='data_details div_cursor' onclick="data_details('{{ transmit.transmit_name }}','{{ transmit.get_transmit_type_display }}','{{ transmit.transmit_topic }}')">详情</div>
+							<div class='data_edit div_cursor' onclick='data_click_edit("{{ transmit.id }}","{{ transmit.transmit_name }}","{{ transmit.transmit_type }}","{{ transmit.transmit_ip }}","{{ transmit.transmit_port }}","{{ transmit.transmit_username }}","{{ transmit.transmit_password }}","{{ transmit.transmit_topic }}", {{ transmit.TYPE_DICT }},"{{ transmit.transmit_remark }}" )'>编辑</div>
+							<div class='data_delete div_cursor' onclick='data_delete("{{ transmit.id }}")'>删除</div>
+						</td>
+					</tr>
+				{% empty %}
+					<tr>
+						<td colspan="7">No matching records found</td>
+					</tr>
+				{% endfor %}
+			</table>
+		</div>
+		
+		
+		
+		<div id="podiv_tips">
+			<div id="mana" class="bu_tips_div">
+				<div id="bu_tips_img"><img src="{% static 'img/sub_manage/u636.png' %}"/></div>
+				<div id="bu_tips_content"><p>操作成功 ！</p></div>
+			</div> 
+			<div id="dele" class="bu_tips_div">
+				<div id="bu_tips_img"><img src="{% static 'img/sub_manage/u636.png' %}"/></div>
+				<div id="bu_tips_content"><p>删除成功 ！</p></div>
+			</div>
+		</div>
+
+		
+		<script type="text/javascript" src="{% static 'js/jquery.js' %}" ></script>
+		<script type="text/javascript" src="{% static 'js/pop.js' %}" ></script>
+		<script type="text/javascript" src="{% static 'js/operation_clue.js' %}" ></script>
+		<script type="text/javascript" src="{% static 'js/sub_manage/Data_Forwarding.js' %}" ></script>
+	</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="{% static 'css/sub_manage/Equipment_Debugging.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/pop.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/split_img.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/bg_Color.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/font.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/table.css' %}" />
+	</head>
+	<body>
+		<div id="equ_top">
+			<span>基本信息</span>
+			<div class="equ_split_div"><img src="{% static 'img/sub_manage/u1756.png' %}" /></div>
+			<div class="equ_information_div">
+				<div class="equ_information">
+					<div class="infomation_left bg_f2 border_gray"><span>设备名称</span></div>
+					<div class="infomation_right font_11 font_dark_blue border_gray"><span>{{ subdevice_name }}</span></div>
+				</div>
+				<div class="equ_information">
+					<div class="infomation_left bg_f2 border_gray"><span>设备类型</span></div>
+					<div class="infomation_right font_11 font_dark_blue border_gray"><span>{{ subdevice_type }}</span></div>
+				</div>
+				<div class="equ_information">
+					<div class="infomation_left bg_f2 border_gray"><span>设备位置</span></div>
+					<div class="infomation_right font_11 font_dark_blue border_gray"><span>{{ subdevice_position }}</span></div>
+				</div>
+			</div>
+			<div class="equ_information_div">
+				<div class="equ_information">
+					<div class="infomation_left bg_f2 border_gray"><span>模板名称</span></div>
+					<div class="infomation_right font_11 font_dark_blue border_gray">
+						{% if etr_name %}
+							<span>{{ etr_name }}</span>
+						{% else %}
+							<span>未配置协议</span>
+						{% endif %}
+						<!--<div id="equ_right_tips" class="equ_right_css">
+							<span style="text-align: left;left: 50px;top: 25px;">您还没有配置采集协议请<br /><br />先去<a style="color: rgb(36, 109, 255);cursor: pointer;" onclick="go_acq_pro()">采集协议</a>配置协议</span>
+						</div>-->
+					</div>
+				</div>
+				<div class="equ_information">
+					<div class="infomation_left bg_f2 border_gray"><span>串口号</span></div>
+					<div class="infomation_right font_11 font_dark_blue border_gray">
+						{% if com %}
+							<span>{{ com }}</span>
+						{% else %}
+							<span>--</span>
+						{% endif %}
+					</div>
+				</div>
+				<div class="equ_information">
+					<div class="infomation_left bg_f2 border_gray"><span>波特率</span></div>
+					<div class="infomation_right font_11 font_dark_blue border_gray">
+						{% if botelv %}
+							<span>{{ botelv }}</span>
+						{% else %}
+							<span>--</span>
+						{% endif %}
+					</div>
+				</div>
+			</div>
+			<div class="equ_information_div">
+				<div class="equ_information">
+					<div class="infomation_left bg_f2 border_gray"><span>奇偶校验</span></div>
+					<div class="infomation_right font_11 font_dark_blue border_gray">
+						{% if check %}
+							<span>{{ check }}</span>
+						{% else %}
+							<span>--</span>
+						{% endif %}
+					</div>
+				</div>
+				<div class="equ_information">
+					<div class="infomation_left bg_f2 border_gray"><span>地址码</span></div>
+					<div class="infomation_right font_11 font_dark_blue border_gray">
+						{% if code %}
+							<span>{{ code }}</span>
+						{% else %}
+							<span>--</span>
+						{% endif %}
+					</div>
+				</div>
+				<div class="equ_information">
+					<div class="infomation_left bg_f2 border_gray"><span>数据位</span></div>
+					<div class="infomation_right font_11 font_dark_blue border_gray">
+						{% if databit %}
+							<span>{{ databit }}</span>
+						{% else %}
+							<span>--</span>
+						{% endif %}
+					</div>
+				</div>
+			</div>
+			<div class="equ_information_div">
+				<div class="equ_information">
+					<div class="infomation_left bg_f2 border_gray"><span>停止位</span></div>
+					<div class="infomation_right font_11 font_dark_blue  border_gray">
+						{% if stopbit %}
+							<span>{{ stopbit }}</span>
+						{% else %}
+							<span>--</span>
+						{% endif %}
+					</div>
+				</div>
+				<div class="equ_information">
+					<div class="infomation_left bg_f2 border_gray"><span>读写周期</span></div>
+					<div class="infomation_right font_11 font_dark_blue border_gray">
+						{% if cycletime %}
+							<span>{{ cycletime }}</span>
+						{% else %}
+							<span>--</span>
+						{% endif %}
+					</div>
+				</div>
+				<div class="equ_information">
+					<div class="infomation_left bg_f2 border_gray"><span>回复超时</span></div>
+					<div class="infomation_right font_11 font_dark_blue border_gray">
+						{% if timeout %}
+							<span>{{ timeout }}</span>
+						{% else %}
+							<span>--</span>
+						{% endif %}
+					</div>
+				</div>
+			</div>
+			<div id="equ_generate" class="font_white">
+				<span>生成数据模板</span>
+			</div>
+			<div class="equ_split_div2"><img src="{% static 'img/sub_manage/u1756.png' %}" /></div>
+		</div>
+		
+		<div id="equ_table_left" class="font_14 float_left">
+			<span>设备属性：</span>
+			<div id="equ_table_div">
+				<table id="equ_table" cellpadding="0" cellspacing="0">
+					<thead id="equ_thead">
+						<td><input name="{{ key }}" type="checkbox" id="select_all" checked /></td>
+						<td style="width: 10%">NO.</td>
+						<td>property</td>
+						<td>value</td>
+					</thead>
+					{% for param, value in template_data.items %}
+					<tr class="td">
+						<td>
+							<input name="{{ param }}" type='checkbox' class='select_list' checked/>
+						</td>
+						<td >{{ forloop.counter }}</td>
+						<td >{{ param }}</td>
+						<td >{{ value }}</td>
+					</tr>
+					{% endfor %}
+				</table>
+			</div>
+		</div>
+		
+		<div id="equ_count">
+			<span>共有<span id="equ_count_span"></span>条</span><br/>
+			<span id="page"></span>
+		</div>
+		<div id="equ_paging_div">
+			<a id="home_page" class="paging_a">首页</a>
+			<a id="pre_page" class="paging_a">上一页</a>
+			<a id="next_page" class="paging_a">下一页</a>
+			<a id="tail_page" class="paging_a">尾页</a>
+			<div id="paging_div_two"><span>跳到第<input id="page_skip" type="text" />页</span><div id="submit_paging" class="div_cursor">go</div></div>
+		</div>
+		<div id="equ_table_right" class="font_14 float_left">
+			<span>特征数据：</span>
+			<div id="equ_right_table_div">
+				<table id="equ_right_table" cellpadding="0" cellspacing="0">
+					<thead id="equ_right_thead">
+						<td>parameter</td>
+						<td>value</td>
+					</thead>
+					<tr>
+						<td>max</td>
+						<td>28</td>
+					</tr>
+					<tr>
+						<td>min</td>
+						<td>22</td>
+					</tr>
+					<tr>
+						<td>avg</td>
+						<td>25</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		
+		<!--<div id="equ_bottom">
+			<span>特征数据</span>
+			<div class="equ_split_div"><img src="{% static 'img/sub_manage/u1756.png' %}" /></div>
+			<div id="feature_extraction"><span>调试</span></div>
+			<div id="equ_table_div">
+				<table id="equ_table" cellpadding="0" cellspacing="0">
+					<thead id="equ_thead">
+						<td><input type="checkbox" id="select_all" /></td>
+						<td>NO.</td>
+						<td>property</td>
+						<td>value</td>
+					</thead>
+				</table>
+			</div>-->
+			<!--<div id="control_block">
+				<div id="equ_generate">
+					<span>生成设备模板</span>
+				</div>
+				<div id="equ_count">
+					<span>共有<span id="equ_count_span">0</span>条</span><br />
+					<span id="page"></span>
+				</div>
+				<div id="equ_paging_div">
+					<a id="home_page" class="paging_a">首页</a>
+					<a id="pre_page" class="paging_a">上一页</a>
+					<a id="next_page" class="paging_a">下一页</a>
+					<a id="tail_page" class="paging_a">尾页</a>
+					<div id="paging_div_two"><span>跳到第<input id="page_skip" type="text" />页</span><div id="submit_paging" class="div_cursor">go</div></div>
+				</div>
+			</div>-->
+		<div id="podiv">
+			<form action="" method="post">
+				<div id="generate_template" class="gateway_service div_shadow div_backgr">
+					<div class="pop_top">
+						<div class="pop_tittle text_left"><span class="tittle_label" style="font-size: 16px;">模板内容</span></div>
+						<div class="pop_close u2040 div_cursor" onclick="pop_close('data_add_podiv')"><img src="{% static 'img/gateway/gateway_pop/u2040.png' %}" /></div>
+					</div>
+					<div class="pop_line"><img src="{% static 'img/gateway/u130.png' %}" /></div>
+					<span class="template_details">模板详情：</span>
+					<div class="template_details_div text_left">
+						<span style="font-size: 15px"> {</span><br>
+						{% for param, val in template_data.items %}
+						  <span style="font-size: 15px;font-weight: bold; color: #92278f ">&nbsp;&nbsp;&nbsp;&nbsp;'{{ param }}'</span>:
+						  <span style="font-size: 15px;font-weight: bold; color: #3ab54a ">'{{ val }}'</span>,
+						<br>
+						{% endfor %}
+						<span style="font-size: 15px"> }</span>
+					</div>
+
+					<div class="device_URL_div"><span>设备URL：</span><span id="device_URL" class="font_16">http://127.0.0.1:9090/apidata/notsend/{{ device_id }}</span></div>
+
+
+					<div id="equ_submit_div" class="new_submit div_cursor text_center"  onclick="pop_save('generate_template')"><span>確定</span></div>
+					<div id="equ_close_div" class="new_close div_cursor text_center" onclick="pop_close('generate_template')"><span>取消</span></div>
+				</div>
+			</form>
+		</div>
+		<script>
+			function pop_save(i) {
+				$("#podiv" , document).css("display","none");
+				$("#generate_template" , document).css("display","none");
+			}
+			function pop_close(i) {
+				$("#podiv" , document).css("display","none");
+				$("#generate_template" , document).css("display","none");
+			}
+		</script>
+		<script type="text/javascript" src="{% static 'js/jquery.js' %}" ></script>
+		<script type="text/javascript" src="{% static 'js/jquery.cookie.js' %}" ></script>
+		<script type="text/javascript" src="{% static 'js/sub_manage/Sub_Device_Main.js' %}" ></script>
+		<script type="text/javascript" src="{% static 'js/sub_manage/Equipment_Debugging.js' %}" ></script>
+	</body>
+</html>

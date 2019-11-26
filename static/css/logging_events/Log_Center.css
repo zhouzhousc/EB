@@ -1,0 +1,181 @@
+html{
+	font-family: '思源黑体 Regular', '思源黑体';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #333333;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#log_center_top{
+	position: relative;
+	top: 10px;
+	/*left: 30px;*/
+	width: 885px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	cursor: inherit;
+	/*border: 1px solid aqua;*/
+}
+#log_center_bottom{
+	position: relative;
+	width: 885px;
+	height: 400px;
+	/*border: 1px solid aqua;*/
+}
+#log_center_bottom_tittle{
+	position: relative;
+	top: 15px;
+	/*border: 1px solid aqua;*/
+	width: 885px;
+	font-size: 12px;
+    color: #666666;
+}
+#log_bottom_see{
+	position: absolute;
+	width: 48px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 24px;
+	color: #FFFFFF;
+	left: 730px;
+	top: 3px;
+	border-radius: 8px;
+	cursor: pointer;
+	background-color: rgba(36, 109, 255, 1);
+}
+#log_center_bottom_table_div{
+	position: relative;
+	top: 60px;
+	width: 800px;
+	height: 320px;
+	left: 45px;
+	/*border: 1px solid aqua;*/
+}
+#log_table{
+	position: absolute;
+	width: 800px;
+}
+#log_table td{
+	height: 44px;
+}
+.log_top_tittle{
+	position: relative;
+	float: left;
+	/*display: inline-block;*/
+	width: 98px;
+	height: 30px;
+	left: 120px;
+	cursor: pointer;
+	margin-right: 30px;
+	/*border: 1px solid aqua;*/
+}
+.log_top_tittle:hover{
+	color: rgb(36, 109, 255);
+}
+.log_bottom_time_div{
+	position: relative;
+	/*border: 1px solid aqua;*/
+	width: 300px;
+	height: 28px;
+	left: 100px;
+	float: left;
+	text-align: left;
+	line-height: 28px;
+}
+.log_bottom_time_div span{
+	position: absolute;
+	/*border: 1px solid aqua;*/
+}
+.log_bottom_time{
+	position: absolute;
+	/*top: 0px;*/
+	left: 65px;
+	/*right: 0px;*/
+    width: 212px;
+    height: 27px;
+    line-height: 27px;
+    border-radius: 9px;
+	border: 1px solid rgba(121, 121, 121, 1);
+}
+.log_bottom_date_input{
+	position: relative;
+	left: 5px;    
+	text-decoration: none;
+	outline-style: none;    
+	font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+	color: rgb(153, 153, 153);
+	border-color: transparent;
+}
+
+
+
+
+
+
+
+#list_count{
+	position: absolute;
+	width: 100px;
+	/*height: 100px;*/
+	top: 380px;
+	left: 400px;
+}
+#page{
+	width: 80px;
+}
+#page_skip{
+	left: 40px;
+	width: 25px;
+	text-align: center;
+}
+#paging_div{
+	position: absolute;
+	/*border: 1px solid aqua;*/ 
+	top: 375px;
+	left: 470px;
+	width: 260px;
+	height: 30px;
+}
+#paging_div span{
+	position: absolute;
+	/*border: 1px solid aqua;*/
+	left: 0px;
+}
+#paging_div_two{
+	position: absolute;
+	/*border: 1px solid aqua;*/
+	top: 2px;
+	left: 240px;
+	width: 260px;
+	height: 30px;
+	line-height: 24px;
+}
+#submit_paging{
+	position: absolute;
+	top: 2px;
+	left: 100px;
+	color: white;
+	width: 34px;
+	height: 22px;
+	line-height: 20px;
+	border-radius: 3px;
+	background-color: rgba(36, 109, 255, 1);
+}
+.paging_a{
+	position: relative;
+	display: inline-block;
+	/*border: 1px solid aqua;*/
+	margin-left: 10px;
+	top: 5px;
+	height: 18px;
+}
+.div_cursor{
+	cursor: pointer;
+}

@@ -1,0 +1,186 @@
+html{
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-family: '思源黑体 Regular', '思源黑体';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+}
+
+table{
+	font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #333333;
+    text-align: center;
+    line-height: normal;
+	text-align: center;
+	width: 100%;
+	border: 1px solid #d7d7d7;
+}
+table td{
+	height: 37px;
+}
+table thead{
+	font-size: 13px;
+}
+table tr:nth-child(4n+1){
+	background: rgba(242, 242, 242, 1);
+}
+table #acq_end_tr td span{
+	cursor: pointer;
+	font-family: 'Arial Negreta', 'Arial';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+    color: #999999;
+	border-bottom: 1px solid rgba(228, 228, 228, 1);;
+}
+thead tr:nth-of-type(odd){
+	background-color: rgba(228, 228, 228, 1);
+}
+
+#acq_center_modbus{
+	position: absolute;
+	display: none;
+	/*border: 1px solid aqua;*/
+	width: 680px;
+    height: 360px;
+	top: 0px;
+	left: 20px;
+}
+/*#acq_modbus_left{*/
+	/*position: absolute;*/
+	/*!*border: 1px solid aqua;*!*/
+	/*top: 5px;*/
+	/*!*left: 3px;*!*/
+/*}*/
+#template_name{
+	left: 0px;
+}
+#template_description{
+	right: 2%;
+}
+#template_information{
+	position: absolute;
+	/*border: 1px solid aqua;*/
+	width: 94%;
+	top: 4%;
+	left: 3%;
+}
+#template_information input{
+	position: relative;
+	left: 1em;
+	width: 68%;
+	height: 1.8em;
+}
+.template_position{
+	position: absolute;
+	display: inline-block;
+}
+#pop_acq_table_div{
+	position: absolute;
+	top:18%;
+	left: 3%;
+	width: 94%;
+}
+
+#acq_modbus_right{
+	position: absolute;
+	right: 25px;
+}
+#acq_table_div{
+	position: absolute;
+	top: 240px;
+	left: 40px;
+}
+.format_box {
+	/*position: relative;*/
+	/*position: absolute;*/
+	left: 80%;
+	text-align: center;
+	width:120px;
+	height:27px;
+	/*margin:10px;*/
+	font-size:12px;
+}
+.format_box input {
+	cursor:pointer;
+	display:block;
+	line-height:23px;
+	text-align: center;
+	z-index: 200;
+	/*width:100%;*/
+	width: 90px;
+	height:25px;
+	overflow:hidden;
+	border: 1px solid rgba(107, 107, 107, 1);
+    box-shadow: none;
+	background:url(../../img/sub_manage/u1322.png) no-repeat 160px center;
+}
+.format_box ul {
+	position:absolute;
+	/*text-align: center;*/
+	width:75%;
+	border: 1px solid rgba(107, 107, 107, 1);
+	background:#fff;
+	overflow: hidden;
+	display:none;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	background-color: rgba(255, 255, 255, 1);
+	z-index:99999;
+}
+.format_img{
+	position: absolute;
+	top: 4px;
+	right: 40px;
+	z-index: 0;
+	-moz-transform:rotate(-60deg);
+	-webkit-transform:rotate(-60deg);
+	filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+}
+#delete{
+	/*border: 1px solid aqua;*/
+	color: #FF0000;
+	left: 5px;
+}
+#updata{
+	/*border: 1px solid aqua;*/
+	color: #246DFF;
+	right: 5px;
+}
+.div_cursor{
+	cursor: pointer;
+}
+.operation{
+	position: relative;
+}
+.div_css{
+	position: absolute;
+	top: 10px;
+}
+.acq_message_tr{
+	font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.acq_modbus_input p label{
+	position: absolute;
+	display: inline-block;
+	text-align: right;
+	/*border: 1px solid aqua;*/
+	top: 11px;
+	width: 80px;
+}
+
+
+
+.pop_cursor{
+	cursor: pointer;
+}

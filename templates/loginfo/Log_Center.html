@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="{% static 'css/logging_events/Log_Center.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/table.css' %}" />
+	</head>
+	<body>
+		<div id="log_center_top">
+			<div class="log_top_tittle" onclick="log_center_tittle_click(className,0)"><span>系统日志</span></div>
+			<div class="log_top_tittle" onclick="log_center_tittle_click(className,1)"><span>采集日志</span></div>
+			<div class="log_top_tittle" onclick="log_center_tittle_click(className,2)"><span>传输日志</span></div>
+			<div class="log_top_tittle" onclick="log_center_tittle_click(className,3)"><span>网络日志</span></div>
+			<div class="log_top_tittle" onclick="log_center_tittle_click(className,4)"><span>权限日志</span></div>
+		</div>
+		
+		<div id="log_center_top_image">
+			<img src="{% static 'img/logging_events/u3862.png' %}" />
+		</div>
+		
+		<div id="log_center_bottom">
+			<div id="log_center_bottom_tittle">
+				<div class="log_bottom_time_div">
+					<span>起始时间：</span>
+					<div class="log_bottom_time">
+						<input id="system_start_date" type="date" class="log_bottom_date_input" style="width: 120px;" />
+						<input id="system_start_time" type="time" class="log_bottom_date_input" />
+					</div>
+				</div>
+				<div class="log_bottom_time_div" style="left: 120px;">
+					<span>结束时间：</span>
+					<div class="log_bottom_time">
+						<input id="system_stop_date" type="date" class="log_bottom_date_input" style="width: 120px;" />
+						<input id="system_stop_time" type="time" class="log_bottom_date_input" />
+					</div>
+				</div>
+				<div id="log_bottom_see">
+					<span>查看</span>
+				</div>
+			</div>
+			
+			<div id="log_center_bottom_table_div">
+				<table id="log_table" cellpadding="0" cellspacing="0">
+					<thead id="log_thead">
+						<td>时间</td>
+						<td>文件名</td>
+						<td>管理者</td>
+						<td>日志级别</td>
+						<td>描述</td>
+					</thead>
+					{% for info in infos %}
+						<tr>
+							<td>{{ info.update_time }}</td>
+							<td>{{ info.log_type }}</td>
+							<td>{{ info.log_leader }}</td>
+							<td>{{ info.log_level }}</td>
+							<td>{{ info.log_info }}</td>
+						</tr>
+					{% endfor %}
+				</table>
+			</div>
+			
+			<div id="list_count">
+				共有&nbsp;<span id="list_count_span">0</span>&nbsp;条<br />
+				<span id="page"></span>
+			</div>
+			<div id="paging_div">
+				<a id="home_page" class="paging_a">首页</a>
+				<a id="pre_page" class="paging_a">上一页</a>
+				<a id="next_page" class="paging_a">下一页</a>
+				<a id="tail_page" class="paging_a">尾页</a>
+				<div id="paging_div_two"><span>跳到第<input id="page_skip" type="text" />页</span><div id="submit_paging" class="div_cursor">GO</div></div>
+				
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="{% static 'js/jquery.js' %}" ></script>
+		<script type="text/javascript" src="{% static 'js/logging_events/Log_Center.js' %}" ></script>
+	</body>
+</html>

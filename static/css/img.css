@@ -1,0 +1,45 @@
+#edit{
+	position: absolute;
+    left: 94px;
+    top: 26px;
+}
+#addPerson{
+	position: absolute;
+    left: 44px;
+    top: 26px;
+}
+#driver_add_img{
+	position: absolute;
+	width: 100px;
+	/*border: 1px solid antiquewhite;*/
+    left: 44px;
+    top: 26px;
+}
+#addPerson img{
+	width: 18px;
+	height: 15px;
+}
+.operation span{
+	position: absolute;
+    width: 70px;
+    left: 25px;
+    top: 1px;
+	/*border: 1px solid aqua;*/
+    text-align: left;
+    font-family: '思源黑体CN Regular', '思源黑体CN';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 13px;
+    color: #246DFF;
+}
+.div_cursor{
+	cursor: pointer;
+}
+
+
+.u2040 img:hover{
+	content: url(../img/gateway/gateway_pop/u2040_mouseOver.png);
+}
+.pop_close_remote img:hover{
+	content: url(../img/gateway/gateway_pop/u2040_mouseOver.png);
+}

@@ -1,0 +1,39 @@
+html,body{
+    font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    color: #333333;
+    background-color: rgba(242, 242, 242, 1);
+}
+a{
+	position: relative;
+	display: block;
+	height: 25px;
+	top: 8px;
+}
+.div_cursor{
+	cursor: pointer;
+}
+.gateway_top{
+	position: absolute;
+	border: 0;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 43px;
+	background-color: rgba(230, 230, 230, 4)
+}
+.page_tittle{
+	position: absolute;
+	/*border: 1px solid aqua;*/
+	left: 25px;
+	width: 300px;
+	height: 43px;
+	text-align: left;
+	line-height: 43px;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+}

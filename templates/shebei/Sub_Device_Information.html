@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="{% static 'css/pop.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/sub_manage/Sub_Device_Information.css' %}" />
+	</head>
+	<body>
+		<div id="information_edit" class="div_cursor" onclick="clickEdit('update')">
+			<img src="{% static 'img/gateway/gateway_pop/u44.png' %}" />&nbsp;&nbsp;&nbsp;<span>修改</span>
+		</div>
+		<div id="information_table_div">
+			<table id="table" cellpadding="0" cellspacing="0">
+				<tr>
+					<td style="width: 278px;"><span class="td_span">子设备名称</span></td>
+					<td class="td-right"><span class="td_span">{{ subdevice.subdevice_name }}</span></td>
+				</tr>
+				<tr>
+					<td><span class="td_span">子设备类型</span></td>
+					<td class="td-right"><span class="td_span">{{ subdevice.subdevice_type }}</span></td>
+				</tr>
+				<tr>
+					<td><span class="td_span">子设备位置</span></td>
+					<td class="td-right"><span class="td_span">{{ subdevice.subdevice_position}}</span></td>
+				</tr>
+				<tr>
+					<td><span class="td_span">子设备型号</span></td>
+					<td class="td-right"><span class="td_span">{{ subdevice.subdevice_model}}</span></td>
+				</tr>
+				<tr>
+					<td><span class="td_span">子设备状态</span></td>
+					{% for i in subdevice.STATUS_CHOICES %}
+						{% if i.0 == subdevice.subdevice_status %}
+							<td class="td-right"><span class="td_span">{{ i.1 }}</span></td>
+						{% endif %}
+					{% endfor%}
+				</tr>
+				<!--<tr>-->
+					<!--<td><span class="td_span">厂商型号</span></td>-->
+					<!--<td><span class="td_span">lichuangEFJIIOO23223</span></td>-->
+				<!--</tr>-->
+				<tr>
+					<td><span class="td_span">注册时间</span></td>
+					<td class="td-right"><span class="td_span">{{ subdevice.create_time }}</span></td>
+				</tr>
+				<tr>
+					<td><span class="td_span">设备描述</span></td>
+					<td class="td-right"><span class="td_span">{{ subdevice.subdevice_remark}}</span></td>
+				</tr>
+			</table>
+		</div>
+		<script type="text/javascript" src="{% static 'js/Information.js' %}" ></script>
+		<script type="text/javascript" src="{% static 'js/sub_manage/Sub_Device_Information.js' %}" ></script>
+	</body>
+</html>

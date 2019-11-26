@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../../css/sub_manage/Equipment_debugging.css" />
+	</head>
+	<body>
+		<div id="equ_top">
+			<span>基本信息</span>
+			<img src="../../img/sub_manage/u1377.png" />
+			<div class="equ_top_css">
+				<div class="equ_left_css">
+					<span>设<br /><br />备</span>
+				</div>
+				<div class="equ_right_css">
+					<p>名称：<span id="equ_name">LIChuang</span></p>
+					<p>类型：<span id="equ_type">力创智能电表</span></p>
+					<p>位置：<span id="equ_position">E6-2F</span></p>	
+				</div>
+			</div>
+			<div class="equ_top_css">
+				<div class="equ_left_css">
+					<span>协<br /><br />议</span>
+				</div>
+				<div id="equ_right_tips" class="equ_right_css">
+					<span style="text-align: left;left: 50px;top: 25px;">您还没有配置采集协议请<br /><br />先去<a style="color: rgb(36, 109, 255);cursor: pointer;" onclick="go_acq_pro()">采集协议</a>配置协议</span>
+				</div>
+				<div id="equ_right_modbus" class="equ_right_css">
+					<div class="equ_right_modbus">
+						<span class="equ_right_modbus_left_span">串口号：</span>
+						<span id="acq_serial_slogans" class="equ_right_modbus_right_span"></span>
+					</div>
+					<div class="equ_right_modbus">
+						<span class="equ_right_modbus_left_span">波特率：</span>
+						<span id="acq_baud_rate" class="equ_right_modbus_right_span"></span>
+					</div>
+					<div class="equ_right_modbus">
+						<span class="equ_right_modbus_left_span">奇偶校验：</span>
+						<span id="acq_parity_check" class="equ_right_modbus_right_span"></span>
+					</div>
+				</div>
+				<div id="equ_right_mqtt" class="equ_right_css">
+					<div class="equ_right_modbus" style="top: 10px;">
+						<span class="equ_right_modbus_left_span">Port：</span>
+						<span id="acq_port" class="equ_right_modbus_right_span"></span>
+					</div>
+					<div class="equ_right_modbus" style="top: 20px;">
+						<span class="equ_right_modbus_left_span">Host：</span>
+						<span id="acq_host" class="equ_right_modbus_right_span"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="equ_bottom">
+			<span>特征数据</span>
+			<img src="../../img/sub_manage/u1377.png" />
+			<div id="feature_extraction"><span>调试</span></div>
+			<div id="equ_table_div">
+				<table id="equ_table" cellpadding="0" cellspacing="0">
+					<thead>
+						<td>NO.</td>
+						<td>property</td>
+						<td>value</td>
+						<td>max</td>
+						<td>min</td>
+						<td>average</td>
+					</thead>
+					<tr>
+						<td colspan="6" style="border-bottom: 1px solid rgba(188, 188, 188, 1);">No matching records found</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../js/jquery.js" ></script>
+		<script type="text/javascript" src="../../js/sub_manage/Equipment_Debugging.js" ></script>
+	</body>
+</html>

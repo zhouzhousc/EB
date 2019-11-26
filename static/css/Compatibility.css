@@ -1,0 +1,29 @@
+/* 点击搜索框获取焦点 placeholder消失-开始 */
+/* WebKit browsers */
+
+input[type="text"]:focus::-webkit-input-placeholder {
+color: transparent;
+/* transparent是全透明黑色(black)的速记法，即一个类似rgba(0,0,0,0)这样的值 */
+}
+
+
+/* Mozilla Firefox 4 to 18 */
+
+input:focus:-moz-placeholder {
+color: transparent;
+}
+
+
+/* Mozilla Firefox 19+ */
+
+input:focus::-moz-placeholder {
+color: transparent;
+}
+
+
+/* Internet Explorer 10+ */
+
+input:focus:-ms-input-placeholder {
+color: transparent;
+}
+/* 点击搜索框获取焦点 placeholder消失-结束 */

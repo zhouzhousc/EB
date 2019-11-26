@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="{% static 'css/img.css' %} " />
+		<link rel="stylesheet" href="{% static 'css/select_input.css' %} " />
+		<link rel="stylesheet" href="{% static 'css/split_img.css' %} " />
+		<link rel="stylesheet" href="{% static 'css/switch.css' %} " />
+		<link rel="stylesheet" href="{% static 'css/table.css' %} " />
+		<link rel="stylesheet" href="{% static 'css/logging_events/Notification_Management.css' %} " />
+	</head>
+	<body>
+		<div id="addPerson" class="operation div_cursor" onclick="clickAdd('add_notification_div')">
+			<img src="{% static 'img/gateway/gateway_pop/u44.png' %} " />&nbsp;&nbsp;&nbsp;<span>新增责任人</span>
+		</div>
+		<div id="select_event_div" class="select_div">
+			<input class="select_input" placeholder="输入查找信息" onfocus="this.style.color='#000000'" />
+			<div id="input_img_div" class="div_cursor">
+				<img class="div_cursor" src="{% static 'img/sub_manage/u538.png' %} " >
+			</div>
+		</div>
+		<div id="split_notification_img" class="split_img"><img src="{% static 'img/logging_events/u3072.png' %} " /></div>
+		
+		
+		<div id="notification_table_div">
+            {% csrf_token %}
+			<table id="notification_table" cellpadding="0" cellspacing="0">
+				<thead id="notification_thead">
+					<td style="width: 80px;">责任人</td>
+					<td style="width: 80px;">位置</td>
+					<td style="width: 120px">已通知消息数</td>
+					<td style="width: 200px;">最近通知时间</td>
+					<td style="width: 120px;">通知状态</td>
+					<td style="width: 140px;">操作</td>
+				</thead>
+				{% for Notice in NoticeView %}
+					<tr>
+					<td>{{Notice.notice_leader}}</td>
+					<td>{{Notice.notice_location}}</td>
+					<td>{{Notice.notice_message_num}}</td>
+					<td>{{Notice.notice_time}}</td>
+					<td>
+						<div class='notification_button_div'>
+							<div class='notification_enable_content'>
+								<span class='notification_enable_span'>启用</span>
+							</div>
+							<div class='notification_enable_button' onclick='notification_clickEnable(className,0)'>
+								<div class='notification_button_on'>ON</div>
+								<div class='notification_button_off'>OFF</div>
+								<div class='notification_button_circular'></div>
+							</div>
+						</div>
+					</td>
+					<td style="position: relative;">
+						<div id='delete' class='div_cursor' onclick='notification_delete("{{ Notice.id }}",this)'>删除</div>
+						<div id='details' name= 'details' class='div_cursor' onclick='notification_details("notification_details_div","{{ Notice.notice_leader }}","{{ Notice.notice_phone }}","{{ Notice.notice_email }}","{{ Notice.notice_location }}")'>详情</div>
+					</td>
+				</tr>
+				{% endfor %}
+			</table>
+		</div>
+
+		<script type="text/javascript" src="{% static 'js/jquery.js' %} " ></script>
+		<script type="text/javascript" src="{% static 'js/click_event.js' %} " ></script>
+		<script type="text/javascript" src="{% static 'js/logging_events/Notification_Management.js' %} " ></script>
+	</body>
+</html>

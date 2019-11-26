@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html>
+	<head>
+		<!--<meta charset="UTF-8" http-equiv="refresh" content="1">-->
+		<meta charset="UTF-8" >
+		<title></title>
+		<link rel="stylesheet" href="{% static 'css/page.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/bg_Color.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/font.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/split_img.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/table.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/pop.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/Docking_Module/M5_Pair_Connection.css' %}" />
+	</head>
+	<body>
+		<div class="gateway_top">
+			<div class="page_tittle">
+				<span>M5 对接通道</span>
+			</div>
+			<div id="pair_add_div" class="bg_blue font_white font_center font_line_height div_cursor" onclick="clickAdd_OWN('pair_pop_add')"><span>新增通道</span></div>
+			<div id="pair_img"><img src="{% static 'img/Docking_Module/u539.png' %}" /></div>
+			<div id="pair_table_div">
+				<table id="pair_table" class="font_center" cellpadding="0" cellspacing="0">
+					<thead id="pair_thead">
+						<td style="width: 50px;"><input type="checkbox" id="pair_selection" /></td>
+						<td style="width: 100px;">通道名称</td>
+						<td style="width: 80px;">通道来源</td>
+						<td style="width: 100px;">COM口</td>
+						<td style="width: 80px;">波特率</td>
+						<td style="width: 150px;">通道描述</td>
+						<td style="width: 100px;">启用/禁用</td>
+						<td style="width: 150px;">操作</td>
+					</thead>
+					{% for m5 in m5_devices %}
+						<tr class='pair_tr'>
+						<td><input type='checkbox' class='pair_election_list'/></td>
+						<td>{{ m5.m5device_name }}</td>
+						<td>{{ m5.m5device_type }}</td>
+						<td><p>{{ m5.m5device_com }}</p></td>
+						<td>{{ m5.m5device_botelv }}</td>
+						<td>{{ m5.m5device_remark }}</td>
+						<td style='position: relative;'>
+							<div class='button_div'>
+								<div class='enable_content'>
+									<span class='enable_span'>启用</span>
+								</div>
+								<div class='enable_button' onclick='clickEnable(this)'>
+									<div class='button_on'>ON</div>
+									<div class='button_off'>OFF</div>
+									<div class='button_circular'></div>
+								</div>
+							</div>
+						</td>
+						<td style='position: relative;'>
+							<div id='operation_div'>
+								<div id='manage' class='div_cursor' onclick='window.location.href="{% url "m5:devicemanage"  m5.m5device_name  %}"'>管理</div>
+								<div id='delete' class='div_cursor' onclick='delete_list(this)'>删除</div>
+							</div>
+						</td>
+					</tr>
+					{% empty %}
+						<tr>
+							<td colspan="8" style="font-size: 15px">No matching records found</td>
+						</tr>
+					{% endfor %}
+				</table>
+			</div>
+		</div>
+		
+		<div id="batch_div">
+			<div class="batch" onclick="delete_batch()"><span>批量删除</span></div>
+			<div class="batch"><span>批量禁用</span></div>
+			<div class="batch"><span>批量启用</span></div>	
+		</div>
+		
+		
+		<div id="podiv">
+			<div id="pair_pop_add" class="div_radius div_shadow div_position">
+				<div class="pop_top">
+					<div class="pop_img"><img src="{% static 'img/gateway/gateway_pop/u1014.png' %}" height="18px" width="18px" /></div>
+					<div class="pop_tittle text_left"><span class="tittle_label">添加通道</span></div>
+					<div class="pop_close div_cursor" onclick="pop_close('pair_pop_add')"><img src="{% static 'img/Docking_Module/u1302.png' %}" /></div>
+				</div>
+				
+				<div class="pop_line"><img src="{% static 'img/gateway/u130.png' %}" width="430px" /></div>
+				
+				<div class="pop_message">
+						<div class="pop_pair_content">
+							<div class="pop_pair_label">
+								<span><sup class="font_red">*</sup>通道名称：</span>
+							</div>
+							<div class="pop_pair_input_div">
+								<input class="pop_pair_input" type="text" maxlength="9" />
+							</div>
+						</div>
+						<div class="pop_pair_content">
+							<div class="pop_pair_label">
+								<span><sup class="font_red">*</sup>通道来源：</span>
+							</div>
+							<div class="pop_pair_input_div">
+								<input class="pop_pair_input" type="text" maxlength="9"  />
+							</div>
+						</div>
+						<div class="pop_pair_content">
+							<div class="pop_pair_label">
+								<span><sup class="font_red">*</sup>COM口：</span>
+							</div>
+							<div class="pop_pair_input_div">
+								<input class="pop_pair_input" type="text" maxlength="9" />
+							</div>
+						</div>
+						<div class="pop_pair_content">
+							<div class="pop_pair_label">
+								<span><sup class="font_red">*</sup>波特率：</span>
+							</div>
+							<div class="pop_pair_input_div">
+								<select id="pop_pair_select"></select>
+							</div>
+						</div>
+						<div class="pop_pair_content">
+							<div class="pop_pair_label">
+								<span>通道描述：</span>
+							</div>
+							<div class="pop_pair_input_div">
+								<input class="pop_pair_input" type="text" maxlength="9" />
+							</div>
+						</div>
+						
+					<div id="pair_submit_div" class="new_submit div_cursor text_center" onclick="pop_save('pair_pop_add')">
+						<p>保存</p>
+					</div>
+					<div id="pair_close_div" class="new_close div_cursor text_center" onclick="pop_close('pair_pop_add')">
+						<p>取消</p>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div id="pop_delete" class="div_backgr">
+				<div class="pop_submit_img"><img src="{% static 'img/gateway/gateway_pop/u387.png' %}" /></div>
+				<div class="pop_tips"><span class="font_orange">温馨提示</span></div>
+				<div class="pop_line text_left"><img src="{% static 'img/gateway/gateway_pop/u363.png' %}" width="300px" /></div>
+				
+				<div id="delete_pop_sub" class="backgr_color"><span>确定删除选择的设备吗？</span></div>
+				<div id="list_delete_submit" class="new2_submit div_cursor text_center"  onclick="pop_delete()"><p>確定<p></div>
+				<div id="list_delete_close" class="new2_close div_cursor text_center" onclick="pop_close('pop_delete')"><p>取消</p></div>
+			</div>
+			
+			<div id="pop_delete_batch" class="div_backgr">
+				<div class="pop_submit_img"><img src="{% static 'img/gateway/gateway_pop/u387.png' %}" /></div>
+				<div class="pop_tips"><span class="font_orange">温馨提示</span></div>
+				<div class="pop_line text_left"><img src="{% static 'img/gateway/gateway_pop/u363.png' %}" width="300px" /></div>
+				
+				<div id="delete_pop_sub" class="backgr_color"><span>确定删除选择的设备吗？</span></div>
+				<div id="list_delete_submit" class="new2_submit div_cursor text_center"  onclick="pop_delete_batch('pair_election_list')"><p>確定<p></div>
+				<div id="list_delete_close" class="new2_close div_cursor text_center" onclick="pop_close('pop_delete_batch')"><p>取消</p></div>
+			</div>
+		</div>
+		<div id="podiv_tips">
+			<div id="mana" class="bu_tips_div">
+				<div id="bu_tips_img"><img src="{% static 'img/sub_manage/u636.png' %}"/></div>
+				<div id="bu_tips_content"><p>操作成功 ！</p></div>
+			</div> 
+			<div id="dele" class="bu_tips_div">
+				<div id="bu_tips_img"><img src="{% static 'img/sub_manage/u636.png' %}"/></div>
+				<div id="bu_tips_content"><p>删除成功 ！</p></div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="{% static 'js/jquery.js' %}" ></script>
+		<script type="text/javascript" src="{% static 'js/pop.js' %}" ></script>
+		<script type="text/javascript" src="{% static 'js/click_event.js' %}" ></script>
+		<script type="text/javascript" src="{% static 'js/operation_clue.js' %}" ></script>
+		<script type="text/javascript" src="{% static 'js/Docking_Module/M5_Pair_Connection.js' %}" ></script>
+	</body>
+	<!--<script>-->
+		<!--setInterval("window.location.reload()", 1000);-->
+	<!--</script>-->
+</html>

@@ -1,0 +1,18 @@
+html{
+	font-family: '思源黑体 Regular', '思源黑体';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #333333;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#event_table_div{
+	position: absolute;
+	top: 90px;
+	left: 65px;
+	width: 760px;
+	/*border: 1px solid aqua;*/
+	text-align: center;
+}

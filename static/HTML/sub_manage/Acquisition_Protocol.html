@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../../css/sub_manage/Acquisition_Protocol.css" />
+		<link rel="stylesheet" href="../../css/pop.css" />
+		<link rel="stylesheet" href="../../css/iframe.css" />
+		<script type="text/javascript" src="../../js/jquery.js" ></script>
+	</head>
+	<body>
+		<div id="acq_tittle"><span>配置采集协议</span></div>
+		<div id="acq_select">
+			<span>协议类型：</span>
+			<div id="select_box" class="select_box" title="请选择协议类型"><input id="myselect" type="text" value="RS232接口类" readonly="readonly">
+			  <div id="select_img"><img src="../../img/sub_manage/u1322.png" /></div>
+			  <ul class="select_ul">
+				<li>RS232接口类</li>
+				<li>以太网类型</li>
+				<li>专有类型</li>
+			  </ul>
+			</div>
+		</div>
+		<div id="acq_div_combination">
+			<span>协议名称：</span>
+			<div id="acq_modbus" class="acq_combination_1 acq_div_css div_cursor"><p>ModBus-RTU</p></div>
+			<div class="acq_combination_1 acq_div_css div_cursor"><p>Colum1n</p></div>
+			<div class="acq_combination_1 acq_div_css div_cursor"><p>Column2</p></div>
+			<div class="acq_combination_2 acq_div_css div_cursor" onclick="click_config('config_center_mqtt')"><p>MQTT</p></div>
+			<div class="acq_combination_2 acq_div_css div_cursor"><p>DB</p></div>
+			<div class="acq_combination_2 acq_div_css div_cursor"><p>KAFKA</p></div>
+			<div class="acq_combination_2 acq_div_css div_cursor"><p>Modbus-TCP</p></div>
+			<div class="acq_combination_3 acq_div_css div_cursor"><p>三菱</p></div>
+			<div class="acq_combination_3 acq_div_css div_cursor"><p>西门子</p></div>
+			<div class="acq_combination_3 acq_div_css div_cursor"><p>Robot</p></div>
+		</div>
+		
+		<div id="hide_div">
+			<div class="hide_div_a"><a style="border: 0px;color: #246DFF;">自定义</a></div>
+			<div class="hide_div_a"><a onclick="click_config('config_center_modbus')">HC31A电表</a></div>
+			<div class="hide_div_a"><a>HC33A电表</a></div>
+			<div class="hide_div_a"><a>压力传感器</a></div>
+		</div>
+		
+		<div id="acq_bottom_div">
+			<fieldset id="system_01" class="system">
+		    	<legend><p>协议名称</p></legend>
+		    	<div id="acq_bottom_tips">
+		    		<div id="acq_tips_css">
+			    		<p>step1. 请选择协议类型</p>
+			    		<p>step2. 请选择协议名称</p>
+			    		<p>step3. 请在这里配置您选择的协议</p>
+		    		</div>
+		    	</div>
+			</fieldset>
+		</div>
+				
+		<script type="text/javascript" src="../../js/jquery.js" ></script>
+		<script type="text/javascript" src="../../js/sub_manage/Acquisition_Protocol.js" ></script>
+	</body>
+</html>

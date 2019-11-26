@@ -1,0 +1,51 @@
+html{
+	overflow-x: hidden;
+}
+#remote_tips{
+	position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 884px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    text-align: left;
+}
+#remote_tips span{
+	position: absolute;
+	font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-size: 14px;
+	left: 16px;
+	color: #333333;
+}
+
+
+#remote_table_div{
+	position: relative;
+	top: 90px;
+	left: 55px;
+}
+
+#remote_type{
+	position: absolute;
+	/*border: 1px solid aqua;*/
+	top: 45px;
+	left: 260px;
+	width: 400px;
+	height: 35px;
+	font-size: 13px;
+}
+.type_select{
+	position: relative;
+	display: inline-block;
+	margin-left: 20px;
+	width: 100px;
+	height: 31px;
+	line-height: 31px;
+	text-align: center;
+	/*border: 1px solid aqua;*/
+}
+.type_select:hover{
+	color: #246DFF;
+}

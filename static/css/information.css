@@ -1,0 +1,45 @@
+html{
+	font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    color: #333333;
+}
+a{
+	/*color: #246DFF;*/
+	text-decoration: none;
+}
+.div_font_css{
+	position: absolute;
+    color: rgb(36, 109, 255);
+    width: 100px;
+    height: 21px;
+}
+.table_div{
+	position: absolute;
+    left: 93px;
+    top: 56px;
+    width: 58px;
+    height: 23px;
+}
+#edit{
+    left: 94px;
+    top: 26px;
+}
+#edit img{
+	position: relative;
+	top: 2px;
+}
+#table{
+	border-collapse : collapse;
+	border-color: rgba(201, 201, 201, 1);
+	width: 710px;
+}
+#table td{
+	border: 1px solid rgba(201, 201, 201, 1);
+	border-width:1px 2px 2px 1px;
+	height: 38px;
+	padding-left: 20px;
+}

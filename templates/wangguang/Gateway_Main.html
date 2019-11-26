@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="{% static 'css/page.css'%}" />
+		<link rel="stylesheet" href="{% static 'css/Small_Main.css'%}" />
+		<link rel="stylesheet" href="{% static 'css/iframe.css'%}" />
+		<link rel="stylesheet" href="{% static 'css/pop.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/font.css' %}" />
+	</head>
+
+	<body>
+		<div class="gateway_top">
+			<div class="page_tittle">
+				<!--<span>网关管理&nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;网关信息</span>-->
+				<span>网关管理&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;<span id="log_sub_title">网关信息</span></span>
+			</div>
+		</div>
+		<div id="gateway_small" class="smallMenu">
+			<a style="text-decoration: none;">
+				<div class="menu" onclick="clickDiv(className,0,0);clickM(className,0)" onmouseover="over(className,0);overM(className,0)" onmouseout="out(className,0)">
+					<div class="smallMenu_div_word">网关信息&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</div>
+				</div>
+			</a>
+			<a style="text-decoration: none;">
+				<div class="menu" onclick="clickDiv(className,1,0);clickM(className,1)" onmouseover="over(className,1);overM(className,1)" onmouseout="out(className,1)">
+					<div class="smallMenu_div_word">系统信息&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</div>
+				</div>
+			</a>
+			<a style="text-decoration: none;">
+				<div class="menu" onclick="clickDiv(className,2,0);clickM(className,2)" onmouseover="over(className,2);overM(className,2)" onmouseout="out(className,2)">
+					<div class="smallMenu_div_word">网关服务&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</div>
+				</div>
+			</a>
+		</div>
+		<!--<iframe id="gateway_iframe" class="css_iframe" name="gateway_iframe" src="Gateway_Information.html"></iframe>-->
+		<iframe id="gateway_iframe" class="css_iframe" name="gateway_iframe" src="{% url 'wangguang:gatewayinfo' %}"></iframe>
+
+		<div id="podiv">
+			<form action="" method="post">
+				{% csrf_token %}
+				<div id="geteway_popup">
+					<div class="pop_top">
+						<div class="pop_img"><img src="{% static 'img/gateway/gateway_pop/u44.png' %}" /></div>
+						<div class="pop_tittle text_left"><span class="tittle_label">网关信息编辑</span></div>
+						<div class="pop_close div_cursor" onclick="pop_close('geteway_popup')"><img src="{% static 'img/gateway/gateway_pop/u423.png' %}" /></div>
+					</div>
+					<div class="pop_line"><img src="{% static 'img/gateway/u130.png' %}" width="460px" /></div>
+					<div class="pop_message">
+						<div class="pop_content">
+							<div class="pop_label">
+								<span><sup class="font_red">*</sup>网关名称：</span>
+							</div>
+							<div class="pop_gateway_input">
+								<input value="{{ data.gateway_name }}" name="gateway_name" type="text" maxlength="9" placeholder="请输入网关名称(a-z,A-Z,0-9)" class="pop_input_gateway" type="text" />
+								<!--<input class="pop_input_gateway" type="text" maxlength="9" placeholder="请输入网关名称(a-z,A-Z,0-9)" />-->
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span><sup class="font_red">*</sup>网关ID：</span>
+							</div>
+							<div class="pop_gateway_input">
+								<input value="{{ data.gateway_key }}" name="gateway_id"  placeholder="请输入网关ID(0-9)" class="pop_input_gateway" type="text" />
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span><sup class="font_red">*</sup>网关Secret：</span>
+							</div>
+							<div class="pop_gateway_input">
+								<input value="{{ data.gateway_secret }}" name="gateway_secret"  placeholder="请输入网关Secret" class="pop_input_gateway" type="text" />
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span><sup class="font_red">*</sup>网关鉴权URL：</span>
+							</div>
+							<div class="pop_gateway_input">
+								<input value="{{ data.gateway_authurl }}" name="gateway_authurl" placeholder="请网关鉴权URL" class="pop_input_gateway" type="text" />
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span>位置信息：</span>
+							</div>
+							<div class="pop_gateway_input">
+								<input value="{{ data.gateway_location }}"  name="gateway_location"   placeholder="请输入位置信息"  class="pop_input_gateway" type="text" />
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span>网关描述：</span>
+							</div>
+							<div class="pop_gateway_input">
+								<input value="{{ data.gateway_remark }}"  placeholder="请输入网关描述"  name="gateway_remark" class="pop_input_gateway">
+							</div>
+						</div>
+					</div>
+					<button id="gateway_submit_div" type=submit class="new_submit div_cursor text_center" >保存</button>
+					<!--<div class="submit div_cursor" onclick="pop_save('geteway_popup')">-->
+						<!--<p>保存</p>-->
+					<!--</div>-->
+					<button id="gateway_close_div" type=button class="new_close div_cursor text_center" onclick="pop_close('geteway_popup')">取消</button>
+					<!--<div class="close div_cursor" onclick="pop_close('geteway_popup')">-->
+						<!--<p>取消</p>-->
+					<!--</div>-->
+					<!--<div id="gateway_submit_div" class="new_submit div_cursor text_center" onclick="pop_save('geteway_popup')">-->
+						<!--<p>保存</p>-->
+					<!--</div>-->
+					<!--<div id="gateway_close_div" class="new_close div_cursor text_center" onclick="pop_close('geteway_popup')">-->
+						<!--<p>取消</p>-->
+					</div>
+			</form>
+
+			<form action="" method="post">
+				<div id="gateway_Restart" class="div_position div_shadow div_backgr div_radius">
+					<div class="pop_submit_img"><img src="{% static 'img/gateway/gateway_pop/u387.png' %}" /></div>
+					<div class="pop_tips"><span class="font_orange">温馨提示</span></div>
+					<div class="pop_line"><img src="{% static 'img/gateway/gateway_pop/u363.png' %}" width="300px" /></div>
+					
+					<div id="submit_pop_tips"><span>确定重启网关的采集程序吗？</span></div>
+					<div class="tips_submit new2_submit div_cursor text_center" onclick="pop_save('gateway_Restart')">
+						<p>确定<p>
+					</div>
+					<div class="tips_close new2_close div_cursor text_center" onclick="pop_close('gateway_Restart')">
+						<p>取消</p>
+					</div>
+				</div>
+			</form>
+			
+			<form action="" method="post">
+				<div id="gateway_factory" class="div_position div_shadow div_backgr div_radius">
+					<div class="pop_submit_img"><img src="{% static 'img/gateway/gateway_pop/u387.png' %}" /></div>
+					<div class="pop_tips"><span class="font_orange">温馨提示</span></div>
+					<div class="pop_line"><img src="{% static 'img/gateway/gateway_pop/u363.png' %}" width="300px" /></div>
+					
+					<div id="pop_pass_input">请输入密码：&nbsp;&nbsp;&nbsp;<span><input type="password"/></span></div>
+					<div class="tips_submit new2_submit div_cursor text_center" onclick="pop_save('gateway_factory')">
+						<p>確定<p>
+					</div>
+					<div class="tips_close new2_close div_cursor text_center" onclick="pop_close('gateway_factory')">
+						<p>取消</p>
+					</div>
+				</div>
+			</form>
+		</div>
+		<script type="text/javascript" src="{% static 'js/jquery.js' %}" ></script>
+		<script type="text/javascript" src="{% static 'js/gateway_manage/Gateway_Main.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/page.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/pop.js' %}"></script>
+	</body>
+
+</html>

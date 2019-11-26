@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="{% static 'css/select_input.css' %} " />
+		<link rel="stylesheet" href="{% static 'css/split_img.css' %} " />
+		<link rel="stylesheet" href="{% static 'css/table.css' %} " />
+		<link rel="stylesheet" href="{% static 'css/logging_events/Event_Center.css' %} " />
+	</head>
+	<body>
+		<div id="select_event_div" class="select_div">
+			<input class="select_input" placeholder="输入查找信息" onfocus="this.style.color='#000000'" />
+			<div id="input_img_div" class="div_cursor">
+				<img class="div_cursor" src="{% static 'img/sub_manage/u538.png' %} " >
+			</div>
+		</div>
+		<div id="split_event_img" class="split_img"><img src="{% static 'img/logging_events/u3072.png' %} " /></div>
+		
+		<div id="event_table_div">
+			<table id="event_table" cellpadding="0" cellspacing="0">
+				<thead id="event_thead">
+					<td style="width: 80px">序号</td>
+					<td style="width: 120px">事件类型</td>
+					<td style="width: 100px">用户名</td>
+					<td style="width: 200px">记录时间</td>
+					<td style="width: 260px;">事件详细</td>
+				</thead>
+				{% for Event in EventView %}
+				<tr>
+					<td>{{ Event.id }}</td>
+					<td>{{ Event.event_type }}</td>
+					<td>{{ Event.event_leader }}</td>
+					<td>{{ Event.event_create_time }}</td>
+					<td style="max-width: 100px">
+						<div style="position: relative;border: 1px solid rgba(215, 215, 215, 1);border-radius: 7px;height: auto;padding-top: 10px;min-height:20px;min-width: 240px;width:auto;padding-bottom: 10px;text-align: left;">
+							<span style="left: 1%;min-width:260px;max-width: 240px;height: auto;word-break:break-all;">{{ Event.event_info }}</span><br />
+							<!--<span>time</span><br />-->
+							<!--<span>alsdidfdf</span><br />-->
+							<!--<span>cd</span><br />-->
+							<!--<span>time</span><br />-->
+						</div>
+					</td>
+				</tr>
+				{% endfor %}
+			</table>
+		</div>
+		
+		<script type="text/javascript" src="{% static 'js/jquery.js' %} " ></script>
+		
+	</body>
+</html>

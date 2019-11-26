@@ -1,0 +1,68 @@
+div{
+	display: block;
+    text-align: center;
+}
+#select_list_div{
+	position: absolute;
+	/*border: 1px solid aqua;*/
+	background-color: #F2F2F2;
+	left: 885px;
+	/*right: 80px;*/
+	top: 70px;
+	width: 213px;
+	height: 32px;
+	line-height: 32px;
+}
+#select_event_div{
+	left: 630px;
+	top: 20px;
+}
+#input_img_div{
+	position: absolute;
+	/*border: 1px solid aqua;*/
+	right: 0px;
+	width: 45px;
+	height: 28px;
+	line-height: 28px;
+	background-color: rgba(131,131,131,0.4);
+}
+#input_img_div:hover{
+	background-color: rgba(36, 109, 255, 1);
+}
+#input_img_div img{
+	position: relative;
+	top: 2px;
+}
+.select_div{
+	position: absolute;
+	/*border: 1px solid aqua;*/
+	background-color: #F2F2F2;
+	width: 213px;
+	height: 32px;
+	line-height: 32px;
+}
+.select_input{
+	position: absolute;
+	text-decoration: none;
+	/*border: 1px solid aqua;*/
+	width: 160px;
+    height: 22px;
+    top: 3px;
+    left: 5px;
+   	/*left: 0px;*/
+    line-height: 22px;
+    text-align: left;
+    border-color: transparent;
+    outline-style: none;
+    background-color: #F2F2F2;
+    /*padding: 15px 0px 5px 0px;*/
+    /*box-sizing: border-box;*/
+	font-family: "思源黑体 CN Regular", "思源黑体 CN";
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(174, 174, 174);
+}
+.select_input:-webkit-autofill{
+	color: seagreen;
+}

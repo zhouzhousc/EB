@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="{% static 'css/table.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/font.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/pop.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/information.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/sub_manage/Data_Forwarding.css' %}" />
+	</head>
+	<body>
+	{% csrf_token %}
+	<div id="acq_tittle"><span>提示：每个设备最多可配置四条转发路径</span></div>
+		<div id="data_add" class="div_font_css div_cursor" onclick="clickAdd('data_add_podiv')">
+			<img src="{% static 'img/gateway/gateway_pop/u44.png' %}" />&nbsp;&nbsp;&nbsp;<span class="font_blue">新增转发</span>
+		</div>
+		<div id="data_table_div">
+			<table class="data_table" id="data_table" cellpadding="0" cellspacing="0">
+				<thead id="data_thead">
+					<td style="width: 70px;">序号</td>
+					<td style="width: 120px;">转发路径名称</td>
+					<td style="width: 110px;">启动/关闭</td>
+					<td>运行状态</td>
+					<td>上行消息数</td>
+					<!--<td>创建时间</td>-->
+					<td style="width: 150px;">描述</td>
+					<td style="width: 150px;">操作</td>
+				</thead>
+				{% for transmit in transmits %}
+					<tr class='data_tr'>
+						<td>{{ forloop.counter }}</td>
+						<td><p class='data_name'>{{ transmit.transmit_name }}</p></td>
+						<td>
+							<div class='data_button_div'>
+								<div class='data_enable_content'>
+									<span class='data_enable_span'>{{ transmit.get_transmit_enable_display }}</span>
+								</div>
+								{% if transmit.transmit_enable == 1 %}
+									<div  style="background:rgba(0, 159, 60, 1)" class='data_enable_button' onclick='data_clickEnable(className,{{ forloop.counter0 }},{{ transmit.id }} , {{ transmit.subdevice_id }},{{ transmit.transmit_type }} 	)'>
+									<div style='display:block' class='data_button_on'>ON</div>
+									<div style='display:None'  class='data_button_off'>OFF</div>
+									<div style="right: 0" class='data_button_circular'></div>
+									</div>
+								{% else %}
+									<div  style="background:rgba(188, 188, 188, 1)" class='data_enable_button' onclick='data_clickEnable(className,{{ forloop.counter0 }},{{ transmit.id }} , {{ transmit.subdevice_id }},{{ transmit.transmit_type }} 	)'>
+									<div style='display:None' class='data_button_on'>ON</div>
+									<div style='display:block'  class='data_button_off'>OFF</div>
+									<div style="left: 1px" class='data_button_circular'></div>
+									</div>
+
+								{% endif %}
+							</div>
+						</td>
+						<td id="status" class="status">{{ transmit.get_transmit_status_display }}</td>
+						{% for transmit_count in transmit_count_list %}
+							{% if forloop.parentloop.counter == forloop.counter %}
+								<td class="count" id="count"  transmit_id="{{ transmit.id }}" subdevice_id="{{ transmit.subdevice_id }}" transmit_enable="{{ transmit.transmit_enable }}" >{{ transmit_count }}</td>
+							{% endif %}
+						{% endfor %}
+
+						<td>{{ transmit.transmit_remark }}</td>
+						<td style='position: relative;'>
+							<div class='data_details div_cursor' onclick="data_details('{{ transmit.transmit_name }}','{{ transmit.get_transmit_type_display }}','{{ transmit.transmit_topic }}')">详情</div>
+							<div class='data_edit div_cursor' onclick='data_click_edit("{{ transmit.id }}","{{ transmit.transmit_name }}","{{ transmit.transmit_type }}","{{ transmit.transmit_ip }}","{{ transmit.transmit_port }}","{{ transmit.transmit_username }}","{{ transmit.transmit_password }}","{{ transmit.transmit_topic }}", {{ transmit.TYPE_DICT }},"{{ transmit.transmit_remark }}" )'>编辑</div>
+							<div class='data_delete div_cursor' onclick='data_delete("{{ transmit.id }}")'>删除</div>
+						</td>
+					</tr>
+				{% empty %}
+					<tr>
+						<td colspan="7">No matching records found</td>
+					</tr>
+				{% endfor %}
+			</table>
+		</div>
+
+		<div id="podiv">
+			<form method="post" action="">
+			<!--<form method="post" >-->
+				{% csrf_token %}
+				<div id="data_add_podiv" class="gateway_service div_shadow div_backgr">
+					<div class="pop_top">
+						<div class="pop_img"><img src="{% static 'img/gateway/gateway_pop/u44.png' %}" /></div>
+						<div class="pop_tittle text_left"><span class="tittle_label" style="font-size: 16px;">新增转发路径</span></div>
+						<div class="pop_close u2040 div_cursor" onclick="pop_close('data_add_podiv')"><img src="{% static 'img/gateway/gateway_pop/u2040.png' %}" /></div>
+					</div>
+
+					<div class="pop_line"><img src="{% static 'img/gateway/u130.png' %}" width="470px" /></div>
+					<div class="pop_message">
+						<div class="pop_content">
+							<div class="pop_label">
+								<span><sup class="font_red">*</sup>转发路径名称：</span>
+							</div>
+							<div class="pop_data_add_input_div">
+								<input name="transmit_name" class="pop_data_add_input" type="text" />
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span><sup class="font_red">*</sup>转发类型：</span>
+							</div>
+							<div class="pop_data_add_input_div">
+								<select name="transmit_type">
+                                    <option>MQTT</option>
+									<option>CorePro</option>
+									<option>KAFKA</option>
+									<option>DB</option>
+								</select>
+							</div>
+						</div>
+						<!--<div class="pop_content">-->
+							<!--&lt;!&ndash;<div class="pop_label">&ndash;&gt;-->
+								<!--&lt;!&ndash;<span>是否鉴权：</span>&ndash;&gt;-->
+							<!--&lt;!&ndash;</div>&ndash;&gt;-->
+							<!--&lt;!&ndash;<div class="pop_data_add_input_div">&ndash;&gt;-->
+								<!--&lt;!&ndash;<div class="data_radio"><input type="radio" name="authentication" checked="checked" onclick="radioClick(false)" /><span>否</span></div>&ndash;&gt;-->
+								<!--&lt;!&ndash;<div class="data_radio"><input type="radio" name="authentication" onclick="radioClick(true)" /><span>是</span></div>&ndash;&gt;-->
+							<!--&lt;!&ndash;</div>&ndash;&gt;-->
+						<!--</div>-->
+						<div class="pop_content">
+							<div class="pop_label">
+								<span id="forwarding_ip">IP地址：</span>
+							</div>
+							<div class="pop_data_add_input_div">
+								<input name="transmit_ip" class="pop_data_add_input" type="text" />
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span id="forwarding_port">端口号：</span>
+							</div>
+							<div class="pop_data_add_input_div">
+								<input name="transmit_port" class="pop_data_add_input" type="text" />
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span id="forwarding_userName">用户名：</span>
+							</div>
+							<div class="pop_data_add_input_div">
+								<input name="transmit_username" class="pop_data_add_input" type="text" />
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span id="forwarding_password">密码：</span>
+							</div>
+							<div class="pop_data_add_input_div">
+								<input name='transmit_password'  class="pop_data_add_input" type="password" />
+							</div>
+						</div>
+                        <div class="pop_content">
+							<div class="pop_label">
+								<span><sup class="font_red">*</sup>Topic/Table：</span>
+							</div>
+							<div class="pop_data_add_input_div">
+								<input name='transmit_topic' class="pop_data_add_input" type="text" />
+							</div>
+						</div>
+						<div class="pop_content">
+						<div class="pop_label">
+							<span id="forwarding_">转发路径描述：</span>
+						</div>
+						<div class="pop_data_add_input_div">
+							<input name="transmit_remark" class="pop_data_add_input" type="text" placeholder="请输入" />
+						</div>
+					</div>
+
+						<div id="data_test_div" class="test_submit div_cursor text_center"  onclick="pop_save('data_add_podiv')"><span>测试</span></div>
+						<!--<button type="submit" id="data_submit_div" class="new_submit div_cursor text_center"  onclick="pop_save('data_add_podiv')"><span>確定</span></button>-->
+						<button type="submit" id="data_submit_div" class="new_submit div_cursor text_center" ><span>確定</span></button>
+						<button type="button" id="data_close_div" class="new_close div_cursor text_center" onclick="pop_close('data_add_podiv')"><span>取消</span></button>
+					</div>
+				</div>
+			</form>
+			<form action="" method="post">
+				<div id="data_details" class="gateway_service div_position div_shadow div_backgr">
+					<div class="pop_top">
+						<div class="pop_img"><img src="{% static 'img/gateway/gateway_pop/u44.png' %}" height="18px" width="20px" /></div>
+						<div class="pop_tittle text_left"><span class="tittle_label" style="font-size: 16px;">数据转发详情</span></div>
+						<div class="pop_close u2040 div_cursor" onclick="pop_close('data_details')"><img src="{% static 'img/gateway/gateway_pop/u2040.png' %}" /></div>
+					</div>
+
+					<div class="pop_line"><img src="{% static 'img/gateway/u130.png' %}" width="440px" /></div>
+					<div class="pop_message" style="top: 80px;">
+						<div class="pop_content">
+							<div class="pop_label">
+								<span >转发路径名称：</span>
+							</div>
+							<div class="pop_data_details_input_div">
+								<input id="transmit_name" readonly="readonly" class="pop_data_details_input" type="text" />
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span>转发类型：</span>
+							</div>
+							<div class="pop_data_details_input_div">
+								<input id="transmit_type"  readonly="readonly"   class="pop_data_details_input" type="text" />
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span>消息主题：</span>
+							</div>
+							<div class="pop_data_details_input_div">
+								<input id="transmit_topic" readonly="readonly"  class="pop_data_details_input" type="text"  />
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label" style="top: 80px;">
+								<span>消息详情：</span>
+							</div>
+							<div class="pop_data_details_input_div">
+								<div class="pop_data_details_span">
+									<span>
+										<!--{-->
+										<!--<br />-->
+											<!--&nbsp;&nbsp;&nbsp;&nbsp;"设备名称"："<span id="device_name">LiChuang</span>"-->
+											<!--<br />-->
+											<!--&nbsp;&nbsp;&nbsp;&nbsp;"设备类型"："<span id="device_name">力创三相电表</span>"-->
+											<!--<br />-->
+											<!--&nbsp;&nbsp;&nbsp;&nbsp;"设备位置"："<span id="device_name">E6-2F</span>"-->
+											<!--<br />-->
+											<!--&nbsp;&nbsp;&nbsp;&nbsp;"设备型号"："<span id="device_name">JUYOUWETY</span>"-->
+											<!--<br />-->
+											<!--&nbsp;&nbsp;&nbsp;&nbsp;"设备描述"："<span id="device_name">力创智能电表</span>"-->
+										<!--<br />-->
+										<!--}-->
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+			<form >
+				{% csrf_token %}
+				<div id="data_edit_podiv" class="gateway_service div_position div_shadow div_backgr">
+					<div class="pop_top">
+						<div class="pop_img"><img src="{% static 'img/gateway/gateway_pop/u44.png' %}" /></div>
+						<div class="pop_tittle text_left"><span class="tittle_label" style="font-size: 16px;">编辑转发路径</span></div>
+						<div class="pop_close u2040 div_cursor" onclick="pop_close('data_edit_podiv')"><img src="{% static 'img/gateway/gateway_pop/u2040.png' %}" /></div>
+					</div>
+
+					<div class="pop_line"><img src="{% static 'img/gateway/u130.png' %}" width="470px" /></div>
+					<div class="pop_message">
+						<div class="pop_content">
+							<div class="pop_label">
+								<span><sup class="font_red">*</sup>转发路径名称：</span>
+							</div>
+							<div class="pop_data_add_input_div">
+								<input id="edit_transmit_name" class="pop_data_add_input" value="{{ transmits }}" type="text" />
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span><sup class="font_red">*</sup>转发类型：</span>
+							</div>
+							<div class="pop_data_add_input_div">
+								<select id="edit_transmit_type" value="0">
+									<option value="0">MQTT</option>
+									<option value="1">CorePro</option>
+									<option value="2">KAFKA</option>
+									<option value="3">DB</option>
+								</select>
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span id="forwarding_update_ip">IP地址：</span>
+							</div>
+							<div class="pop_data_add_input_div">
+								<input id="edit_transmit_ip" class="pop_data_add_input" type="text" />
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span id="forwarding_update_port">端口号：</span>
+							</div>
+							<div class="pop_data_add_input_div">
+								<input id="edit_transmit_port" class="pop_data_add_input" type="text" />
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span id="forwarding_update_userName">用户名：</span>
+							</div>
+							<div class="pop_data_add_input_div">
+								<input id="edit_transmit_username" class="pop_data_add_input" type="text" />
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span id="forwarding_update_password">密码：</span>
+							</div>
+							<div class="pop_data_add_input_div">
+								<input id="edit_transmit_password" class="pop_data_add_input" type="password" />
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span><sup class="font_red">*</sup>Topic/Table：</span>
+							</div>
+							<div class="pop_data_add_input_div">
+								<input id="edit_transmit_topic" class="pop_data_add_input" type="text" />
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span id="edit_forwarding_">转发路径描述：</span>
+							</div>
+							<div class="pop_data_add_input_div">
+								<input id="edit_transmit_remark" class="pop_data_add_input" type="text" placeholder="请输入" />
+							</div>
+						</div>
+
+						<div id="edit_data_test_div" class="test_submit div_cursor text_center"  onclick="pop_save('data_add_podiv')"><span>测试</span></div>
+						<div id="edit_data_submit_div" class="new_submit div_cursor text_center"  onclick="pop_save('data_edit_podiv')"><span>確定</span></div>
+						<div id="edit_data_close_div" class="new_close div_cursor text_center" onclick="pop_close('data_edit_podiv')"><span>取消</span></div>
+					</div>
+				</div>
+			</form>
+			<div id="pop_delete" class="div_backgr">
+				<div class="pop_submit_img"><img src="{% static 'img/gateway/gateway_pop/u387.png' %}" /></div>
+				<div class="pop_tips"><span class="font_orange">温馨提示</span></div>
+				<div class="pop_line text_left"><img src="{% static 'img/gateway/gateway_pop/u363.png' %}" width="300px" /></div>
+
+				<div id="delete_pop_sub" class="backgr_color">
+					<span>确定删除该条数据转发路径？</span>
+				</div>
+
+				<div id="list_delete_submit" class="new2_submit div_cursor text_center"  onclick="pop_data_delete('transmit')"><p>確定<p></div>
+				<div id="list_delete_close" class="new2_close div_cursor text_center" onclick="pop_close('pop_delete')"><p>取消</p></div>
+			</div>
+
+		</div>
+		<div id="podiv_tips">
+				<div id="mana" class="bu_tips_div">
+					<div id="bu_tips_img"><img src="{% static 'img/sub_manage/u636.png' %}"/></div>
+					<div id="bu_tips_content"><p>操作成功 ！</p></div>
+				</div>
+				<div id="dele" class="bu_tips_div">
+					<div id="bu_tips_img"><img src="{% static 'img/sub_manage/u636.png' %}"/></div>
+					<div id="bu_tips_content"><p>删除成功 ！</p></div>
+				</div>
+		</div>
+		<script type="text/javascript" src="{% static 'js/jquery.js' %}" ></script>
+		<script type="text/javascript" src="{% static 'js/sub_manage/Data_Forwarding.js' %}" ></script>
+		<script type="text/javascript" src="{% static 'js/pop.js' %}" ></script>
+
+		<!--<script type="text/javascript" src="{% static 'js/sub_manage/Sub_Device_List.js' %}" ></script>-->
+	</body>
+	<script >
+		function countnum() {
+
+			var count=$('.data_tr').find("#count").each(function () {
+				var enable=$(this).attr('transmit_enable');
+				var transmit_id=$(this).attr('transmit_id');
+				var subdevice_id= $(this).attr('subdevice_id');
+				var obj=$(this);
+				// console.log(obj.attr("subdevice_id"));
+				if(enable=="1"){
+					var csrf = $('input[name="csrfmiddlewaretoken"]').val();
+					// 组织参数
+					var params = {	'subdevice_id':subdevice_id,
+									'transmit_id':transmit_id,
+									'csrfmiddlewaretoken':csrf };
+					// 设置ajax 请求为同步
+					$.ajaxSettings.async = false;
+					// 发起ajax post请求，访问/cart/update, 传递参数:sku_id count
+					$.post('/shebei/transmit/count', params, function (data) {
+						if (data.res == 3){
+							// 更新成功
+							// console.log(data.count);
+							obj.text(data.count);
+							obj.prev().text(data.status);
+							// $(this).innerText=1;
+						}
+						else{
+							// 更新失败
+							console.log(data.errmsg);
+						}
+					})
+					// 设置ajax请求为异步, false 代表为 同步 true 代表异步
+					$.ajaxSettings.async = true;
+					}
+
+			});
+
+		}
+		// var n=0;
+		setInterval("countnum()", 1000);
+
+	</script>
+</html>
+
+

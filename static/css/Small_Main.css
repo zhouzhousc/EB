@@ -1,0 +1,52 @@
+#gateway_small{
+    height: 93px;
+}
+#sub_smallMenu{
+	height: 120px;
+}
+#library_smallMenu{
+	height: 70px;
+}
+#remot_smallMenu{
+	height: 70px;
+}
+#docking_small{
+	height: 70px;
+}
+.smallMenu{
+	position: absolute;
+	left: 13px;
+    top: 60px;
+    width: 125px;
+    text-align: center;
+    /*border: 1px solid aqua;*/
+    background-color: rgba(255, 255, 255, 1);
+}
+.menuhead{
+	position: relative;
+	left: 12px;
+	top: 2px;
+	width: 100px;
+    height: 27px;
+    color: #000000;
+    /*border: 1px solid aqua;*/
+    border-radius: 50px;
+}
+.menu{
+	position: relative;
+	left: 12px;
+	top: 2px;
+	width: 100px;
+    height: 27px;
+    color: #000000;
+    /*border: 1px solid aqua;*/
+    border-radius: 50px;
+}
+.smallMenu_div_word{
+	position: relative;
+	height: 25px;
+	line-height: 29px;
+}
+.page_tittle{
+	width: 260px;
+}

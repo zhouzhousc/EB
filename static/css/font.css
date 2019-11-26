@@ -1,0 +1,54 @@
+.font_orange{
+    color: #FF6600;
+}
+.font_red{
+	color: red;
+}
+.font_blue{
+	color: #246DFF;
+}
+.font_dark_blue{
+	color: #0033FF;
+}
+.font_black{
+	color: #333333;
+}
+.div_cursor{
+	cursor: pointer;
+}
+.font_white{
+	color: #FFFFFF;
+}
+.font_center{
+	text-align: center;
+}
+.font_line_height{
+    line-height: 230%;
+}
+.font_submit_line_height{
+    line-height: 400%;
+}
+.font_family{
+	font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+}
+.font_11{
+	font-size: 11px;
+}
+.font_12{
+	font-size: 12px;
+}
+.font_13{
+	font-size: 13px;
+}
+.font_14{
+	font-size: 14px;
+}
+.font_15{
+	font-size: 15px;
+}
+
+.font_16{
+	font-size: 16px;
+}

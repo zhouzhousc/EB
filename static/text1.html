@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+   <head>
+ <meta charset="UTF-8">
+ <title>一键复制粘贴</title>
+ <style>
+ .transfer {
+  width: 90%;
+  margin: 20px auto;
+  font-size: 18px;
+ }
+ .transfer button {
+  margin-top: -5px;
+  float: right;
+  margin-left: 10px;
+  background-color: rgb(3, 169, 244);
+  width: 30%;
+  height: 25px;
+  font-size: 14px;
+  color: white;
+  border: 0;
+ border-radius: 8%;
+ }
+ </style>
+ </head>
+  
+ <body>
+ <div class="transfer">
+ 支付宝：<span class="zfb_account">11111111111</span>
+ <button onclick="copy1()" data-clipboard-target=".zfb_account" id="copy_zfb">一键复制</button>
+ </div>
+ <div class="transfer">
+ 微信：<span class="zfb_account">2222222</span>
+ <button onclick="copy2()"  data-clipboard-target=".zfb_account" id="copy_wx">一键复制</button>
+ </div>
+ <input type="text" />
+ </body>
+ <script type="text/javascript" src="js/clipboard.min.js" ></script>
+ <script>
+ function copy1() {
+ var clipboard = new ClipboardJS('#copy_zfb');
+ clipboard.on('success', function(e) {
+ e.clearSelection(); //选中需要复制的内容
+ alert("复制成功！");
+ });
+ clipboard.on('error', function(e) {
+ alert("当前浏览器不支持此功能，请手动复制。")
+ });
+ }
+  
+ function copy2() {
+ var clipboard = new ClipboardJS('#copy_wx');
+ clipboard.on('success', function(e) {
+ e.clearSelection(); //选中需要复制的内容
+ alert("复制成功！");
+ });
+ clipboard.on('error', function(e) {
+ alert("当前浏览器不支持此功能，请手动复制。")
+ });
+ }
+ </script>
+  
+</html>

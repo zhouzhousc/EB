@@ -1,0 +1,41 @@
+html{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#inteface_iframe{
+	position: absolute;
+	left: 181px;
+	top: 40px;
+	border: 0;
+	width: 1184px;
+	height: 619px;
+}
+#gateway_iframe{
+	height: 560px;
+}
+#sub_iframe{
+	height: 600px;
+}
+.css_iframe{
+	position: absolute;
+    left: 155px;
+    top: 59px;
+    width: 901px;
+    height: 489px;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 0px;
+}
+.config_iframe{
+	position: absolute;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 0px;
+    width: 720px;
+    height: 296px;
+    top: 50px;
+    left: 0px;
+    /*border: 1px solid aqua;*/
+}

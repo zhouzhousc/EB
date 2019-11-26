@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="{% static 'css/page.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/sub_manage/Sub_Device_List.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/pop.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/split_img.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/select_input.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/table.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/font.css' %}" />
+		
+		<script type="text/javascript" src="{% static 'js/jquery.js' %}" ></script>
+	</head>
+	<body>
+		<div class="gateway_top">
+			<div class="page_tittle">
+				<span>子设备列表</span>
+			</div>
+		</div>
+		<div id="add_sub_div">
+			<div id="add_div" class="menu div_cursor" onclick="open_add()">
+				<div id="add_div add_div_word" class="font_css">新增子设备</div>
+			</div>
+		</div>
+		<div id="select_list_div" class="select_div">
+			<input class="select_input" placeholder="输入查找信息" onfocus="this.style.color='#000000'" />
+			<div id="input_img_div" class="div_cursor">
+				<img class="div_cursor" src="{% static 'img/sub_manage/u538.png' %}" >
+			</div>
+		</div>
+		<div id="split_list_img"><img src="{% static 'img/sub_manage/u553.png' %}" /></div>
+		<div id="sub_list">
+			<table id="sub_tab_list" cellpadding="0" cellspacing="0">
+				<thead id="sub_thead">
+				<tr class='tr'>
+					<td style="width: 30px;"><input id="election" type="checkbox"/></td>
+					<td style="width: 100px;">设备名称</td>
+					<td style="width: 120px">设备类型</td>
+					<td style="width: 80px;">设备位置</td>
+					<td style="width: 110px;">设备型号</td>
+					<td style="width: 140px;">设备描述</td>
+					<td style="width: 200px;">最近上线时间</td>
+					<td class="enable_td">启用/禁用</td>
+					<td style="width: 80px;">设备状态</td>
+					<td style="width: 110px;">操作</td>
+				</tr>
+				</thead>
+
+				{% for subdevice in subdevices %}
+					<tr class='tr'>
+						<td><input type='checkbox' class='election_list'/></td>
+						<td>{{ subdevice.subdevice_name }}</td>
+						<td>{{ subdevice.subdevice_type }}</td>
+						<td>{{ subdevice.subdevice_position }}</td>
+						<td>{{ subdevice.subdevice_model }}</td>
+						<td>{{ subdevice.subdevice_remark }}</td>
+						<td>{{ subdevice.subdevice_online_time }}</td>
+						{% if subdevice.subdevice_enable == 1 %}
+							<td style='position: relative;'>
+							<div class='button_div'>
+								<div class='enable_content'>
+									<span class='enable_span'>启用</span>
+								</div>
+								<div style="background:rgba(0, 159, 60, 1)" class='enable_button' onclick='clickEnable(className,{{ forloop.counter }}-1, {{ subdevice.id }} )'>
+									<div style='display:block' class='button_on'>ON</div>
+									<div style='display:None' class='button_off'>OFF</div>
+									<div style="right: 0" class='button_circular'></div>
+								</div>
+							</div>
+							</td>
+							{% if subdevice.subdevice_status == 1 %}
+								<td><p style="color: #00CC00" class='isOnLine'>在线</p></td>
+							{% else %}
+								<td><p style="color: #000000" class='isOnLine'>离线</p></td>
+							{% endif %}
+
+						{% else %}
+							<td style='position: relative;'>
+							<div class='button_div'>
+								<div class='enable_content'>
+									<span class='enable_span'>禁用</span>
+								</div>
+								<div style="background:rgba(188, 188, 188, 1)" class='enable_button' onclick='clickEnable(className,{{ forloop.counter }}-1, {{ subdevice.id }} )'>
+									<div style='display:None' class='button_on'>ON</div>
+									<div style='display:block' class='button_off'>OFF</div>
+									<div style="left: 1px" class='button_circular'></div>
+								</div>
+							</div>
+							</td>
+							<td><p style="color: #000000" class='isOnLine'>离线</p></td>
+
+						{% endif %}
+						<td style='position: relative;'>
+							<div id='manage' class='div_cursor' onclick='window.location.href="{% url "shebei:devicemanage" subdevice.id  %}"'>管理</div>
+							<div id='delete' class='div_cursor' onclick='delete_list("{{ subdevice.id }}")'>删除</div>
+						</td>
+					</tr>
+				{% empty %}
+					<tr>
+						<td colspan="10">No matching records found</td>
+					</tr>
+				{% endfor %}
+			</table>
+		</div>
+		<div id="batch_div">
+			<div class="batch">批量删除</div>
+			<div class="batch">批量禁用</div>
+			<div class="batch">批量启用</div>	
+		</div>
+		<!--<div id="list_count">
+			共有&nbsp;<span id="list_count_span">0</span>&nbsp;条<br />
+			<span id="page"></span>
+		</div>
+		<div id="paging_div">
+			<a id="home_page" class="paging_a">首页</a>
+			<a id="pre_page" class="paging_a">上一页</a>
+			<a id="next_page" class="paging_a">下一页</a>
+			<a id="tail_page" class="paging_a">尾页</a>
+			<div id="paging_div_two"><span>跳到第<input id="page_skip" type="text" />页</span><div id="submit_paging" class="div_cursor">go</div></div>
+		</div>-->
+		
+		<div id="podiv">
+			<div id="pop_device_add" class="div_shadow div_backgr">
+				<div class="pop_top">
+					<div class="pop_img"><img src="{% static 'img/gateway/gateway_pop/u1014.png' %}" height="18px" width="18px" /></div>
+					<div class="pop_tittle text_left"><span class="tittle_label">添加子设备</span></div>
+					<div class="pop_close div_cursor" onclick="pop_close('pop_device_add')"><img src="{% static 'img/gateway/gateway_pop/u423.png' %}" /></div>
+				</div>
+				
+				<div class="pop_line"><img src="{% static 'img/gateway/u130.png' %}" width="460px" /></div>
+				<form method="post">
+					{% csrf_token %}
+				<div class="pop_message">
+					<div class="pop_content">
+						<div class="pop_label">
+							<span><sup class="font_red">*</sup>设备名称：</span>
+						</div>
+						<div class="pop_list_input">
+							<input id="device_name" name="device_name" type="text" placeholder="请输入设备名称(a-z,A-Z,0-9)" />
+						</div>
+					</div>
+					<div class="pop_content">
+						<div class="pop_label">
+							<span><sup class="font_red">*</sup>所属类别：</span>
+						</div>
+						<div class="pop_list_input">
+							<select id="device_type" name="device_type">
+								<option>生产设备类</option>
+								<option>压铸设备类</option>
+								<option>环境设备类</option>
+								<option>机床设备类</option>
+								<option>仪表设备类</option>
+								<option>注塑成型设备类</option>
+								<option>包装设备类</option>
+								<option>工控电脑</option>
+								<option>传感器设备类</option>
+								<option>SMT设备类</option>
+								<option>冲压设备类</option>
+								<option>表面处理设备类</option>
+								<option>运输设备类</option>
+								<option>其他</option>
+							</select>
+						</div>
+					</div>
+					<div class="pop_content">
+						<div class="pop_label">
+							<span><sup class="font_red">*</sup>设备位置：</span>
+						</div>
+						<div class="pop_list_input">
+							<input name="device_position" id="device_position" type="text" />
+						</div>
+					</div>
+					<div class="pop_content">
+						<div class="pop_label">
+							<span><sup class="font_red">*</sup>设备型号：</span>
+						</div>
+						<div class="pop_list_input">
+							<input id="device_model" name="device_model" type="text" />
+						</div>
+					</div>
+					<div class="pop_content">
+						<div class="pop_label">
+							<span>描述：</span>
+						</div>
+						<div class="pop_list_input">
+							<input id="device_describe" name="device_describe" type="text" />
+						</div>
+					</div>
+					<button type=submit class="pop_serveice_submit div_cursor">確定</button>
+					<button type=button class="pop_serveice_close div_cursor" onclick="pop_close('pop_device_add')">取消</button>
+
+					<!--<div id="list_submit_div" class="new_submit div_cursor text_center" onclick="pop_save('pop_device_add')">-->
+						<!--<p>確定<p>-->
+					<!--</div>-->
+					<!--<div id="list_close_div" class="new_close div_cursor text_center" onclick="pop_close('pop_device_add')">-->
+						<!--<p>取消</p>-->
+					<!--</div>-->
+				</div>
+
+				</form>
+
+			</div>
+			
+			<div id="pop_delete" class="div_backgr">
+				<div class="pop_submit_img"><img src="{% static 'img/gateway/gateway_pop/u387.png' %}" /></div>
+				<div class="pop_tips"><span class="font_orange">温馨提示</span></div>
+				<div class="pop_line text_left"><img src="{% static 'img/gateway/gateway_pop/u363.png' %}" width="300px" /></div>
+				
+				<div id="delete_pop_sub" class="backgr_color">
+					<span>确定删除选择的设备吗？</span>
+				</div>
+
+				<div id="list_delete_submit" class="new2_submit div_cursor text_center"  onclick="pop_delete('subdevice')"><p>確定<p></div>
+				<div id="list_delete_close" class="new2_close div_cursor text_center" onclick="pop_close('pop_delete')"><p>取消</p></div>
+			</div>
+		</div>
+		
+		<div id="podiv_tips">
+			<div id="mana" class="bu_tips_div">
+				<div id="bu_tips_img"><img src="{% static 'img/sub_manage/u636.png' %}"/></div>
+				<div id="bu_tips_content"><p>操作成功 ！</p></div>
+			</div> 
+			<div id="dele" class="bu_tips_div">
+				<div id="bu_tips_img"><img src="{% static 'img/sub_manage/u636.png' %}"/></div>
+				<div id="bu_tips_content"><p>删除成功 ！</p></div>
+			</div>
+		</div>
+			
+		<script type="text/javascript" src="{% static 'js/page.js' %}" ></script>
+		<script type="text/javascript" src="{% static 'js/pop.js' %}" ></script>
+		<script type="text/javascript" src="{% static 'js/sub_manage/Sub_Device_List.js' %}" ></script>
+		<script type="text/javascript" src="{% static 'js/jquery.js' %}" ></script>
+	</body>
+</html>

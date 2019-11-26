@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="{% static 'css/gateway_manage/System_Information.css' %}" />
+	</head>
+	<body>
+		<fieldset id="system_01" class="system">
+	    	<legend><p>系統</p></legend>
+	    	<div id="left_div">
+		    	<div class="left_info"><div class="info_left_label">主机名：</div><div class="info_right_label">{{ data.sys_hostname }}</div></div>
+		    	<div class="left_info"><div class="info_left_label">产品名称：</div><div class="info_right_label">{{ data.sys_product_name }}</div></div>
+		    	<div class="left_info"><div class="info_left_label">操作系统：</div><div class="info_right_label">{{ data.sys_os }}</div></div>
+		    	<div class="left_info"><div class="info_left_label">网络模块：</div><div class="info_right_label">{{ data.sys_net_model }}</div></div>
+	    	</div>
+	    	<div id="right_div">
+	    		<div class="right_info"><div class="info_left_label">运行时长：</div><div class="info_right_label"><span>{{ data.sys_running_time }}</span>&nbsp;</div></div>
+				<div class="right_info"><div class="info_left_label">CPU使用率：</div><div class="info_right_label"><span>{{ data.sys_rateof_cpu }}</span></div></div>
+	    		<div class="right_info"><div class="info_left_label">本地时间：</div><div class="info_right_label"><span>{{ data.sys_local_time|date:"Y-m-d H:i:s" }}</span></div></div>
+	    		<div class="right_info"><div class="info_left_label">出厂日期：</div><div class="info_right_label"><span>{{ data.sys_out_time|date:"Y-m-d H:i:s" }}</span></div></div>
+	    	</div>
+		</fieldset>
+		<fieldset class="system system_0203">
+	    	<legend><p>內存</p></legend>
+	    	<div id="left_div">
+		    	<div class="left_info"><div class="info_left_label">内存大小：</div><div class="info_right_label"><span>{{ data.sys_memory_size }}</span></div></div>
+		    	<div class="left_info"><div class="info_left_label">硬盘总量：</div><div class="info_right_label"><span>{{ data.sys_harddisk_size }}</span></div></div>
+		   		<div class="left_info"><div class="info_left_label">USB接口：</div><div class="info_right_label"><span>{{ data.sys_usb_num }}</span>&nbsp;&nbsp;&nbsp;&nbsp;个</div></div>
+		    </div>
+	    	<div id="right_div">
+	    		<div class="right_info"><div class="info_left_label">内存剩余：</div><div class="info_right_label"><span>{{ data.sys_memory }}</span></div></div>
+	    		<div class="right_info"><div class="info_left_label">硬盘剩余：</div><div class="info_right_label"><span>{{ data.sys_harddisk }}</span></div></div>
+	    		<div class="right_info"><div class="info_left_label">RS232接口：</div><div class="info_right_label"><span>{{ data.sys_rs232_num }}</span>&nbsp;&nbsp;&nbsp;&nbsp;个</div></div>
+	    	</div>
+		</fieldset>
+		<fieldset class="system system_0203">
+	    	<legend><p>网络</p></legend>
+	    	<div id="left_div">
+		    	<div class="left_info"><div class="info_left_label">IP地址：</div><div class="info_right_label">{{ data.sys_ip }}</div></div>
+		    	<div class="left_info"><div class="info_left_label">子网掩码：</div><div class="info_right_label">{{ data.sys_mask }}</div></div>
+		    	<div class="left_info"><div class="info_left_label">MAC地址：</div><div class="info_right_label">{{ data.sys_mac }}</div></div>
+	    	</div>
+	    	<div id="right_div">
+	    		<div class="right_info"><div class="info_left_label">连接状态：</div><div class="info_right_label">{{ data.get_sys_net_status_display }}</div></div>
+	    		<div class="right_info"><div class="info_left_label">默认网关：</div><div class="info_right_label">{{ data.sys_gateway }}</div></div>
+	    	</div>
+		</fieldset>
+	</body>
+</html>

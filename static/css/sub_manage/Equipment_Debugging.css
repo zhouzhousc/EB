@@ -1,0 +1,198 @@
+html{
+	font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #333333;
+    line-height: normal;
+    overflow: hidden;
+}
+span{
+	text-align: center;
+}
+table #acq_end_tr td span{
+	cursor: pointer;
+	font-family: 'Arial Negreta', 'Arial';
+    font-weight: 700;
+    font-style: normal;
+    color: #999999;
+	border-bottom: 1px solid rgba(228, 228, 228, 1);;
+}
+thead tr:nth-of-type(odd){
+	background-color: rgba(201, 201, 201, 1);
+}
+table tr:hover{
+	background-color: rgba(242, 242, 242, 1);
+}
+thead tr:hover{
+	background-color: rgba(201, 201, 201, 1);
+}
+#equ_top{
+	position: relative;
+	width: 94%;
+	height: 15em;
+	top: 20px;
+	left: 30px;
+	/*border: 1px solid aqua;*/
+}
+#equ_top span{
+	/*border: 1px solid aqua;*/
+}
+#equ_bottom{
+	position: relative;
+	top: 35px;
+	left: 30px;
+	width: 800px;
+	height: 350px;
+	/*border: 1px solid aqua;*/
+}
+#feature_extraction{
+	position: absolute;
+	width: 52px;
+    height: 19px;
+    right: 0px;
+    cursor: pointer;
+	text-align: center;
+    border-radius: 17px;
+    background-color: rgba(215, 215, 215, 1);
+}
+#feature_extraction span{
+	position: relative;
+	color: rgb(102, 102, 102);
+    font-size: 14px;
+	width: 60px;
+	/*border: 1px solid aqua;*/
+}
+#equ_table_div{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 85%;
+	/*border: 1px solid aqua;*/
+}
+#equ_right_table_div{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 75%;
+	/*height: 350px;*/
+}
+#equ_generate{
+	position: absolute;
+    top: 85%;
+    right: 0px;
+	width: 10%;
+    height: 1.8em;
+    line-height: 200%;
+    text-align: center;
+	background-color: rgba(204, 204, 204, 1);
+}
+#equ_count{
+	position: relative;
+	/*top: 2.5em;*/
+	left: 10%;
+}
+#equ_count_span{
+	position: relative;
+	/*top: 2px;*/
+	/*left: 0px;*/
+}
+#equ_paging_div{
+	position: relative;
+	top: -1.5em;
+	left: 21%;
+	width: 28%;
+	/*border: 1px solid aqua;*/
+}
+#paging_div_two{
+	position: absolute;
+	/*border: 1px solid aqua;*/
+	top: -2px;
+	left: 150px;
+	width: 260px;
+	height: 30px;
+	line-height: 24px;
+}
+#page_skip{
+	left: 40px;
+	width: 25px;
+}
+#submit_paging{
+	position: absolute;
+	top: 2px;
+	left: 100px;
+	color: white;
+	width: 28px;
+	height: 22px;
+	line-height: 20px;
+	border-radius: 3px;
+	text-align: center;
+	background-color: rgba(36, 109, 255, 1);
+}
+#equ_table_left{
+	position: relative;
+	top: 2.8em;
+	left: 30px;
+	width: 46%;
+	height: 26em;
+	/*border: 1px solid aqua;*/
+}
+#equ_table_right{
+	position: absolute;
+	/*top: 2.8em;*/
+	top: 16.7em;
+	right: 30px;
+	width: 35%;
+	height: 26em;
+	/*border: 1px solid aqua;*/
+}
+.paging_a{
+	position: relative;
+	display: inline-block;
+}
+.equ_information_div{
+	position: relative;
+	float: left;
+	top: 20%;
+	width: 25%;
+	height: 50%;
+	/*margin-right: 0.1%;*/
+	/*border: 1px solid aqua;*/
+}
+.equ_information{
+	position: relative;
+	display: inline-block;
+	float: left;
+	height: 31%;
+	width: 100%;
+	/*border: 1px solid cadetblue;*/
+}
+.infomation_left{
+	position: absolute;
+	left: 0px;
+	width: 39%;
+	height: 100%;
+	line-height: 250%;
+	/*border: 1px solid seagreen;*/
+}
+.infomation_left span{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	/*border: 1px solid seagreen;*/
+}
+.infomation_right{
+	position: absolute;
+	right: 0px;
+	width: 59.9%;
+	height: 100%;
+	line-height: 250%;
+	/*border: 1px solid #269ABC;*/
+}
+.infomation_right span{
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	/*border: 1px solid seagreen;*/	
+}

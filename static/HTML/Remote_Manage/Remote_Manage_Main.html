@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../../css/page.css" />
+		<link rel="stylesheet" href="../../css/Small_Main.css" />
+		<link rel="stylesheet" href="../../css/iframe.css" />
+		<link rel="stylesheet" href="../../css/pop.css" />
+		<link rel="stylesheet" href="../../css/font.css" />
+		<link rel="stylesheet" href="../../css/img.css" />
+		<link rel="stylesheet" href="../../css/split_img.css" />
+		<link rel="stylesheet" href="../../css/select_input.css" />
+		<!--<link rel="stylesheet" href="../../css/overflow.css" />-->
+	</head>
+	<body>
+		
+		<div class="gateway_top">
+			<div class="page_tittle">
+				<span>远程管理及维护 &nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;<span id="log_sub_title">配置下发</span></span>
+			</div>
+		</div>
+		<div id="remot_smallMenu" class="smallMenu">
+			<a style="text-decoration: none;" onclick="clickDiv('menu',0,2)" onmouseover="over('menu',0);overM('menu',0)" onmouseout="out('menu',0)">
+				<div class="menu">
+					<div class="smallMenu_div_word">配置下发&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</div>
+				</div>
+			</a>
+			<a style="text-decoration: none;" onclick="clickDiv('menu',1,2)" onmouseover="over('menu',1);overM('menu',1)" onmouseout="out('menu',1)">
+				<div class="menu">
+					<div class="smallMenu_div_word">远程管理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</div>
+				</div>
+			</a>
+		</div>
+		<iframe id="remote_iframe" class="css_iframe" name="remote_iframe" src="Configuration_distribution.html"></iframe>
+		
+		
+		<div id="podiv">
+			
+			<form action="" method="post">
+				<div id="config_instructions">
+					<div class="pop_top_remote">
+						<div class="pop_tittle_remote text_left"><span class="tittle_label_remote">使用说明</span></div>
+						<div class="pop_close_remote div_cursor" onclick="pop_close('config_instructions')"><img src="../../img/Remote_Manage/u2431.png" /></div>
+					</div>
+					
+					<div class="pop_line_remote"><img src="../../img/Remote_Manage/u2427.png" width="330px" height="2px" /></div>
+					
+					<div class="instructions_message">
+						<span>
+							{<br/><br/>
+							  &nbsp;&nbsp;"id":"信息唯一标识ID"，<br/><br/>
+							  &nbsp;&nbsp;"msg_ver": "设备影子版本信息",<br/><br/>
+							  &nbsp;&nbsp;"params": {<br/><br/>
+							  &nbsp;&nbsp;"设备名称”："LiChuang",<br/><br/>
+							  &nbsp;&nbsp;"设备类型": "力创三相电表",<br/><br/>
+							  &nbsp;&nbsp;"设备位置": "E6-2F",<br/><br/>
+							  &nbsp;&nbsp;"设备型号": "JUYOUWETY",<br/><br/>
+							  &nbsp;&nbsp;"设备描述": "力创智能电表",<br/><br/>
+							  &nbsp;&nbsp;}<br/><br/>
+							}<br/><br/>
+						</span>
+					</div>
+				</div>
+			</form>
+			
+		</div>
+		
+		<div id="podiv_tips">
+			<div id="copy_success" class="config_tips_div">
+				<div id="config_tips_img"><img width="18px" src="../../img/sub_manage/u636.png"/></div>
+				<div id="config_tips_content"><p>复制成功 ！</p></div>
+			</div> 
+			<div id="copy_error" class="config_tips_div">
+				<div id="config_tips_img"><img src="../../img/sub_manage/u636.png"/></div>
+				<div id="config_tips_content"><p>复制成功 ！</p></div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="../../js/jquery1.3.2.js" ></script>
+		<script type="text/javascript" src="../../js/page.js"></script>
+		<script type="text/javascript" src="../../js/pop.js" ></script>
+		<script type="text/javascript" src="../../js/Remote_Manage/Remote_Manage_Main.js" ></script>
+	</body>
+</html>

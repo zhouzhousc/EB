@@ -1,0 +1,241 @@
+html,body{
+	font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #333333;
+    /*overflow-x: hidden;
+    overflow-y: auto;*/
+}
+span{
+    font-family: '思源黑体 CN Regular', '思源黑体 CN';
+    font-weight: 400;
+    font-style: normal;
+    /*border: 1px solid aqua;*/
+}
+legend{
+	position: relative;
+	margin-left: 15px;
+	font-size: 14px;
+	width: 80px;
+}
+legend p{
+	text-align: center;
+}
+#system_01{
+    height: 258px;
+}
+#acq_select{
+    top: 6em;
+	left: 1.5%;
+}
+#acq_div_combination{
+    top: 4em;
+	left: 27%;
+}
+#acq_bottom_div{
+	position: relative;
+	top: 4.5em;
+	left: 1.5%;
+	width: 96.6%;
+	/*border: 1px solid aqua;*/
+}
+#acq_bottom_tips{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+	width: 611px;
+    height: 143px;
+	background-color: rgba(209, 222, 252, 1);
+}
+#acq_tips_css{
+	position: absolute;
+	font-size: 14px;
+	top: 10px;
+	left: 20px;
+}
+#acq_submit{
+	position: relative;
+	width: 7.5%;
+	height: 2em;
+	top: 1.9em;
+	left: 52%;
+	line-height: 200%;
+	border-radius: 5px;
+}
+#tips_select{
+	position: relative;
+	display: none;
+	opacity: 0;
+	top: 90%;
+	left: 33%;
+}
+#rs232{
+	display: block;
+}
+#intel{
+	display: none;
+}
+#other{
+	display: none;
+}
+.box{
+	display: none;
+}
+.acq_application{
+	left: 25%;
+}
+.acq_details{
+	right: 25%;
+}
+.acq_details img{
+	position: absolute;
+	top: 40%;
+	margin-left: 20%;
+}
+.select_div{
+	position: relative;
+    width: 15%;
+    height: 25px;
+    line-height: 25px;
+    /*border: 1px solid aqua;*/
+}
+.select_div span{
+	position: absolute;
+}
+.myselect{
+	color: rgb(153, 153, 153);
+}
+.position{
+	position: absolute;
+	font-size: 12px;
+	top: 34%;
+}
+.system{
+	position: relative;
+	left: 40px;
+    top: -14px;
+    width: 739px;
+    border-width: 1px;
+    border-color: rgba(36, 109, 255, 1);
+    border-radius: 19px;
+}
+.acq_combination_1{
+	display: inline-block;
+	/*margin: -3px;*/
+	float: left;
+	/*display: none;*/
+	/*margin-right: -50px;*/
+	/*border: 1px solid aqua;*/
+}
+.acq_combination_2{
+	/*display: inline-block;*/
+	display: none;
+	float: left;
+	/*border: 1px solid aqua;*/
+}
+.acq_combination_3{
+	/*display: inline-block;*/
+	display: none;
+	float: left;
+	/*border: 1px solid aqua;*/
+}
+.acq_div_css{
+	/*border: 1px solid aqua;*/	
+	width: 100px;
+	height: 30px;
+	line-height: 5px;
+	text-align: center;
+	color: #246DFF;
+}
+.acq_div_css:hover{
+	color: #333333;
+	background-color: rgba(209, 222, 252, 1);
+}
+.acq_div_css p{
+	width: 100%;
+}
+
+.select_box {
+	position: absolute;
+	text-align: center;
+	left: 75px;
+	width:138px;
+	/*margin:10px;*/
+	font-size:12px;
+}
+.submit_box {
+	width:138px;
+	position:absolute; 
+	margin:10px;
+	padding:0; 
+	font-size:12px; 
+	text-align:center;
+}
+ul,li {
+	list-style-type:none; 
+	padding:0; 
+	margin:0;
+}
+.select_box input {
+	cursor:pointer; 
+	display:block; 
+	line-height:23px; 
+	text-align: center;
+	/*width:100%;*/ 
+	width: 104px;
+	height:21px; 
+	overflow:hidden;
+	border: 1px solid rgba(107, 107, 107, 1);
+    border-radius: 4px;
+    box-shadow: none;
+	padding-right:20px; 
+	padding-left:10px; 
+	background:url(../../img/sub_manage/u1322.png) no-repeat 160px center;
+}
+.select_box ul {
+	position:absolute; 
+	/*text-align: center;*/
+	left:0; 
+	top:100%; 
+	width:138px; 
+	border: 1px solid rgba(107, 107, 107, 1); 
+	background:#fff; 
+	overflow: hidden;
+	display:none; 
+	border-radius: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: rgba(255, 255, 255, 1);
+	z-index:99999;
+}
+.select_box ul li {
+	display:block;
+	text-align: center;
+	height:30px;
+	overflow:hidden;
+	line-height:30px;
+	padding-left:5px;
+	text-align: center;
+	width:80%;
+	cursor:pointer;
+}
+.select_box li{
+	position: relative;
+	left: 10px;
+}
+.hover {
+	color: white;
+	background: rgba(36, 110, 200, 1)
+}
+
+.select_img{
+	position: absolute;
+	top: -2px;
+	right: 10%;
+	z-index: -10;
+	-moz-transform:rotate(-60deg);
+	-webkit-transform:rotate(-60deg);
+	filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+	cursor: pointer;
+}

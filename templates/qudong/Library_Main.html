@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="{% static 'css/iframe.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/Small_Main.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/page.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/pop.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/font.css' %}" />
+		<!--<link rel="stylesheet" href="{% static 'css/overflow.css' %}" />-->
+		
+	</head>
+	<body>
+		<div class="gateway_top">
+			<div class="page_tittle">
+				<span><span>设备驱动库</span> &nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;<span id="log_sub_title">驱动库</span></span>
+			</div>
+		</div>
+		<div id="library_smallMenu" class="smallMenu">
+			<a style="text-decoration: none;" onclick="clickDiv('menu',0,4)" onmouseover="over('menu',0);overM('menu',0)" onmouseout="out('menu',0)">
+				<div class="menu">
+					<div class="smallMenu_div_word">驱动库&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</div>
+				</div>
+			</a>
+			<a style="text-decoration: none;" onclick="clickDiv('menu',1,4)" onmouseover="over('menu',1);overM('menu',1)" onmouseout="out('menu',1)">
+				<div class="menu">
+					<div class="smallMenu_div_word">模板库&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</div>
+				</div>
+			</a>
+		</div>
+
+
+		<iframe id="library_iframe" class="css_iframe" name="library_iframe" src="{% url 'qudong:qudongdrive' %}"></iframe>
+		
+		<div id="podiv">
+			
+			<form name="" action="" method="post">
+				<div id="driver_add_div" class="div_radius div_shadow">
+					<div class="pop_top">
+						<div class="pop_img"><img src="{% static 'img/gateway/gateway_pop/u44.png' %}" /></div>
+						<div class="pop_tittle text_left"><span class="tittle_label">新增驱动库</span></div>
+						<div class="pop_close div_cursor" onclick="pop_close('driver_add_div')"><img src="{% static 'img/gateway/gateway_pop/u2040.png' %}" /></div>
+					</div>
+				
+					<div class="pop_line"><img src="{% static 'img/gateway/u130.png' %}" width="410px" /></div>
+				
+					<div class="pop_message">
+						<div class="pop_content">
+							<div class="pop_label2">
+								<span><sup class="font_red">*</sup>驱动库名称：</span>
+							</div>
+							<div class="driver_input_div">
+								<input id="driver_input_name" type="text" />
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label2">
+								<span><sup class="font_red">*</sup>驱动库文件：</span>
+							</div>
+							<div class="driver_input_div">
+								<input class="gateway_input" type="file" />
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label2">
+								<span>驱动库描述：</span>
+							</div>
+							<div class="driver_input_div">
+								<textarea id="driver_discribe"></textarea>
+							</div>
+						</div>
+						<div id="driver_submit_div" class="new_submit div_cursor text_center"  onclick="pop_save('driver_add_div')"><p>保存<p></div>
+						<div id="driver_close_div" class="new_close div_cursor text_center" onclick="pop_close('driver_add_div')"><p>取消</p></div>
+					</div>
+				</div>
+			</form>
+			
+		</div>
+		
+		
+		<script type="text/javascript" src="{% static 'js/jquery.js' %}" ></script>		
+		<script type="text/javascript" src="{% static 'js/page.js' %}" ></script>
+		<script type="text/javascript" src="{% static 'js/pop.js' %}" ></script>
+		<script type="text/javascript" src="{% static 'js/dev_dri_library/Library_Main.js' %}" ></script>
+	</body>
+</html>

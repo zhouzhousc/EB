@@ -1,0 +1,345 @@
+table{
+	width: 100%;
+	/*min-width: 900px;*/
+	height: 100%;
+	text-align: center;
+	border-bottom: 1px solid rgba(188, 188, 188, 1);
+}
+#sub_tab_list td{
+	height: 37px;
+	font-size: 12px;
+}
+td{
+	position: relative;
+}
+input[type=checkbox]{
+	width: 1em;
+	height: 1em;
+}
+
+#gateway_table{
+	border-collapse : collapse;
+	border-color: rgba(201, 201, 201, 1);
+}
+#gateway_table td{
+	border: 1px solid rgba(201, 201, 201, 1);
+	border-width:1px 2px 2px 1px;
+	height: 2.8em;
+	padding-left: 2%;
+}
+#gateway_table tr:nth-child(odd){
+	background-color: rgba(242, 242, 242, 1);
+}
+#gateway_table tr:hover{
+	background: rgba(228, 228, 228, 1);
+}
+
+
+#sub_tab_list td{
+	height: 3em;
+	font-size: 12px;
+	text-align: center;
+}
+
+#sub_tab_list tr:nth-child(2n){
+	background: rgba(228, 228, 228, 1);
+}
+#sub_tab_list tr:nth-child(10n+1) td{
+	/*border-bottom: 1px solid rgba(188, 188, 188, 1);*/
+	border-bottom: 0px solid rgba(188, 188, 188, 1);
+}
+#sub_thead tr:nth-of-type(odd){
+	background-color: rgba(201, 201, 201, 1);
+	/*background-color: rgba(250, 250, 250, 1);*/
+}
+#sub_tab_list tr:hover{
+	background-color: rgba(242, 242, 242, 1);
+}
+#sub_thead tr:hover{
+	background-color: rgba(201, 201, 201, 1);
+}
+
+
+#data_table{
+	font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #333333;
+    text-align: center;
+	/*width: 850px;*/
+}
+#data_table td{
+	height: 2.8em;
+	text-align: center;
+}
+#data_table tr:nth-child(2n+1){
+	background-color: rgba(242, 242, 242, 1);
+}
+#data_table #acq_end_tr td span{
+	cursor: pointer;
+	font-family: 'Arial Negreta', 'Arial';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+    color: #999999;
+	border-bottom: 1px solid rgba(228, 228, 228, 1);;
+	/*border-bottom:  solid rgba(228, 228, 228, 1);;*/
+}
+#data_thead tr:nth-of-type(odd){
+	background-color: rgba(228, 228, 228, 1);
+}
+
+
+
+
+#log_table tr:nth-child(2n){
+	background: rgba(242, 242, 242, 1);
+}
+#log_thead tr:nth-of-type(odd){
+	background-color: rgba(228, 228, 228, 1);
+}
+#log_table tr:hover{
+	background-color: rgba(242, 242, 242, 1);
+}
+#log_thead tr:hover{
+	background-color: rgba(201, 201, 201, 1);
+}
+
+
+
+#event_table{
+	width: 779px;
+}
+#event_thead td{
+	height: 27px;
+	line-height: 27px;
+}
+#event_table td{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#event_table tr:nth-child(2n){
+	background: rgba(242, 242, 242, 1);
+}
+#event_thead tr:nth-of-type(odd){
+	background-color: rgba(228, 228, 228, 1);
+}
+#event_table tr:hover{
+	background-color: rgba(242, 242, 242, 1);
+}
+#event_thead tr:hover{
+	background-color: rgba(228, 228, 228, 1);
+}
+
+
+
+
+#notification_table tr:nth-child(2n){
+	background: rgba(242, 242, 242, 1);
+}
+#notification_table tr:nth-child(10n+1) td{
+	border-bottom: 1px solid rgba(188, 188, 188, 1);
+	/*border-bottom:  solid rgba(188, 188, 188, 1);*/
+}
+#notification_thead tr:nth-of-type(odd){
+	background-color: rgba(228, 228, 228, 1);
+}
+
+
+
+#driver_table td{
+	height: 45px;
+}
+#driver_table tr{
+    font-size: 14px;
+}
+#driver_table tr:nth-child(2n){
+	background: rgba(242, 242, 242, 1);
+}
+#driver_thead tr:nth-of-type(odd){
+    font-size: 13px;
+	background-color: rgba(228, 228, 228, 1);
+}
+
+
+
+
+
+
+#config_table{
+	font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+	width: 780px;
+}
+#config_table td{
+	position: relative;
+	height: 45px;
+	
+}
+#config_table td img{
+	position: absolute;
+	right: 30px;
+}
+#config_table tr:nth-child(2n){
+	background: rgba(242, 242, 242, 1);
+}
+#config_thead tr:nth-of-type(odd){
+    font-size: 13px;
+	background-color: rgba(228, 228, 228, 1);
+}
+#remote_table{
+	font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+	width: 780px;
+}
+#remote_table td{
+	position: relative;
+	height: 45px;
+	
+}
+#remote_table td img{
+	position: absolute;
+	right: 30px;
+}
+#remote_table tr:nth-child(2n){
+	background: rgba(242, 242, 242, 1);
+}
+#remote_thead tr:nth-of-type(odd){
+    font-size: 13px;
+	background-color: rgba(228, 228, 228, 1);
+}
+
+
+#pair_table td{
+	position: relative;
+	height: 35px;
+    font-size: 12px;
+}
+#pair_thead td{
+    font-size: 13px;
+}
+
+#pair_table td{
+	height: 3em;
+    font-size: 12px;
+}
+#pair_table td img{
+	position: absolute;
+	right: 30px;
+}
+#pair_table tr:nth-child(2n){
+	background: rgba(228, 228, 228, 1);
+}
+#pair_thead tr:nth-of-type(odd){
+	background-color: rgba(201, 201, 201, 1);
+}
+#pair_table tr:hover{
+	background-color: rgba(242, 242, 242, 1);
+}
+#pair_thead tr:hover{
+	background-color: rgba(201, 201, 201, 1);
+}
+#feature_table{
+	width: 814px;
+}
+#feature_table td{
+	position: relative;
+	height: 32px;
+    font-size: 13px;
+}
+#feature_thead td{
+    /*font-size: 13px;*/
+}
+#feature_table td img{
+	position: absolute;
+	right: 30px;
+}
+#feature_table tr:nth-child(2n){
+	background: rgba(228, 228, 228, 1);
+}
+#feature_thead tr:nth-of-type(odd){
+	background-color: rgba(201, 201, 201, 1);
+}
+#feature_table tr:hover{
+	background-color: rgba(242, 242, 242, 1);
+}
+#feature_thead tr:hover{
+	background-color: rgba(201, 201, 201, 1);
+}
+
+
+
+#acq_table{
+	border: 1px solid #d7d7d7;
+}
+#acq_table td{
+	height: 3.6em;
+    font-size: 14px;
+}
+#acq_table tr:nth-child(3n){
+	background-color: #f2f2f2;
+}
+
+#acq_thead tr:nth-of-type(odd){
+	background-color: #d7d7d7;
+}
+#acq_thead tr td{
+	height: 3.5em;
+    font-size: 13px;
+}
+
+#acq_table_table{
+	padding-top: 1%;
+	padding-bottom: 1%;
+	border-bottom: 0;	
+}
+#acq_table_table td{
+	height: 2.5em;
+    font-size: 13px;
+}
+#acq_table_table tr:nth-child(3n){
+	background-color: white;
+}
+
+#equ_table{
+    font-family: '思源黑体 Regular', '思源黑体';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+	/*border: 1px solid aqua;*/
+}
+#equ_table td{
+	height: 2em;
+	text-align: center;
+}
+
+#equ_table tr:nth-child(2n){
+	background-color: rgba(242, 242, 242, 1);
+}
+
+#equ_right_table_div{
+    font-family: '思源黑体 Regular', '思源黑体';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+}
+#equ_right_table td {
+	height: 2em;
+	text-align: center;
+}
+
+#equ_right_table tr:nth-child(odd){
+	background-color: rgba(242, 242, 242, 1);
+}
+#equ_right_thead tr:nth-of-type(odd) {
+	background-color: rgba(201, 201, 201, 1);
+}

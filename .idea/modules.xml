@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://F:/CMDB-master/.idea/CMDB-master.iml" filepath="F:/CMDB-master/.idea/CMDB-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../edgebox_app/.idea/edgebox_app.iml" filepath="$PROJECT_DIR$/../edgebox_app/.idea/edgebox_app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/edgebox_web.iml" filepath="$PROJECT_DIR$/.idea/edgebox_web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../imooc_celery/.idea/imooc_celery.iml" filepath="$PROJECT_DIR$/../imooc_celery/.idea/imooc_celery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../proj/.idea/proj.iml" filepath="$PROJECT_DIR$/../proj/.idea/proj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../tutorial/.idea/tutorial.iml" filepath="$PROJECT_DIR$/../tutorial/.idea/tutorial.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,80 @@
+html{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #333333;
+    line-height: normal;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+legend{
+	position: relative;
+	margin-left: 15px;
+	font-size: 14px;
+	width: 60px;
+}
+div{
+	font-size: 12px;
+}
+p{
+	text-align: center;
+}
+#system_01{
+    height: 174px;
+}
+#left_div{
+	position: absolute;
+	/*border: 1px solid aqua;*/
+	top: 35px;
+	left: 40px;
+	width: 320px;
+	height: 180px;
+}
+#right_div{
+	position: absolute;
+	/*border: 1px solid aqua;*/
+	top: 35px;
+	right: 50px;
+	width: 320px;
+	height: 180px;
+}
+.system{
+	position: relative;
+	left: 40px;
+    top: -14px;
+    width: 772px;
+    border-width: 1px;
+    border-color: rgba(36, 109, 255, 1);
+    border-radius: 5px;
+}
+
+.system_0203{
+	height: 127px;
+}
+.left_info{
+	position: relative;
+	/*border: 1px solid aqua;*/
+	height: 36px;
+	line-height: 36px;
+}
+.right_info{
+	position: relative;
+	/*border: 1px solid aqua;*/
+	height: 36px;
+	line-height: 36px;
+}
+.info_left_label{
+	position: absolute;
+	/*text-align: right;*/
+	/*border: 1px solid aqua;*/
+	width: 100px;
+	left: 20px;
+}
+.info_right_label{
+	position: absolute;
+	width: 250px;
+	left: 120px;
+}

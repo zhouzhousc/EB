@@ -1,0 +1,108 @@
+html{
+	background-color: #FFFFFF;	
+	/*overflow-y: auto;*/
+}
+#pair_add_div{
+	position: relative;
+	top: 70px;
+	left: 70px;
+	width: 78px;
+    height: 27px;
+    border-radius: 12px;
+}
+#pair_table_div{
+	position: relative;
+	top: 80px;
+	left: 60px;
+}
+
+
+#batch_div{
+	position: absolute;
+	/*border: 1px solid aqua;*/
+	top: 550px;
+	left: 60px;
+	width: 293px;
+    height: 27px;
+    margin-bottom: 20px;
+}
+#operation_div{
+	position: absolute;
+	width: 60%;
+	top: 0px;
+	left: 20%;
+}
+#manage{
+	position: absolute;
+	top: 12px;
+	left: 20px;
+	color: #246DFF;
+}
+#delete{
+	position: absolute;
+	top: 12px;
+	right: 20px;
+	color: #FF0000;
+}
+.batch{
+	position: relative;
+	display: inline-block;
+	color: #FFFFFF;
+	background-color: rgba(204, 204, 204, 1);
+	margin-right: 10px;
+	text-align: center;
+	/*border: 1px solid aqua;*/
+	width: 82px;
+	height: 26px;
+	line-height: 28px;
+}
+.button_div{
+	position: absolute;
+	top: 0px;
+	left: 20%;
+	width: 90px;
+	height: 37px;
+	/*border: 1px solid aqua;*/
+}
+.enable_content{
+	position: absolute;
+	top: 11px;
+	left: -4px;
+	width: 30px;
+	height: 20px;
+	/*border: 1px solid aqua;*/
+}
+.enable_button{
+	position: relative;
+    width: 53px;
+    height: 22px;
+    left: 26px;
+    top: 8px;
+    font-size: 13px;
+    color: #FFFFFF;
+    background-color: rgba(0, 159, 60, 1);
+    border-radius: 44px;
+    cursor: pointer;
+	/*border: 1px solid aqua;*/
+}
+.button_on{
+	position: absolute;
+	top: 4px;
+	left: 4px;
+}
+.button_off{
+	position: absolute;
+	display: none;
+	top: 4px;
+	right: 4px;
+}
+.button_circular{
+	position: absolute;
+    /*left: 1px;*/
+    right: 1px;
+    top: 2px;
+    width: 19px;
+    height: 18px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 150px;
+}

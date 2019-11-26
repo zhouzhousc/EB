@@ -1,0 +1,61 @@
+#ini_tips{
+	position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 884px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    text-align: left;
+	background-color: rgba(209, 222, 252, 1);
+}
+#ini_tips span{
+	position: absolute;
+	font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-size: 14px;
+	left: 16px;
+	color: #333333;
+}
+.submit{
+	position: relative;
+    left: 380px;
+    top: 165px;
+    width: 120px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+    color: #FFFFFF;    
+    cursor: pointer;
+    margin-bottom: 60px;
+    border-radius: 9px;
+    background-color: rgba(36, 109, 255, 1);
+}
+.submit span{
+	position: absolute;
+	width: 120px;
+    height: 38px;
+	text-align: center;
+}
+.sub_tips{
+	position: relative;
+    left: 300px;
+    top: 130px;
+    width: 290px;
+    height: 38px;
+    /*border: 1px solid aqua;*/
+    line-height: 38px;
+    font-size: 14px;
+    font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #FF0000;    
+    border-radius: 9px;
+}
+.sub_tips span{ 
+	position: absolute;
+	width: 290px;
+	line-height: 18px;
+	text-align: center;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+{% load poll_extras %}
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="{% static 'css/font.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/table.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/pop.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/Docking_Module/Feature_Extraction.css' %}" />
+	</head>
+	<body>
+		{% csrf_token %}
+		<div id="feature_template" class="font_line_height font_center font_white font_family font_14"><span>生成设备模板</span></div>
+		<div id="feature_table_div">
+			<table id="feature_table" class="font_center font_black" cellpadding="0" cellspacing="0">
+				<thead id="feature_thead">
+					<td width="50px"><input type="checkbox"  checked id="feature_election" /></td>
+					<td width="80px">NO.</td>
+					<td width="120px">property</td>
+					<td width="120px">value</td>
+					<td width="120px">max</td>
+					<td width="120px">min</td>
+					<td width="120px">average</td>
+				</thead>
+				{% for i, v in data.items %}
+					<tr class="m5_params">
+						<td>
+							<input type='checkbox' checked class='feature_election_list'/>
+						</td>
+						<td>{{ forloop.counter }}</td>
+						<td class="{{ i }}">{{ i }}</td>
+						<td class="value">{{ v }}</td>
+						<td class="max">{{ m5device_name|tolist:i|maxus:v }}</td>
+						<td class="min">{{ m5device_name|tolist:i|mixus:v }}</td>
+						<td class="avg">{{ m5device_name|tolist:i|averagenumus:v }}</td>
+
+					</tr>
+				{% endfor %}
+			</table>
+		</div>
+		
+		<div id="list_count" class="font_14 font_black">
+			共有&nbsp;<span id="list_count_span">0</span>&nbsp;条<br />
+			<span id="page"></span>
+		</div>
+		<div id="paging_div" class="font_14 font_black">
+			<a id="home_page" class="paging_a">首页</a>
+			<a id="pre_page" class="paging_a">上一页</a>
+			<a id="next_page" class="paging_a">下一页</a>
+			<a id="tail_page" class="paging_a">尾页</a>
+			<div id="paging_div_two"><span>跳到第<input id="page_skip" type="text" />页</span><div id="submit_paging" class="div_cursor">GO</div></div>
+			
+		</div>
+	
+		
+		
+		<div id="podiv_tips">
+			<div id="generate" class="bu_tips_div">
+				<div id="bu_tips_img"><img src="{% static 'img/sub_manage/u636.png' %}"/></div>
+				<div id="bu_tips_content"><p>模板生成成功 ！</p></div>
+			</div> 
+		</div>
+		
+		
+		<script type="text/javascript" src="{% static 'js/jquery.js' %}" ></script>
+		<script type="text/javascript" src="{% static 'js/Docking_Module/Feature_Extraction.js' %}" ></script>
+	</body>
+		<script >
+			function showdata() {
+				var m5device_name = "{{ m5device_name|safe }}";
+				var tr="{{ data|safe }}";
+				obj = tr.replace(RegExp("'", "g"),"\"");
+				obj = JSON.parse(obj);
+
+				var csrf = $('input[name="csrfmiddlewaretoken"]').val();
+				// 组织参数
+				var params = {'csrfmiddlewaretoken':csrf };
+				// 设置ajax 请求为同步
+				$.ajaxSettings.async = false;
+				// 发起ajax post请求，访问/cart/update, 传递参数:sku_id count
+				$.post('http://127.0.0.1:9090/apidata/m5/send/'+m5device_name, params, function (data) {
+					if (data.res == 0){
+						// 更新成功
+						tr_data =data.data;
+						for(var key in tr_data){
+							var temp= "."+key;
+							$(temp).next().text(tr_data[key]);
+							// console.log(d);
+						}
+
+					}
+					else{
+						// 更新失败
+						console.log(data.errmsg);
+					}
+				})
+				// 设置ajax请求为异步, false 代表为 同步 true 代表异步
+				$.ajaxSettings.async = true;
+			}
+		setInterval("showdata()", 500);
+
+		</script>
+</html>

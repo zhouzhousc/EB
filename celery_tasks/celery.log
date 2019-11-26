@@ -1,0 +1,188 @@
+[2019-07-08 09:36:35,297: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2019-07-08 09:36:35,300: DEBUG/MainProcess] | Worker: Building graph...
+[2019-07-08 09:36:35,301: DEBUG/MainProcess] | Worker: New boot order: {Timer, Hub, Pool, Autoscaler, Beat, StateDB, Consumer}
+[2019-07-08 09:36:35,323: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2019-07-08 09:36:35,323: DEBUG/MainProcess] | Consumer: Building graph...
+[2019-07-08 09:36:35,351: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Events, Mingle, Gossip, Agent, Heart, Tasks, Control, event loop}
+[2019-07-08 09:36:35,364: DEBUG/MainProcess] | Worker: Starting Pool
+[2019-07-08 09:36:35,364: DEBUG/MainProcess] ^-- substep ok
+[2019-07-08 09:36:35,364: DEBUG/MainProcess] | Worker: Starting Consumer
+[2019-07-08 09:36:35,365: DEBUG/MainProcess] | Consumer: Starting Connection
+[2019-07-08 09:36:35,377: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2019-07-08 09:36:35,377: DEBUG/MainProcess] ^-- substep ok
+[2019-07-08 09:36:35,377: DEBUG/MainProcess] | Consumer: Starting Events
+[2019-07-08 09:36:35,386: DEBUG/MainProcess] ^-- substep ok
+[2019-07-08 09:36:35,386: DEBUG/MainProcess] | Consumer: Starting Mingle
+[2019-07-08 09:36:35,386: INFO/MainProcess] mingle: searching for neighbors
+[2019-07-08 09:36:37,419: INFO/MainProcess] mingle: all alone
+[2019-07-08 09:36:37,420: DEBUG/MainProcess] ^-- substep ok
+[2019-07-08 09:36:37,420: DEBUG/MainProcess] | Consumer: Starting Gossip
+[2019-07-08 09:36:37,422: DEBUG/MainProcess] ^-- substep ok
+[2019-07-08 09:36:37,423: DEBUG/MainProcess] | Consumer: Starting Heart
+[2019-07-08 09:36:37,424: DEBUG/MainProcess] ^-- substep ok
+[2019-07-08 09:36:37,424: DEBUG/MainProcess] | Consumer: Starting Tasks
+[2019-07-08 09:36:37,427: DEBUG/MainProcess] ^-- substep ok
+[2019-07-08 09:36:37,427: DEBUG/MainProcess] | Consumer: Starting Control
+[2019-07-08 09:36:37,427: DEBUG/MainProcess] ^-- substep ok
+[2019-07-08 09:36:37,428: DEBUG/MainProcess] | Consumer: Starting event loop
+[2019-07-08 09:36:37,428: INFO/MainProcess] celery@F1335086-BEACON ready.
+[2019-07-08 09:36:37,428: DEBUG/MainProcess] basic.qos: prefetch_count->16
+[2019-07-08 09:36:37,438: INFO/MainProcess] pidbox: Connected to redis://127.0.0.1:6379/0.
+[2019-07-08 09:37:26,277: INFO/MainProcess] Received task: celery_tasks.tasks.loop_print[a96eeb04-7c96-4393-8ba0-78963a384a79]  
+[2019-07-08 09:37:26,278: DEBUG/MainProcess] TaskPool: Apply <function _fast_trace_task at 0x03BC6300> (args:('celery_tasks.tasks.loop_print', 'a96eeb04-7c96-4393-8ba0-78963a384a79', {'id': 'a96eeb04-7c96-4393-8ba0-78963a384a79', 'group': None, 'eta': None, 'expires': None, 'task': 'celery_tasks.tasks.loop_print', 'timelimit': [None, None], 'reply_to': 'cce9c7e6-b38a-3f06-989c-abcf89ed82f6', 'delivery_info': {'exchange': '', 'routing_key': 'celery', 'priority': 0, 'redelivered': None}, 'origin': 'gen37924@F1335086-BEACON', 'parent_id': None, 'root_id': 'a96eeb04-7c96-4393-8ba0-78963a384a79', 'argsrepr': '(5,)', 'kwargsrepr': '{}', 'lang': 'py', 'correlation_id': 'a96eeb04-7c96-4393-8ba0-78963a384a79', 'retries': 0}, b'[[5], {}, {"chord": null, "chain": null, "callbacks": null, "errbacks": null}]', 'application/json', 'utf-8') kwargs:{})
+[2019-07-08 09:37:26,279: DEBUG/MainProcess] Task accepted: celery_tasks.tasks.loop_print[a96eeb04-7c96-4393-8ba0-78963a384a79] pid:63904144
+[2019-07-08 09:37:26,279: WARNING/MainProcess] 5
+[2019-07-08 09:37:26,280: INFO/MainProcess] Received task: celery_tasks.tasks.loop_print[25b4adce-a299-4abf-a658-3c0dacac496b]  
+[2019-07-08 09:37:26,281: DEBUG/MainProcess] TaskPool: Apply <function _fast_trace_task at 0x03BC6300> (args:('celery_tasks.tasks.loop_print', '25b4adce-a299-4abf-a658-3c0dacac496b', {'id': '25b4adce-a299-4abf-a658-3c0dacac496b', 'group': None, 'eta': None, 'expires': None, 'task': 'celery_tasks.tasks.loop_print', 'timelimit': [None, None], 'reply_to': 'cce9c7e6-b38a-3f06-989c-abcf89ed82f6', 'delivery_info': {'exchange': '', 'routing_key': 'celery', 'priority': 0, 'redelivered': None}, 'origin': 'gen37924@F1335086-BEACON', 'parent_id': None, 'root_id': '25b4adce-a299-4abf-a658-3c0dacac496b', 'argsrepr': '(8,)', 'kwargsrepr': '{}', 'lang': 'py', 'correlation_id': '25b4adce-a299-4abf-a658-3c0dacac496b', 'retries': 0}, b'[[8], {}, {"chord": null, "chain": null, "callbacks": null, "errbacks": null}]', 'application/json', 'utf-8') kwargs:{})
+[2019-07-08 09:37:26,281: DEBUG/MainProcess] Task accepted: celery_tasks.tasks.loop_print[25b4adce-a299-4abf-a658-3c0dacac496b] pid:63904544
+[2019-07-08 09:37:26,281: WARNING/MainProcess] 8
+[2019-07-08 09:37:29,291: WARNING/MainProcess] 5
+[2019-07-08 09:37:29,291: WARNING/MainProcess] 8
+[2019-07-08 09:37:32,300: WARNING/MainProcess] 5
+[2019-07-08 09:37:32,300: WARNING/MainProcess] 8
+[2019-07-08 09:37:35,313: WARNING/MainProcess] 8
+[2019-07-08 09:37:35,313: WARNING/MainProcess] 5
+[2019-07-08 09:37:38,324: WARNING/MainProcess] 5
+[2019-07-08 09:37:38,324: WARNING/MainProcess] 8
+[2019-07-08 09:37:41,306: DEBUG/MainProcess] | Worker: Closing Pool...
+[2019-07-08 09:37:41,306: DEBUG/MainProcess] | Worker: Closing Consumer...
+[2019-07-08 09:37:41,306: DEBUG/MainProcess] | Worker: Stopping Consumer...
+[2019-07-08 09:37:41,306: DEBUG/MainProcess] | Consumer: Closing Connection...
+[2019-07-08 09:37:41,307: DEBUG/MainProcess] | Consumer: Closing Events...
+[2019-07-08 09:37:41,307: DEBUG/MainProcess] | Consumer: Closing Mingle...
+[2019-07-08 09:37:41,307: DEBUG/MainProcess] | Consumer: Closing Gossip...
+[2019-07-08 09:37:41,307: DEBUG/MainProcess] | Consumer: Closing Heart...
+[2019-07-08 09:37:41,307: DEBUG/MainProcess] | Consumer: Closing Tasks...
+[2019-07-08 09:37:41,308: DEBUG/MainProcess] | Consumer: Closing Control...
+[2019-07-08 09:37:41,308: DEBUG/MainProcess] | Consumer: Closing event loop...
+[2019-07-08 09:37:41,308: DEBUG/MainProcess] | Consumer: Stopping event loop...
+[2019-07-08 09:37:41,308: DEBUG/MainProcess] | Consumer: Stopping Control...
+[2019-07-08 09:37:41,309: DEBUG/MainProcess] Waiting for broadcast thread to shutdown...
+[2019-07-08 09:37:41,328: DEBUG/MainProcess] | Consumer: Stopping Tasks...
+[2019-07-08 09:37:41,328: DEBUG/MainProcess] Canceling task consumer...
+[2019-07-08 09:37:41,328: DEBUG/MainProcess] | Consumer: Stopping Heart...
+[2019-07-08 09:37:41,329: DEBUG/MainProcess] | Consumer: Stopping Gossip...
+[2019-07-08 09:37:41,330: DEBUG/MainProcess] | Consumer: Stopping Mingle...
+[2019-07-08 09:37:41,331: DEBUG/MainProcess] | Consumer: Stopping Events...
+[2019-07-08 09:37:41,331: DEBUG/MainProcess] | Consumer: Stopping Connection...
+[2019-07-08 09:37:41,331: DEBUG/MainProcess] | Worker: Stopping Pool...
+[2019-07-08 09:37:41,331: WARNING/MainProcess] 8
+[2019-07-08 09:37:41,331: WARNING/MainProcess] 5
+[2019-07-08 09:37:48,374: DEBUG/MainProcess] | Worker: Preparing bootsteps.
+[2019-07-08 09:37:48,377: DEBUG/MainProcess] | Worker: Building graph...
+[2019-07-08 09:37:48,378: DEBUG/MainProcess] | Worker: New boot order: {Beat, StateDB, Timer, Hub, Pool, Autoscaler, Consumer}
+[2019-07-08 09:37:48,398: DEBUG/MainProcess] | Consumer: Preparing bootsteps.
+[2019-07-08 09:37:48,399: DEBUG/MainProcess] | Consumer: Building graph...
+[2019-07-08 09:37:48,426: DEBUG/MainProcess] | Consumer: New boot order: {Connection, Events, Heart, Mingle, Gossip, Agent, Tasks, Control, event loop}
+[2019-07-08 09:37:48,438: DEBUG/MainProcess] | Worker: Starting Pool
+[2019-07-08 09:37:48,438: DEBUG/MainProcess] ^-- substep ok
+[2019-07-08 09:37:48,439: DEBUG/MainProcess] | Worker: Starting Consumer
+[2019-07-08 09:37:48,439: DEBUG/MainProcess] | Consumer: Starting Connection
+[2019-07-08 09:37:48,448: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2019-07-08 09:37:48,448: DEBUG/MainProcess] ^-- substep ok
+[2019-07-08 09:37:48,449: DEBUG/MainProcess] | Consumer: Starting Events
+[2019-07-08 09:37:48,458: DEBUG/MainProcess] ^-- substep ok
+[2019-07-08 09:37:48,459: DEBUG/MainProcess] | Consumer: Starting Heart
+[2019-07-08 09:37:48,460: DEBUG/MainProcess] ^-- substep ok
+[2019-07-08 09:37:48,460: DEBUG/MainProcess] | Consumer: Starting Mingle
+[2019-07-08 09:37:48,460: INFO/MainProcess] mingle: searching for neighbors
+[2019-07-08 09:37:49,491: INFO/MainProcess] mingle: all alone
+[2019-07-08 09:37:49,492: DEBUG/MainProcess] ^-- substep ok
+[2019-07-08 09:37:49,492: DEBUG/MainProcess] | Consumer: Starting Gossip
+[2019-07-08 09:37:49,495: DEBUG/MainProcess] ^-- substep ok
+[2019-07-08 09:37:49,495: DEBUG/MainProcess] | Consumer: Starting Tasks
+[2019-07-08 09:37:49,498: DEBUG/MainProcess] ^-- substep ok
+[2019-07-08 09:37:49,498: DEBUG/MainProcess] | Consumer: Starting Control
+[2019-07-08 09:37:49,499: DEBUG/MainProcess] ^-- substep ok
+[2019-07-08 09:37:49,499: DEBUG/MainProcess] | Consumer: Starting event loop
+[2019-07-08 09:37:49,499: INFO/MainProcess] celery@F1335086-BEACON ready.
+[2019-07-08 09:37:49,499: DEBUG/MainProcess] basic.qos: prefetch_count->16
+[2019-07-08 09:37:49,508: INFO/MainProcess] pidbox: Connected to redis://127.0.0.1:6379/0.
+[2019-07-08 09:37:50,450: DEBUG/MainProcess] | Worker: Closing Pool...
+[2019-07-08 09:37:50,450: DEBUG/MainProcess] | Worker: Closing Consumer...
+[2019-07-08 09:37:50,451: DEBUG/MainProcess] | Worker: Stopping Consumer...
+[2019-07-08 09:37:50,451: DEBUG/MainProcess] | Consumer: Closing Connection...
+[2019-07-08 09:37:50,451: DEBUG/MainProcess] | Consumer: Closing Events...
+[2019-07-08 09:37:50,451: DEBUG/MainProcess] | Consumer: Closing Heart...
+[2019-07-08 09:37:50,452: DEBUG/MainProcess] | Consumer: Closing Mingle...
+[2019-07-08 09:37:50,452: DEBUG/MainProcess] | Consumer: Closing Gossip...
+[2019-07-08 09:37:50,452: DEBUG/MainProcess] | Consumer: Closing Tasks...
+[2019-07-08 09:37:50,452: DEBUG/MainProcess] | Consumer: Closing Control...
+[2019-07-08 09:37:50,452: DEBUG/MainProcess] | Consumer: Closing event loop...
+[2019-07-08 09:37:50,453: DEBUG/MainProcess] | Consumer: Stopping event loop...
+[2019-07-08 09:37:50,453: DEBUG/MainProcess] | Consumer: Stopping Control...
+[2019-07-08 09:37:50,453: DEBUG/MainProcess] Waiting for broadcast thread to shutdown...
+[2019-07-08 09:37:50,521: DEBUG/MainProcess] | Consumer: Stopping Tasks...
+[2019-07-08 09:37:50,522: DEBUG/MainProcess] Canceling task consumer...
+[2019-07-08 09:37:50,522: DEBUG/MainProcess] | Consumer: Stopping Gossip...
+[2019-07-08 09:37:50,524: DEBUG/MainProcess] | Consumer: Stopping Mingle...
+[2019-07-08 09:37:50,524: DEBUG/MainProcess] | Consumer: Stopping Heart...
+[2019-07-08 09:37:50,525: DEBUG/MainProcess] | Consumer: Stopping Events...
+[2019-07-08 09:37:50,525: DEBUG/MainProcess] | Consumer: Stopping Connection...
+[2019-07-08 09:37:50,526: DEBUG/MainProcess] | Worker: Stopping Pool...
+[2019-07-08 09:37:50,526: DEBUG/MainProcess] | Consumer: Shutdown Control...
+[2019-07-08 09:37:50,526: DEBUG/MainProcess] | Consumer: Shutdown Tasks...
+[2019-07-08 09:37:50,526: DEBUG/MainProcess] Canceling task consumer...
+[2019-07-08 09:37:50,527: DEBUG/MainProcess] Closing consumer channel...
+[2019-07-08 09:37:50,527: DEBUG/MainProcess] | Consumer: Shutdown Gossip...
+[2019-07-08 09:37:50,527: DEBUG/MainProcess] | Consumer: Shutdown Heart...
+[2019-07-08 09:37:50,527: DEBUG/MainProcess] | Consumer: Shutdown Events...
+[2019-07-08 09:37:50,528: DEBUG/MainProcess] | Consumer: Shutdown Connection...
+[2019-07-08 09:38:01,128: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2019-07-08 09:38:01,141: INFO/MainProcess] mingle: searching for neighbors
+[2019-07-08 09:38:03,174: INFO/MainProcess] mingle: all alone
+[2019-07-08 09:38:03,180: INFO/MainProcess] celery@F1335086-BEACON ready.
+[2019-07-08 09:38:03,189: INFO/MainProcess] pidbox: Connected to redis://127.0.0.1:6379/0.
+[2019-07-08 09:38:23,841: INFO/MainProcess] Received task: celery_tasks.tasks.loop_print[9bcda95c-9cb8-4086-a600-17fe28f4aa88]  
+[2019-07-08 09:38:23,842: WARNING/MainProcess] 5
+[2019-07-08 09:38:23,843: INFO/MainProcess] Received task: celery_tasks.tasks.loop_print[ade396cc-777a-4c3a-9861-effcfa25619a]  
+[2019-07-08 09:38:23,844: WARNING/MainProcess] 8
+[2019-07-08 09:38:26,855: WARNING/MainProcess] 5
+[2019-07-08 09:38:26,855: WARNING/MainProcess] 8
+[2019-07-08 09:38:29,863: WARNING/MainProcess] 8
+[2019-07-08 09:38:29,863: WARNING/MainProcess] 5
+[2019-07-08 09:38:32,878: WARNING/MainProcess] 5
+[2019-07-08 09:38:32,878: WARNING/MainProcess] 8
+[2019-07-08 09:38:35,885: WARNING/MainProcess] 8
+[2019-07-08 09:38:35,885: WARNING/MainProcess] 5
+[2019-07-08 09:38:38,896: WARNING/MainProcess] 5
+[2019-07-08 09:38:38,896: WARNING/MainProcess] 8
+[2019-07-08 09:38:41,908: WARNING/MainProcess] 8
+[2019-07-08 09:38:41,908: WARNING/MainProcess] 5
+[2019-07-08 09:38:44,919: WARNING/MainProcess] 5
+[2019-07-08 09:38:44,919: WARNING/MainProcess] 8
+[2019-07-08 09:38:47,931: WARNING/MainProcess] 8
+[2019-07-08 09:38:47,931: WARNING/MainProcess] 5
+[2019-07-08 09:38:50,942: WARNING/MainProcess] 5
+[2019-07-08 09:38:50,942: WARNING/MainProcess] 8
+[2019-07-08 09:38:53,952: INFO/MainProcess] Task celery_tasks.tasks.loop_print[ade396cc-777a-4c3a-9861-effcfa25619a] succeeded in 30.108000000000175s: None
+[2019-07-08 09:38:53,952: INFO/MainProcess] Task celery_tasks.tasks.loop_print[9bcda95c-9cb8-4086-a600-17fe28f4aa88] succeeded in 30.108000000000175s: None
+[2019-07-08 09:40:11,595: INFO/MainProcess] Connected to redis://127.0.0.1:6379/0
+[2019-07-08 09:40:11,605: INFO/MainProcess] mingle: searching for neighbors
+[2019-07-08 09:40:12,639: INFO/MainProcess] mingle: all alone
+[2019-07-08 09:40:12,644: INFO/MainProcess] celery@F1335086-BEACON ready.
+[2019-07-08 09:40:12,653: INFO/MainProcess] pidbox: Connected to redis://127.0.0.1:6379/0.
+[2019-07-08 09:40:14,463: INFO/MainProcess] Received task: celery_tasks.tasks.loop_print[b5f961b8-175c-412c-aefb-f100387e7fda]  
+[2019-07-08 09:40:14,465: WARNING/MainProcess] 5
+[2019-07-08 09:40:14,466: INFO/MainProcess] Received task: celery_tasks.tasks.loop_print[84f54d6f-a0b8-459f-a27f-ceef2894f3eb]  
+[2019-07-08 09:40:14,466: WARNING/MainProcess] 8
+[2019-07-08 09:40:17,473: WARNING/MainProcess] 5
+[2019-07-08 09:40:17,473: WARNING/MainProcess] 8
+[2019-07-08 09:40:20,488: WARNING/MainProcess] 5
+[2019-07-08 09:40:20,488: WARNING/MainProcess] 8
+[2019-07-08 09:40:23,498: WARNING/MainProcess] 8
+[2019-07-08 09:40:23,498: WARNING/MainProcess] 5
+[2019-07-08 09:40:26,509: WARNING/MainProcess] 5
+[2019-07-08 09:40:26,509: WARNING/MainProcess] 8
+[2019-07-08 09:40:29,519: WARNING/MainProcess] 5
+[2019-07-08 09:40:29,519: WARNING/MainProcess] 8
+[2019-07-08 09:40:32,531: WARNING/MainProcess] 8
+[2019-07-08 09:40:32,531: WARNING/MainProcess] 5
+[2019-07-08 09:40:35,540: WARNING/MainProcess] 5
+[2019-07-08 09:40:35,540: WARNING/MainProcess] 8
+[2019-07-08 09:40:38,551: WARNING/MainProcess] 8
+[2019-07-08 09:40:38,551: WARNING/MainProcess] 5
+[2019-07-08 09:40:41,560: WARNING/MainProcess] 5
+[2019-07-08 09:40:41,560: WARNING/MainProcess] 8
+[2019-07-08 09:40:44,575: INFO/MainProcess] Task celery_tasks.tasks.loop_print[84f54d6f-a0b8-459f-a27f-ceef2894f3eb] succeeded in 30.10900000000038s: None
+[2019-07-08 09:40:44,575: INFO/MainProcess] Task celery_tasks.tasks.loop_print[b5f961b8-175c-412c-aefb-f100387e7fda] succeeded in 30.10900000000038s: None

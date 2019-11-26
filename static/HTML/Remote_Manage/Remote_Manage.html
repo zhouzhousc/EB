@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../../css/table.css" />
+		<link rel="stylesheet" href="../../css/font.css" />
+		<link rel="stylesheet" href="../../css/pop.css" />
+		<link rel="stylesheet" href="../../css/bg_Color.css" />
+		<link rel="stylesheet" href="../../css/split_img.css" />
+		<link rel="stylesheet" href="../../css/Remote_Manage/Remote_Manage.css" />
+	</head>
+	<body>
+		<div id="remote_tips" class="remote_tip_bg"><span>该功能实现远程对网关的配置下发！</span></div>
+		
+		<div>
+			<div id="remote_type">
+				<div class="type_select div_cursor"><span>Topic</span></div>
+				<div class="type_select div_cursor"><span>挂载</span></div>
+				<div class="type_select div_cursor"><span>网络</span></div>
+			</div>
+			<div id="remote_split"><img src="../../img/Remote_Manage/u2443.png" /></div>
+		</div>
+		
+		<div id="remote_table_div">
+			<table id="remote_table" cellpadding="0" cellspacing="0">
+				<thead id="remote_thead">
+					<td style="width: 80px;"><span>下发类型</span></td>
+					<td style="width: 160px"><span>MQTT的Topic</span></td>
+					<td style="width: 80px;"><span>描述</span></td>
+					<td style="width: 110px;"><span>操作</span></td>
+				</thead>
+				<tr>
+					<td><span>status</span></td>
+					<td><span class="topic">/data/EdgeBox/gateway/status/<span>....</span></span><img  class="div_cursor click_copy"  src="../../img/Remote_Manage/u2384.png" title="点击复制" /></td>
+					<td><span>状态</span></td>
+					<td><span class="font_blue div_cursor" onclick="clickEvent('config_instructions')">使用说明</span></td>
+				</tr>
+				<tr>
+					<td><span>error</span></td>
+					<td><span class="topic">/data/EdgeBox/gateway/error/<span>....</span></span><img class="div_cursor click_copy" src="../../img/Remote_Manage/u2384.png" title="点击复制" /></td>
+					<td><span>错误</span></td>
+					<td><span class="font_blue div_cursor" onclick="clickEvent('config_instructions')">使用说明</span></td>
+				</tr>
+				<tr>
+					<td><span>event</span></td>
+					<td><span class="topic">/data/EdgeBox/gatetway/event/<span>....</span></span><img class="div_cursor click_copy" src="../../img/Remote_Manage/u2384.png" title="点击复制" /></td>
+					<td><span>事件</span></td>
+					<td><span class="font_blue div_cursor" onclick="clickEvent('config_instructions')">使用说明</span></td>
+				</tr>
+				<tr>
+					<td><span>restart</span></td>
+					<td><span class="topic">/data/EdgeBox/gateway/restart/<span>....</span></span><img class="div_cursor click_copy" src="../../img/Remote_Manage/u2384.png" title="点击复制" /></td>
+					<td><span>重启</span></td>
+					<td><span class="font_blue div_cursor" onclick="clickEvent('config_instructions')">使用说明</span></td>
+				</tr>
+				<tr>
+					<td><span>timing</span></td>
+					<td><span class="topic">/data/EdgeBox/gatetway/timing/<span>....</span></span><img class="div_cursor click_copy" src="../../img/Remote_Manage/u2384.png" title="点击复制" /></td>
+					<td><span>校时</span></td>
+					<td><span class="font_blue div_cursor" onclick="clickEvent('config_instructions')">使用说明</span></td>
+				</tr>
+			</table>
+		</div>
+		
+		<script type="text/javascript" src="../../js/clipboard.min.js" ></script>
+		<script type="text/javascript" src="../../js/jquery1.3.2.js" ></script>
+		<script type="text/javascript" src="../../js/click_copy.js" ></script>
+		<script type="text/javascript" src="../../js/click_event.js" ></script>
+		<script type="text/javascript" src="../../js/isDisapper.js" ></script>
+		<script type="text/javascript" src="../../js/Remote_Manage/Remote_Manage.js" ></script>
+	</body>
+</html>

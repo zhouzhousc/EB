@@ -1,0 +1,123 @@
+html{
+	font-family: '思源黑体 CN Light', '思源黑体 CN Regular', '思源黑体 CN';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/*table tr:hover{
+	background-color: rgba(242, 242, 242, 1);
+}
+thead tr:hover{
+	background-color: rgba(201, 201, 201, 1);
+}*/
+
+#acq_tittle{
+	position: absolute;
+    left: 18px;
+    top: 10px;
+    width: 849px;
+    height: 34px;
+    line-height: 36px;
+    font-size: 14px;
+    text-align: left;
+	/*border: 1px solid aqua;*/
+	background-color: rgba(209, 222, 252, 1);
+}
+#acq_tittle span{
+	position: absolute;
+	font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-size: 14px;
+	left: 16px;
+	color: #333333;
+}
+#data_add{
+	position: relative;
+	top: 4em;
+	left: 2%;
+}
+#data_add span{
+	position: absolute;
+	top: 1px;
+}
+#data_table_div{
+	position: relative;
+	top: 5em;
+	left: 2%;
+	width: 94.3%;
+	/*border: 1px solid aqua;*/
+}
+
+.data_button_div{
+	position: relative;
+	top: 0px;
+	left: 15%;
+	/*right: 184px;*/
+	/*width: 90px;*/
+	height: 37px;
+	/*border: 1px solid aqua;*/
+}
+.data_enable_content{
+	position: absolute;
+	top: 11px;
+	left: -4px;
+	width: 30px;
+	height: 20px;
+}
+.data_enable_button{
+	position: relative;
+    width: 53px;
+    height: 22px;
+    left: 26px;
+    top: 8px;
+    font-size: 13px;
+    color: #FFFFFF;
+    background-color: rgba(0, 159, 60, 1);
+    border-radius: 44px;
+    cursor: pointer;
+}
+.data_button_on{
+	position: absolute;
+	top: 4px;
+	left: 4px;
+}
+.data_button_off{
+	position: absolute;
+	display: none;
+	top: 4px;
+	right: 4px;
+}
+.data_button_circular{
+	position: absolute;
+    /*left: 1px;*/
+    right: 1px;
+    top: 2px;
+    width: 19px;
+    height: 18px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 150px;
+}
+.data_details{
+	position: absolute;
+	top: 12px;
+	left: 30px;
+	color: #246DFF;
+}
+.data_edit{
+	position: absolute;
+	top: 12px;
+	left: 65px;
+	color: #246DFF;
+}
+.data_delete{
+	position: absolute;
+	top: 12px;
+	right: 20px;
+	color: #FF0000;
+}
+.div_cursor{
+	cursor: pointer;
+}

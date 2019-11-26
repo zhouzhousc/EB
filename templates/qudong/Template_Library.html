@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<link rel="stylesheet" href="{% static 'css/table.css' %} " />
+		<link rel="stylesheet" href="{% static 'css/font.css' %} " />
+		<link rel="stylesheet" href="{% static 'css/dev_dri_library/Driver_Library.css' %} " />
+	</head>
+	<body>
+		<div id="driver_table_div">
+			<table id="driver_table" cellpadding="0" cellspacing="0">
+				<thead id="driver_thead">
+					<td width="120px">设备类型</td>
+					<td width="120px">协议类型</td>
+					<td width="120px">协议名称</td>
+					<td width="160px">创建时间</td>
+					<td width="160px">描述</td>
+					<td width="130px">操作</td>
+				</thead>
+				<tr>
+					<td>HC31A电表</td>
+					<td>RS485</td>
+					<td>ModBus</td>
+					<td>2019-05-25 13:52:47</td>
+					<td>HC31A电表配置模板</td>
+					<td><span class="font_red">删除</span></td>
+				</tr>
+				<tr>
+					<td>HC31A电表</td>
+					<td>RS485</td>
+					<td>ModBus</td>
+					<td>2019-04-12 09:48:36</td>
+					<td>HC33A电表配置模板</td>
+					<td><span class="font_red">删除</span></td>
+				</tr>
+				<tr>
+					<td>SMT API</td>
+					<td>RS485</td>
+					<td>SMT协议</td>
+					<td>2019-04-10 10:52:32</td>
+					<td>SMT API配置模板</td>
+					<td><span class="font_red">删除</span></td>
+				</tr>
+				<tr>
+					<td>IO</td>
+					<td>RS485</td>
+					<td>IO协议</td>
+					<td>2019-03-25 09:14:40</td>
+					<td>IO 配置模板</td>
+					<td><span class="font_red">删除</span></td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,116 @@
+#split_event_img{
+	position: absolute;
+	top: 45px;
+	left: 65px;
+}
+#split_event_img img{
+	width: 780px;
+    height: 2px;
+}
+#split_notification_img{
+	position: absolute;
+	top: 45px;
+	left: 45px;
+}
+#split_notification_img img{
+	width: 780px;
+    height: 2px;
+}
+#split_list_img{
+	position: absolute;
+	top: 100px;
+	left: 65px;
+}
+#remote_split{
+	position: relative;
+	top: 73px;
+	left: 40px;
+	/*border: 1px solid aqua;*/
+}
+#remote_split img{
+	position: absolute;
+}
+#pair_img{
+	position: relative;
+	top: 65px;
+	left: 60px;
+}
+.config_line{
+	position: absolute;
+	top: 2.5em;
+	width: 100%;
+}
+.config_line img{
+	height: 0.6em;
+	width:100%;
+}
+.equ_split_div{
+	position: relative;
+	display: block;
+	top: 10%;
+	height: 0.2em;
+	width: 100%;
+}
+.equ_split_div img{
+	position: absolute;
+	width: 100%;
+}
+.equ_split_div2{
+	position: absolute;
+	display: block;
+	/*top: 10%;*/
+	bottom: 0px;
+	height: 0.2em;
+	width: 100%;
+}
+.acq_split_div{
+	position: absolute;
+	top: 55%;
+	left: 5%;
+	width: 89%;
+}
+.acq_split_div img{
+	/*position: absolute;*/
+	width: 100%;
+	height: 1em;
+}
+.equ_split_div2 img{
+	position: absolute;
+	width: 100%;
+}
+#split_list_img img{
+	width: 1033px;
+    height: 2px;
+}
+#remote_split{
+	position: relative;
+	top: 73px;
+	left: 40px;
+	/*border: 1px solid aqua;*/
+}
+#remote_split img{
+	position: absolute;
+}
+.pop_line{
+	position: absolute;
+	top: 8%;
+	left: 2%;
+	width: 97%;
+}
+.pop_line img{
+	width: 100%;
+}
+.pop_split{
+	position: absolute;
+	top: 12%;
+	left: 2%;
+	width: 97%;
+}
+.pop_split img{
+	width: 100%;
+}
+.pop_line_remote{
+	position: relative;
+	top: 5px;
+	/*left: 5px;*/
+}

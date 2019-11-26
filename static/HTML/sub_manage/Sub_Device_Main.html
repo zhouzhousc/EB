@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../../css/page.css" />
+		<link rel="stylesheet" href="../../css/Small_Main.css" />
+		<link rel="stylesheet" href="../../css/iframe.css" />
+		<link rel="stylesheet" href="../../css/pop.css" />
+		<link rel="stylesheet" href="../../font.css" />
+		<link rel="stylesheet" href="../../css/img.css" />
+		<link rel="stylesheet" href="../../css/sub_manage/sub_manage_agreement/Sub_Acq_Modbus.css" />
+	</head>
+
+	<body>
+		<div class="gateway_top">
+			<div class="page_tittle">
+				<span>子设备管理 &nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;<span id="log_sub_title">设备信息</span></span>
+			</div>
+		</div>
+		<div id="sub_smallMenu" class="smallMenu">
+			<a style="text-decoration: none;" onclick="clickDiv('menu',0,1)" onmouseover="over('menu',0);overM('menu',0)" onmouseout="out('menu',0)">
+				<div class="menu">
+					<div class="smallMenu_div_word">设备信息&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</div>
+				</div>
+			</a>
+			<a style="text-decoration: none;" onclick="clickDiv('menu',1,1)" onmouseover="over('menu',1);overM('menu',1)" onmouseout="out('menu',1)">
+				<div class="menu">
+					<div class="smallMenu_div_word">采集协议&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</div>
+				</div>
+			</a>
+			<a style="text-decoration: none;" onclick="clickDiv('menu',2,1)" onmouseover="over('menu',2);overM('menu',2)" onmouseout="out('menu',2)">
+				<div class="menu">
+					<div class="smallMenu_div_word">特征提取&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</div>
+				</div>
+			</a>
+			<a style="text-decoration: none;" onclick="clickDiv('menu',3,1)" onmouseover="over('menu',3);overM('menu',3)" onmouseout="out('menu',3)">
+				<div class="menu">
+					<div class="smallMenu_div_word">数据转发&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</div>
+				</div>
+			</a>
+		</div>
+		<iframe id="sub_iframe" class="css_iframe" name="sub_iframe" src="Sub_Device_Information.html"></iframe>
+		<!--<iframe id="sub_iframe" class="css_iframe" name="sub_iframe" src="Data_Forwarding.html"></iframe>-->
+
+
+		<div id="podiv">
+			<form action="" method="post">
+				<div id="update" class="gateway_service div_shadow div_backgr">
+					<div class="pop_top">
+						<div class="pop_img"><img src="../../img/sub_manage/u1190.png" /></div>
+						<div class="pop_tittle text_left"><span class="tittle_label">修改设备信息</span></div>
+						<div class="pop_close div_cursor" onclick="pop_close('update')"><img src="../../img/gateway/gateway_pop/u423.png" /></div>
+					</div>
+					
+					<div class="pop_line"><img src="../../img/gateway/u130.png" width="460px" /></div>
+					<div class="pop_message">
+						<div class="pop_content">
+							<div class="pop_label">
+								<span><sup class="font_red">*</sup>设备名称：</span>
+							</div>
+							<div class="pop_sub_input">
+								<input type="text"  placeholder="请输入设备名称"/>
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span><sup class="font_red">*</sup>所属类别：</span>
+							</div>
+							<div class="pop_sub_input" style="border: 0px;">
+								<select id="device_type">
+									<option>生产设备类</option>
+									<option>压铸设备类</option>
+									<option>环境设备类</option>
+									<option>机床设备类</option>
+									<option>仪表设备类</option>
+									<option>注塑成型设备类</option>
+									<option>包装设备类</option>
+									<option>工控电脑</option>
+									<option>传感器设备类</option>
+									<option>SMT设备类</option>
+									<option>冲压设备类</option>
+									<option>表面处理设备类</option>
+									<option>运输设备类</option>
+									<option>其他</option>
+							</select>
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span><sup class="font_red">*</sup>设备型号：</span>
+							</div>
+							<div class="pop_sub_input">
+								<input type="text" placeholder="请输入设备型号" />
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span><sup class="font_red">*</sup>设备位置：</span>
+							</div>
+							<div class="pop_sub_input">
+								<input type="text" placeholder="请输入设备位置" />
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span><sup class="font_red">*</sup>厂商型号：</span>
+							</div>
+							<div class="pop_sub_input">
+								<input type="text" placeholder="请输入厂商型号" />
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span>设备描述：</span>
+							</div>
+							<div class="pop_sub_input">
+								<input type="text" />
+							</div>
+						</div>
+						<div id="sub_submit_div" class="new_submit div_cursor text_center"  onclick="pop_save('update')"><p>保存<p></div>
+						<div id="sub_close_div" class="new_close div_cursor text_center" onclick="pop_close('update')"><p>取消</p></div>
+					</div>
+				</div>
+			</form>				
+				
+			<form action="" method="post">
+				<div id="config_podiv">
+					<div id="config_podiv_tittle">
+						<span id="config_tittle_span">ModbusRTU协议(HC31A电表)</span>
+						<div class="sub_close div_cursor" onclick="pop_close('config_podiv')"><img src="../../img/gateway/gateway_pop/u1938.png" /></div>
+					</div>
+					
+					<div id="config_center_modbus" class="config_podiv_center">
+						<div id="acq_bootom_modbus">
+							<!--<div class="pop_close pop_cursor" onclick="pop_close('acq_bootom_modbus')"><img src="../../../img/gateway/gateway_pop/u132.png" /></div>-->
+							<div id="acq_modbus_left">
+								<div class="acq_modbus_input">
+									<p><label><sup class="font_red">*</sup>串口号：</label>&nbsp;&nbsp;&nbsp;&nbsp;
+										<select id="acq_serial_slogans" class="baud_rate_css">
+											<option>com3</option>
+											<option>com4</option>
+											<option>com5</option>
+											<option>com6</option>
+											<option>com7</option>
+											<option>com8</option>
+										</select>
+									</p>
+								</div>
+								<div class="acq_modbus_input">
+									<p><label><sup class="font_red">*</sup>波特率：</label>&nbsp;&nbsp;&nbsp;&nbsp;
+										<select id="baud_rate" class="baud_rate_css"></select>
+									</p>
+								</div>
+								<div class="acq_modbus_input">
+									<p><label><sup class="font_red">*</sup>停止位：</label>&nbsp;&nbsp;&nbsp;&nbsp;
+										<select id="stop_bit" class="baud_rate_css"></select>
+									</p>
+								</div>
+								<div class="acq_modbus_input">
+									<p><label>读写周期：</label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" /><span class="acq_input_span">s</span></p>
+								</div>
+							</div>
+				
+							<div id="acq_modbus_right">
+								<div class="acq_modbus_input">
+									<p><label><sup class="font_red">*</sup>数据位：</label>&nbsp;&nbsp;&nbsp;&nbsp;
+										<select id="data_bits" class="baud_rate_css"></select>
+									</p>
+								</div>
+								<div class="acq_modbus_input">
+									<p><label><sup class="font_red">*</sup>奇偶校验：</label>&nbsp;&nbsp;&nbsp;&nbsp;
+										<select id="parity_check" class="baud_rate_css">
+											<option>n&nbsp;&nbsp;(无校验)</option>
+											<option>e&nbsp;&nbsp;(偶校验)</option>
+											<option>o&nbsp;&nbsp;(奇校验)</option>
+										</select>
+									</p>
+								</div>
+								<div class="acq_modbus_input">
+									<p><label>回复超时：</label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" /><span class="acq_input_span">s</span></p>
+								</div>
+								<div class="acq_modbus_input">
+									<p><label><sup class="font_red">*</sup>地址码：</label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" /></p>
+								</div>
+							</div>
+						</div>
+						
+						<div id="acq_table_div">
+							<table id="acq_table" cellpadding="0" cellspacing="0">
+								<thead id="acq_thead">
+									<td>功能码</td>
+									<td>寄存器地址</td>
+									<td>长度</td>
+									<td>参数</td>
+									<td>操作</td>
+								</thead>
+								<tr id="acq_end_tr">
+									<td colspan="6"><span>+</span></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				
+				
+					<div id="config_center_mqtt" class="config_podiv_center">
+						
+						<div class="pop_modbus_content">
+							<div class="pop_input_label">
+								<span><sup class="font_red">*</sup>Host：</span>
+							</div>
+							<div class="input_label">
+								<input id="host" class="pop_input_long" type="text" />
+							</div>
+						</div>
+						<div class="pop_modbus_content">
+							<div class="pop_input_label">
+								<span><sup class="font_red">*</sup>Port：</span>
+							</div>
+							<div class="input_label">
+								<input id="port" class="pop_input_long" type="text" />
+							</div>
+						</div>
+						<div class="pop_modbus_content">
+							<div class="pop_input_label">
+								<span><sup class="font_red">*</sup>Client ID：</span>
+							</div>
+							<div class="input_label">
+								<input class="pop_input_long" type="text" />
+							</div>
+						</div>
+						<div class="pop_modbus_content">
+							<div class="pop_input_label">
+								<span><sup class="font_red">*</sup>Username：</span>
+							</div>
+							<div class="input_label">
+								<input class="pop_input_long" type="text" />
+							</div>
+						</div>
+						<div class="pop_modbus_content">
+							<div class="pop_input_label">
+								<span><sup class="font_red">*</sup>Password：</span>
+							</div>
+							<div class="input_label">
+								<input class="pop_input_long" type="text" />
+							</div>
+						</div>
+						<div class="pop_modbus_content">
+							<div class="pop_input_label">
+								<span><sup class="font_red">*</sup>Subscribe：</span>
+							</div>
+							<div class="input_label">
+								<input class="pop_input_long" type="text" />
+							</div>
+						</div>
+						
+					</div>
+					
+					<div id="config_save_div">
+						<div id="acq_save" class="save div_cursor"><p>保存<p></div>
+						<div id="acq_close" class="close_save div_cursor" onclick="pop_acq_close('config_podiv')"><p>取消</p></div>
+					</div>
+				</div>
+			</form>
+			
+			<form action="" method="post">
+				<div id="data_add_podiv" class="gateway_service div_shadow div_backgr">
+					<div class="pop_top">
+						<div class="pop_img"><img src="../../img/gateway/gateway_pop/u44.png" /></div>
+						<div class="pop_tittle text_left"><span class="tittle_label" style="font-size: 16px;">新增转发路径</span></div>
+						<div class="pop_close u2040 div_cursor" onclick="pop_close('data_add_podiv')"><img src="../../img/gateway/gateway_pop/u2040.png" /></div>
+					</div>
+					
+					<div class="pop_line"><img src="../../img/gateway/u130.png" width="470px" /></div>
+					<div class="pop_message">
+						<div class="pop_content">
+							<div class="pop_label">
+								<span><sup class="font_red">*</sup>转发路径名称：</span>
+							</div>
+							<div class="pop_data_add_input_div">
+								<input class="pop_data_add_input" type="text" />
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span><sup class="font_red">*</sup>转发类型：</span>
+							</div>
+							<div class="pop_data_add_input_div">
+								<select>
+									<option>MQTT</option>
+									<option>KAFKA</option>
+									<option>DB</option>
+								</select>
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span><sup class="font_red">*</sup>Topic：</span>
+							</div>
+							<div class="pop_data_add_input_div">
+								<input class="pop_data_add_input" type="text" />
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span>是否鉴权：</span>
+							</div>
+							<div class="pop_data_add_input_div">
+								<div class="data_radio"><input type="radio" name="authentication" checked="checked" onclick="radioClick(false)" /><span>否</span></div>
+								<div class="data_radio"><input type="radio" name="authentication" onclick="radioClick(true)" /><span>是</span></div>
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span id="forwarding_ip">IP：</span>
+							</div>
+							<div class="pop_data_add_input_div">
+								<input class="pop_data_add_input" type="text" />
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span id="forwarding_port">端口号：</span>
+							</div>
+							<div class="pop_data_add_input_div">
+								<input class="pop_data_add_input" type="text" />
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span id="forwarding_userName">User Name：</span>
+							</div>
+							<div class="pop_data_add_input_div">
+								<input class="pop_data_add_input" type="text" />
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span id="forwarding_password">Password：</span>
+							</div>
+							<div class="pop_data_add_input_div">
+								<input class="pop_data_add_input" type="text" />
+							</div>
+						</div>
+						
+						<div id="data_test_div" class="test_submit div_cursor text_center"  onclick="pop_save('data_add_podiv')"><span>测试</span></div>
+						<div id="data_submit_div" class="new_submit div_cursor text_center"  onclick="pop_save('data_add_podiv')"><span>確定</span></div>
+						<div id="data_close_div" class="new_close div_cursor text_center" onclick="pop_close('data_add_podiv')"><span>取消</span></div>
+					</div>
+				</div>
+			</form>
+		
+			<form action="" method="post">
+				<div id="data_details" class="gateway_service div_position div_shadow div_backgr">
+					<div class="pop_top">
+						<div class="pop_img"><img src="../../img/gateway/gateway_pop/u44.png" height="18px" width="20px" /></div>
+						<div class="pop_tittle text_left"><span class="tittle_label" style="font-size: 16px;">数据转发详情</span></div>
+						<div class="pop_close u2040 div_cursor" onclick="pop_close('data_details')"><img src="../../img/gateway/gateway_pop/u2040.png" /></div>
+					</div>
+					
+					<div class="pop_line"><img src="../../img/gateway/u130.png" width="440px" /></div>
+					<div class="pop_message" style="top: 80px;">
+						<div class="pop_content">
+							<div class="pop_label">
+								<span>转发路径名称：</span>
+							</div>
+							<div class="pop_data_details_input_div">
+								<input class="pop_data_details_input" type="text" value="test-1" />
+							</div>
+						</div>	
+						<div class="pop_content">
+							<div class="pop_label">
+								<span>转发类型：</span>
+							</div>
+							<div class="pop_data_details_input_div">
+								<input class="pop_data_details_input" type="text" value="CorePro" />
+							</div>
+						</div>	
+						<div class="pop_content">
+							<div class="pop_label">
+								<span>消息上行数：</span>
+							</div>
+							<div class="pop_data_details_input_div">
+								<input class="pop_data_details_input" type="text" value="10" />
+							</div>
+						</div>	
+						<div class="pop_content">
+							<div class="pop_label" style="top: 80px;">
+								<span>消息"payload"：</span>
+							</div>
+							<div class="pop_data_details_input_div">
+								<div class="pop_data_details_span">
+									<span>
+										{
+										<br />
+											&nbsp;&nbsp;"设备名称"："<span id="device_name">LiChuang</span>"
+											<br />
+											&nbsp;&nbsp;"设备类型"："<span id="device_name">力创三相电表</span>"
+											<br />
+											&nbsp;&nbsp;"设备位置"："<span id="device_name">E6-2F</span>"
+											<br />
+											&nbsp;&nbsp;"设备型号"："<span id="device_name">JUYOUWETY</span>"
+											<br />
+											&nbsp;&nbsp;"设备描述"："<span id="device_name">力创智能电表</span>"	
+										<br />
+										}
+									</span>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</form>
+			
+			<form action="" method="post">
+				<div id="data_edit_podiv" class="gateway_service div_position div_shadow div_backgr">
+					<div class="pop_top">
+						<div class="pop_img"><img src="../../img/gateway/gateway_pop/u44.png" /></div>
+						<div class="pop_tittle text_left"><span class="tittle_label" style="font-size: 16px;">编辑转发路径</span></div>
+						<div class="pop_close u2040 div_cursor" onclick="pop_close('data_edit_podiv')"><img src="../../img/gateway/gateway_pop/u2040.png" /></div>
+					</div>
+					
+					<div class="pop_line"><img src="../../img/gateway/u130.png" width="470px" /></div>
+					<div class="pop_message">
+						<div class="pop_content">
+							<div class="pop_label">
+								<span><sup class="font_red">*</sup>转发路径名称：</span>
+							</div>
+							<div class="pop_data_add_input_div">
+								<input class="pop_data_add_input" type="text" />
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span><sup class="font_red">*</sup>转发类型：</span>
+							</div>
+							<div class="pop_data_add_input_div">
+								<select>
+									<option>MQTT</option>
+									<option>KAFKA</option>
+									<option>DB</option>
+								</select>
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span><sup class="font_red">*</sup>Topic：</span>
+							</div>
+							<div class="pop_data_add_input_div">
+								<input class="pop_data_add_input" type="text" />
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span>是否鉴权：</span>
+							</div>
+							<div class="pop_data_add_input_div">
+								<div class="data_radio"><input type="radio" name="authentication_update" checked="checked" onclick="radioClick_update(false)" /><span>否</span></div>
+								<div class="data_radio"><input type="radio" name="authentication_update" onclick="radioClick_update(true)" /><span>是</span></div>
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span id="forwarding_update_ip">IP：</span>
+							</div>
+							<div class="pop_data_add_input_div">
+								<input class="pop_data_add_input" type="text" />
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span id="forwarding_update_port">端口号：</span>
+							</div>
+							<div class="pop_data_add_input_div">
+								<input class="pop_data_add_input" type="text" />
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span id="forwarding_update_userName">User Name：</span>
+							</div>
+							<div class="pop_data_add_input_div">
+								<input class="pop_data_add_input" type="text" />
+							</div>
+						</div>
+						<div class="pop_content">
+							<div class="pop_label">
+								<span id="forwarding_update_password">Password：</span>
+							</div>
+							<div class="pop_data_add_input_div">
+								<input class="pop_data_add_input" type="text" />
+							</div>
+						</div>
+						
+						<div id="data_test_div" class="test_submit div_cursor text_center"  onclick="pop_save('data_add_podiv')"><span>测试</span></div>
+						<div id="data_submit_div" class="new_submit div_cursor text_center"  onclick="pop_save('data_add_podiv')"><span>確定</span></div>
+						<div id="data_close_div" class="new_close div_cursor text_center" onclick="pop_close('data_add_podiv')"><span>取消</span></div>
+					</div>
+				</div>
+			</form>
+			
+		</div>
+		
+		
+		
+		<script type="text/javascript" src="../../js/jquery.js" ></script>
+		<script type="text/javascript" src="../../js/sub_manage/Sub_Device_Main.js"></script>
+		<script type="text/javascript" src="../../js/page.js"></script>
+		<script type="text/javascript" src="../../js/pop.js" ></script>
+		<script type="text/javascript" src="../../js/sub_manage/sub_manage_agreement/Sub_Acq_Modbus.js" ></script>
+	</body>
+</html>

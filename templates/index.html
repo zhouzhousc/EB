@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>网关信息</title>
+		<link rel="stylesheet" href="{% static 'css/Main.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/pop.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/iframe.css'%}" />
+		<script type="text/javascript" src="{% static 'js/jquery.js' %}" ></script>
+	</head>
+	<body>
+			<div id="leftMenu">
+				<div id="topImage">
+					<img id="u61_img" src="{% static 'img/gateway/u61.jpg' %}">
+				</div>
+				<div id="defaultMenu">
+					<div id="box" class="box" onclick="clickDiv(className,0)" onmouseover="over(className,0)" onmouseout="out(className,0)">
+						<a href="javascript:void(0)">
+						<div id="u154"><img id="u154_img" class="list_img" src="{% static 'img/gateway/gateway_manage/0.png' %} " /></div>
+						<div id="box_1" class="menuList">网关管理</div></a>
+					</div>
+					<div class="box" onclick="clickDiv(className,1)" onmouseover="over(className,1)" onmouseout="out(className,1)">
+						<a href="javascript:void(0)">
+						<div id="u85"><img id="u85_img" class="list_img" src="{% static 'img/gateway/gateway_manage/1.png' %} " /></div>
+						<div id="box_2" class="menuList">子设备管理</div></a>
+					</div>
+					<div class="box" onclick="clickDiv(className,2)" onmouseover="over(className,2)" onmouseout="out(className,2)">
+						<a href="javascript:void(0)">
+						<div id="u68"><img id="u68_img" class="list_img" src="{% static 'img/gateway/gateway_manage/2.png' %} " /></div>
+						<div id="box_3" class="menuList">远程管理及维护</div></a>
+					</div>
+					<div class="box" onclick="clickDiv(className,3)" onmouseover="over(className,3)" onmouseout="out(className,3)">
+						<a href="javascript:void(0)">
+						<div id="u105"><img id="u105_img" class="list_img" src="{% static 'img/gateway/gateway_manage/3.png' %}" /></div>
+						<div id="box_4" class="menuList">日志事件</div></a>
+					</div>
+					<div class="box" onclick="clickDiv(className,4)" onmouseover="over(className,4)" onmouseout="out(className,4)">
+						<a href="javascript:void(0)">
+						<div id="u83"><img id="u83_img" class="list_img" src="{% static 'img/gateway/gateway_manage/4.png' %} " /></div>
+						<div id="box_5" class="menuList">设备驱动库</div></a>
+					</div>
+					<div class="box" onclick="clickDiv(className,5)" onmouseover="over(className,5)" onmouseout="out(className,5)">
+						<a href="javascript:void(0)">
+						<div id="u83"><img id="u83_img" class="list_img" src="{% static 'img/gateway/gateway_manage/5.png' %} " /></div>
+						<div id="box_6" class="menuList">M5对接模块</div></a>
+					</div>
+					<div id="u91"><img id="u91_img" src="{% static 'img/gateway/u91.png' %} " /></div>
+				</div>
+			</div>
+			<div>
+				<div id="dashboard"><span>DashBoard</span></div>
+				<div id="top_u40"><img id="u40_img" src="{% static 'img/gateway/u40.png' %} " /></div>
+				<div id="sign_out_div" class="div_cursor font_white"><span id="sign_out">退出</span></div>
+				<div id="top_u302"><img id="u302_img" src="{% static 'img/gateway/u302.png' %} " /><span id="user_span" class="font_white">{{ user.username }} </span></div>
+				<div id="u157" class="div_cursor" onmouseover="display_edition(true)" onmouseout="display_edition(false)"><img id="u157_img" src="{% static 'img/gateway/u157.png' %} " /></div>
+			</div>
+			
+			<div id="edition">
+				<span>当前版本V1.0,发布时间2019/07/11</span>
+			</div>
+			<iframe id="inteface_iframe" name="inteface_iframe" src="{% url 'shebei:devicelist'%}"></iframe>
+
+			<!--<iframe id="inteface_iframe" name="inteface_iframe" src="gateway_manage/Gateway_main.html"></iframe>-->
+			<!--<iframe id="inteface_iframe" name="inteface_iframe" src="Remote_Manage/Remote_Manage_Main.html"></iframe>-->
+
+			
+			
+			
+			
+		<script type="text/javascript" src="{% static 'js/Main.js' %} " ></script>
+		<script type="text/javascript" src="{% static 'js/pop.js' %} " ></script>
+	</body>
+</html>

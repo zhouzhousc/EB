@@ -1,0 +1,29 @@
+html{
+	overflow: hidden;
+}
+#config_tips{
+	position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 884px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    text-align: left;
+}
+#config_tips span{
+	position: absolute;
+	font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-size: 14px;
+	left: 16px;
+	color: #333333;
+}
+
+
+#config_table_div{
+	position: relative;
+	top: 80px;
+	left: 55px;
+}
+

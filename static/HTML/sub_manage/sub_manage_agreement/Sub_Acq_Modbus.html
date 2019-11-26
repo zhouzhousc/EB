@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../../../css/sub_manage/sub_manage_agreement/Sub_Acq_Modbus.css" />
+	</head>
+
+	<body>
+		<div id="acq_bootom_modbus">
+			<!--<div class="pop_close pop_cursor" onclick="pop_close('acq_bootom_modbus')"><img src="../../../img/gateway/gateway_pop/u132.png" /></div>-->
+			<div id="acq_modbus_left">
+				<div class="acq_modbus_input">
+					<p><label>串口号：</label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" /></p>
+				</div>
+				<div class="acq_modbus_input">
+					<p><label>波特率：</label>&nbsp;&nbsp;&nbsp;&nbsp;
+						<select id="baud_rate" class="baud_rate_css"></select>
+					</p>
+				</div>
+				<div class="acq_modbus_input">
+					<p><label>停止位：</label>&nbsp;&nbsp;&nbsp;&nbsp;
+						<select id="stop_bit" class="baud_rate_css"></select>
+					</p>
+				</div>
+				<div class="acq_modbus_input">
+					<p><label>读写周期：</label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" /><span class="acq_input_span">s</span></p>
+				</div>
+			</div>
+
+			<div id="acq_modbus_right">
+				<div class="acq_modbus_input">
+					<p><label>数据位：</label>&nbsp;&nbsp;&nbsp;&nbsp;
+						<select id="data_bits" class="baud_rate_css"></select>
+					</p>
+				</div>
+				<div class="acq_modbus_input">
+					<p><label>奇偶校验：</label>&nbsp;&nbsp;&nbsp;&nbsp;
+						<select id="baud_rate" class="baud_rate_css">
+							<option>n&nbsp;&nbsp;(无校验)</option>
+							<option>e&nbsp;&nbsp;(偶校验)</option>
+							<option>o&nbsp;&nbsp;(奇校验)</option>
+						</select>
+					</p>
+				</div>
+				<div class="acq_modbus_input">
+					<p><label>回复超时：</label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" /><span class="acq_input_span">ms</span></p>
+				</div>
+				<div class="acq_modbus_input">
+					<p><label>上报周期：</label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" /><span class="acq_input_span">s</span></p>
+				</div>
+			</div>
+		</div>
+		
+		<div id="acq_table_div">
+			<table id="acq_table" cellpadding="0" cellspacing="0">
+				<thead id="acq_thead">
+					<td>地址码</td>
+					<td>功能码</td>
+					<td>寄存器地址</td>
+					<td>长度</td>
+					<td>参数</td>
+					<td>操作</td>
+				</thead>
+				<tr id="acq_end_tr">
+					<td colspan="6"><span>+</span></td>
+				</tr>
+			</table>
+		</div>
+		
+		<script type="text/javascript" src="../../../js/jquery.js" ></script>
+		<script type="text/javascript" src="../../../js/sub_manage/sub_manage_agreement/Sub_Acq_Modbus.js" ></script>
+	</body>
+
+</html>
